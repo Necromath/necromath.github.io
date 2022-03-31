@@ -1,14 +1,14 @@
 === Welcome to my Folland Real Analysis notes and solutions page! ===
 
-= Chapter [[0]] Preliminaries =
+= Chapter 0 [[Preliminaries]] =
 
-= Chapter [[1]] Measures=
+= Chapter 1 [[Measures]]=
 
-= Chapter [[2]] Integration =
+= Chapter 2 [[Integration]] =
 
-= Chapter [[3]] Signed Measures and Differentiation =
+= Chapter 3 [[Signed Measures and Differentiation ]] =
 
-= Chapter [[4]] Topology =
+= Chapter 4 [[Topology]] =
 
-= Chapter [[5]] Functional Analysis =
+= Chapter 5 [[Functional Analysis ]]=
 
