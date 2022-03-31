@@ -8,6 +8,6 @@
 
 = My [[solutions to Folland]]  Folland Real Analysis =
 
-= My [[work]] to prepare for the topology prelim =
+= My [[work for the topology prelim]] =
 
 
