@@ -1,4 +1,13 @@
-= Hello world =
+=== Hello world ===
 1. My first line.
 2. Second line.
 3. I can also do some math $\int_0^x \sin(x) d x$
+4. If you want to look at our files in Ubuntu from windows explorer. Use \\wsl$ in the search bar :)
+
+== This will be updated later with more stuff! ==
+
+= My [[solutions to Folland]]  Folland Real Analysis =
+
+= My [[work]] to prepare for the topology prelim =
+
+
