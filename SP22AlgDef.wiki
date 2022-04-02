@@ -1,0 +1,57 @@
+Definitions I am expected to know:
+
+0. Group Representation: A group representation of a group G on a vector space V over a field K is a group homomorphism \rho : G \rightarrow GL(V), general linear group (group of all isomorphisms of V), So the condition is that \rho(g_1 g_2) = \rho(g_1) \rho(g_2) \forall g_1, g_2, \in G.
+
+An example: The group S_3 is isomorphic to D_3, which in turn has a group representation over \R and \C as the rotation by 2\pi / 3.
+
+2. Group Ring: The group ring over a ring R is defined to be the set of all finite R linear combinations of elements of a group G. Written \Sum a_\sigma \sigma, where a_\sigma \in R for all \sigma \in G and a_\sigma =0 for all but finitely many \sigma. 
+
+An example: \R [\Z /3] is the set of all linear combinations of $$x + y\sigma + z\sigma ^2 $$ where x,y,z\in R. Since \R is a field, we can really view this as a vector space. An the real idea is to be thinking about the group ring as follows. This is a vector space over your field/ring/whatever with your group G as a basis! 
+
+3. Isomorphism of group representations: An isomorphism of group representations \rho: G \rightarrow GL(V) and \psi: H \rightarrow GL(W) is a \C - vector space isomorphism T: V \rightarrow W such that $$T(\rho(g))=\psi(g)T for all g \in G. 
+
+An example: Consider the group representations of S_3 and D_3. A permutation of indices of 3-vector can be represented by rotations and reflections in D_3.
+
+4. G invariant element: Let G be a finite group. Let V be a nonzero, finite dimensional \C vector space. Let \rho:G \rightarrow GL(V) be a G-representation. Any element v\in V is said to be a G_invariant element if \rho(g)(v)=v for all g \in G. i.e. 
+
+An example: This is exactly the eigenvectors the image of \rho. The G-invariant vectors. 
+
+5. G invariant subspace: Let G and V be as before. Any subspace W \subset V is said to be a G-invariant subspace if \rho(g)w \in W for all w \in W and g \in G.
+
+An example: Consider the XY-plane in \R ^3. The set of rotation in 3-space that are a pure rotation/translation in XY coordinates would have a representation with the XY plane as a G-invariant subpsace. 
+
+6. Direct sum of representations: Let \rho: G \rightarrow GL(V) be a finite dimensional G-represntation. If V decomposes as a direct sum of G-invariant subspaces W_1 and W_2. We say that \rho: G \rightarrow GL(V) is the direct sum of the G-representations. \rho_1 : G \rightarrow GL(W_1) and \rho_2 : G \rightarrow GL(W_2)
+
+An example: To be filled in with something later... perhaps a calculation. 
+
+7. Irreducible representation: A G-representation \rho: G \rightarrow GL(V) is irreducible if V \neq 0 and V contatins no proper G-invariant subspaces. I.e. V\neq and V as a \C[G]-module contains no proper \C[G]-submodules.
+
+An example: Also to be filled with an example. See homework. 
+
+8. Minimial Polynomial of a linear transformation: The minimial polynomial of the linear transformation T:V \rightarrow V is the monic polynomial m_T \in F[x] of the least degree such that m_T(T)=0.
+
+An example: Consider a matrix A such that $A^2 = I$, meaning that this would have a minimal polynomial $m_A(x)= x^2-1$. 
+
+9. Characteristic Polynomial of a linear transformation: The characteristic polynomial is something we calculate. Typically, given a linear transformation A. The characteristic polynomial f(\lambda)=det(A-\lambda I). From here we see that the roots of the charactersitic polynomial are exactly the eigen values of our linear transformation.
+
+An example: Take your favorite matrix and take the determinant of A-\lambda I. 
+
+10. Invariant factor of a linear transformation: The invariant factors of a finitely generated R-module, M, and where R is a PID. This is a consequence of the structure theorem for finitely generated modules over a PID. Stating that essentially, M is iso to R^r \directsum R/(a_1) ... \directsum R/(a_m), r\in \Z and a_i \in R, with the additional property that a_i divides a_j when i<j. 
+
+An example: There is a lot of information that comes with this. First, that the minimal polynomial of a linear transformation T is its largest invariant factor. Further, the characteristic polynomial is the product of all the invariant factors of T.
+
+11. Elementary divisors of a linear transformation: If R is a PID and M a fg R-module. Then M is isomorphic to a finite sum of the form M \isomorphic R^r \directsum _i=1 ^{s} R / (q_i) with r,s \geq 0 and where (q_i) are nonzero ideals. These q_i are called the elementary divisors and are unique up to reordering. 
+
+An example: This one is usually characterized by when you begin to factor a characteristic polynomial into its factors. The elementary divisors really are exactly your invariant factors. 
+
+12. Companion Matrix: Let $a(x)= \Sum _{i=0} ^{k} b_i x^i $ be any monic polynomial in F[x], where F is a field. The companion matrix of a(x) is the k x k matrix with 1's down the first subdiagonal and, -b_i up to b_k-1 on down the last column and zeroes everywhere else. 
+An example: Whenever we get the decomposition of V as a direct sum of quotients of F[x] modules. We see that the direct sum of the companion matrices of our invariant factors gives us what is called the Rational Canonical Form.
+
+13. Similarity of Matrices: Two matrices A and B are considered to be similar if there exists an invertible matrix P such that PAP^-1 = B
+An example: Think of one yourself :-)
+
+14. Rational Canonical Form: A matrix is said to be in rational canonical form if it is the direct sum of companion matrices for moni polynomials a_i(x) of degree at least one with a_i dividing a_j if i<j. The a_i are called the invariant factors of the matrix. 
+An example: We have had several homework problems like this.
+
+15. Jordan Canonical Form: The JCF is  matrix along the diagonal and 1's on the super diagonal. It has jordan blocks which are mini blocks that correspond to your eigenvalues and your invariant factors. See homeworks.
+An example: The homework lol.

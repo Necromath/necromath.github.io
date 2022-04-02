@@ -1,12 +1,1 @@
-There was a discussion today (3/31/2021) about: Given Normed Vector Spaces X,Y. 
-Given a transformation T \in L(X,Y) that is continuous. Then T is closed. 
 
-Gabe: 
-
-Fix (x,y) \notin \Gamma(T) where T:X\rightarrow Y is continuous. [insert topological
-approach]
-
-Monday:
-
-[analytical version, just observe that the limit of
-(x_n,Tx_n)-> (x,Tx) = (x_n,Tx_n)-> (x,y) ]
