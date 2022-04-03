@@ -1,7 +1,7 @@
 Here are some theorems and results I should know. Of which I only need to know how to prove 2. These are starred for my ease of viewing. 
 
 (*) A representation of a group G is the same thing as a \C [G] - module.
-	Proof: Let G be a group, \rho its representation in GL(V). 
+	Proof: Given a \C [G] modules, V, we have a linear action of G on a \C vector space. Thus giving a homomorphism from G to GL(V). This is our representation 
 	
 (*) The four key properties of tensor products: Commutativity, Associativity, compatibility with direct sums, and tensoring with the ring does nothing. 
 	Proof:
