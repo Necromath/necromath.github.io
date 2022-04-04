@@ -14,20 +14,25 @@ Here are some theorems and results I should know. Of which I only need to know h
 
 <p>
 (*) A representation of a group G is the same thing as a \C [G] - module.
-	Proof: Let G be a group, \rho its representation in GL(V). 
+	Proof: Given a representation of G, the homomorphism \rho from G to GL(V), where V is our vectorspace or module over our field or ring. We can also interperet V as \C[G] module by thinking about V as a \C vector space with a basis given by elements of G.
 </p>
 	
 <p>
 (*) The four key properties of tensor products: Commutativity, Associativity, compatibility with direct sums, and tensoring with the ring does nothing. 
-	Proof:
+	Proof: 
 </p>
 	
 <p>
-Maschke's Theorem:
+	(1) Associativity: We must show that there is unique isomorphism (M \tensor N) \tensor L \isomorphic M \tensor (N \tensor L)
+	This is given by the map (m \tensor n) \tensor l \rightarrow m \tensor (n \tensor l). The big takeaway is abusing and reabusing the universal properties for the tensor to make it happen. The universal property is that as long as you can form a billinear map from (M x N) to your target space L (which is a module over your base space). Then there exists a unique module homomorphism from (M \tensor N) to L. So then first write the obious billinear form from (M x N) to  (M \tensor (N \tensor L )) and then using universal properties of tensor to summon a homomorphism from (M \tensor N) x L to M \tensor (N \tensor L). That sends ((m \tensor n),l) to m \tensor (n \tensor l). Then reapply the property of universal tensors to establish a module isomomorphism between (M \tensor N) \tensor L and M \tensor (N \tensor L)
+</p>
+	
+<p>
+Maschke's Theorem: The minimal polynomial divides the characteristic polynomial.
 </p>
 
 <p>
-Cayley Hamilton Theorem
+Cayley Hamilton Theorem: Given the characteristic polynomial, f(x), for a matrix A. F(A)=0
 </p>
 
 <p>
