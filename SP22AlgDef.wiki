@@ -2,7 +2,7 @@ Definitions I am expected to know:
 
 0. Group Representation: A group representation of a group G on a vector space V over a field K is a group homomorphism \rho : G \rightarrow GL(V), general linear group (group of all isomorphisms of V), So the condition is that \rho(g_1 g_2) = \rho(g_1) \rho(g_2) \forall g_1, g_2, \in G.
 
-An example: The group S_3 is isomorphic to D_3, which in turn has a group representation over \R and \C as the rotation by 2\pi / 3.
+An example: The group S_3 is isomorphic to D_3, which in turn has a group representation over \R and \C as the rotation by 2\pi / 3 as well as reflections.
 
 2. Group Ring: The group ring over a ring R is defined to be the set of all finite R linear combinations of elements of a group G. Written \Sum a_\sigma \sigma, where a_\sigma \in R for all \sigma \in G and a_\sigma =0 for all but finitely many \sigma. 
 
@@ -55,3 +55,9 @@ An example: We have had several homework problems like this.
 
 15. Jordan Canonical Form: The JCF is  matrix along the diagonal and 1's on the super diagonal. It has jordan blocks which are mini blocks that correspond to your eigenvalues and your invariant factors. See homeworks.
 An example: The homework lol.
+
+16. The tensor product of two modules: Given modules V,W over a ring R. The tensor product of V and W is the module denoted V \tensor W with a billinear map \tensor:(v,w) \rightarrow v\tensor w from V \times W to V \tensor W, such that for EVERY billinear map h: V \times W \rightarrow Z, there is a unique linear map h\hat : V \tensor W \rightarrow Z such that h = h\hat \compose \tensor. Meaning h(v,w) = h\hat ( v \tensor w) for all v \in V and w \in W. 
+    							    (V \tensor W)
+    							     ^		\
+							     |           >
+MM: So if I were to draw it here in ViM it would be like (V x W)    ->     Z . Note that V \tensor W is ALWAYS defined. 
