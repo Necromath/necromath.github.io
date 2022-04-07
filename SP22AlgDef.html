@@ -94,7 +94,7 @@ An example: This is exactly the eigenvectors the image of \rho. The G-invariant 
 </ol>
 
 <p>
-An example: Consider the \(XY\)-plane in \(\R ^3\). The set of rotation in 3-space that are a pure rotation/translation in \(XY\) coordinates would have a representation with the \(XY\)-plane as a \(G\)-invariant subpsace. 
+An example: Consider the \(XY\)-plane in \(mathbb{R}^3\). The set of rotation in 3-space that are a pure rotation/translation in \(XY\) coordinates would have a representation with the \(XY\)-plane as a \(G\)-invariant subpsace. 
 </p>
 
 <ol>
@@ -139,7 +139,7 @@ An example: Take your favorite matrix and take the determinant of \(A-\lambda I\
 
 <ol>
 <li>
-Invariant factor of a linear transformation: The invariant factors of a finitely generated \(R\)-module, \(M\), and where \(R\) is a PID. This is a consequence of the structure theorem for finitely generated modules over a PID. Stating that essentially, \(M \cong R^r \directsum R/(a_1) ... \directsum R/(a_m)\), \(r\in \Z\) and \(a_i \in R\), with the additional property that \(a_i\) divides \(a_j\) when \(i&lt;j\). 
+Invariant factor of a linear transformation: The invariant factors of a finitely generated \(R\)-module, \(M\), and where \(R\) is a PID. This is a consequence of the structure theorem for finitely generated modules over a PID. Stating that essentially, \(M \cong R^r \sum R/(a_1) ... \sum R/(a_m)\), \(r\in \Z\) and \(a_i \in R\), with the additional property that \(a_i\) divides \(a_j\) when \(i&lt;j\). 
 
 </ol>
 
@@ -149,7 +149,7 @@ An example: There is a lot of information that comes with this. First, that the 
 
 <ol>
 <li>
-Elementary divisors of a linear transformation: If R is a PID and M a fg R-module. Then M is isomorphic to a finite sum of the form \(M \cong R^r \directsum _i=1 ^{s} R / (q_i)\) with \(r,s \geq 0\) and where \((q_i)\) are nonzero ideals. These \(q_i\) are called the elementary divisors and are unique up to reordering. 
+Elementary divisors of a linear transformation: If R is a PID and M a fg R-module. Then M is isomorphic to a finite sum of the form \(M \cong R^r \Osum _i=1 ^{s} R / (q_i)\) with \(r,s \geq 0\) and where \((q_i)\) are nonzero ideals. These \(q_i\) are called the elementary divisors and are unique up to reordering. 
 
 </ol>
 
@@ -159,7 +159,7 @@ An example: This one is usually characterized by when you begin to factor a char
 
 <ol>
 <li>
-Companion Matrix: Let \(a(x)= \Sum _{i=0} ^{k} b_i x^i \) be any monic polynomial in \(F[x]\), where \(F\) is a field. The companion matrix of \(a(x)\) is the \(k x k\) matrix with 1's down the first subdiagonal and, \(-b_i\) up to\(-b_k-1\) on down the last column and zeroes everywhere else. 
+Companion Matrix: Let \(a(x)= \Sigma _{i=0} ^{k} b_i x^i \) be any monic polynomial in \(F[x]\), where \(F\) is a field. The companion matrix of \(a(x)\) is the \(k x k\) matrix with 1's down the first subdiagonal and, \(-b_i\) up to\(-b_k-1\) on down the last column and zeroes everywhere else. 
 
 </ol>
 <p>
@@ -195,15 +195,9 @@ An example: The homework lol.
 
 <ol>
 <li>
-The tensor product of two modules: Given modules \(V,W\) over a ring \(R\). The tensor product of \(V\) and \(W\) is the module denoted \(V \otimes W\) with a billinear map \(\otimes:(v,w) \rightarrow v\otimes w\) from \(V \times W\) to \(V \otimes W\), such that for EVERY billinear map \(h: V \times W \rightarrow Z\), there is a unique linear map \(h\hat : V \otimes W \rightarrow Z\) such that \(h = h\hat \circ \otimes\). Meaning \(h(v,w) = h\hat ( v \tensor w)\) for all \(v \in V\) and \(w \in W.\) 
-    							    (V \tensor W)
-    							     ^		\
-							     |           &gt;
+The tensor product of two modules: Given modules \(V,W\) over a ring \(R\). The tensor product of \(V\) and \(W\) is the module denoted \(V \otimes W\) with a billinear map \(\otimes:(v,w) \rightarrow v\otimes w\) from \(V \times W\) to \(V \otimes W\), such that for EVERY billinear map \(h: V \times W \rightarrow Z\), there is a unique linear map \(h\hat : V \otimes W \rightarrow Z\) such that \(h = h\hat \circ \otimes\). Meaning \(h(v,w) = h\hat ( v \otimes w)\) for all \(v \in V\) and \(w \in W.\) 
 
 </ol>
-<p>
-MM: So if I were to draw it here in ViM it would be like (V x W)    -&gt;     Z . Note that V \tensor W is ALWAYS defined. 
-</p>
 
     </div>
 <hr>
@@ -211,6 +205,6 @@ MM: So if I were to draw it here in ViM it would be like (V x W)    -&gt;     Z 
 document.write("This page was powered by Vimwiki and was last modified on: " + document.lastModified +"");
 </SCRIPT>
 <hr>
-<center>&copy; Le Chen, 2022, chenle02@gmail.com </center>
+<center>&copy; Mauricio Montes, 2022, myfirstname.mylast@auburn.edu </center>
 </body>
 </html>

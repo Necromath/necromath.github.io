@@ -18,7 +18,7 @@ An example: This is exactly the eigenvectors the image of \rho. The G-invariant 
 
 5. $G$ invariant subspace: Let $G$ and $V$ be as before. Any subspace $W \subset V$ is said to be a G-invariant subspace if $\rho(g)w \in W$ for all $w \in W$ and $g \in G$.
 
-An example: Consider the $XY$-plane in $\R ^3$. The set of rotation in 3-space that are a pure rotation/translation in $XY$ coordinates would have a representation with the $XY$-plane as a $G$-invariant subpsace. 
+An example: Consider the $XY$-plane in $mathbb{R}^3$. The set of rotation in 3-space that are a pure rotation/translation in $XY$ coordinates would have a representation with the $XY$-plane as a $G$-invariant subpsace. 
 
 6. Direct sum of representations: Let $\rho: G \rightarrow GL(V)$ be a finite dimensional $G$-represntation. If $V$ decomposes as a direct sum of G-invariant subspaces $W_1$ and $W_2$. We say that $\rho: G \rightarrow GL(V)$ is the direct sum of the $G$-representations. $\rho_1 : G \rightarrow GL(W_1)$ and $\rho_2 : G \rightarrow GL(W_2)$
 
@@ -36,15 +36,15 @@ An example: Consider a matrix A such that $A^2 = I$, meaning that this would hav
 
 An example: Take your favorite matrix and take the determinant of $A-\lambda I$. 
 
-10. Invariant factor of a linear transformation: The invariant factors of a finitely generated $R$-module, $M$, and where $R$ is a PID. This is a consequence of the structure theorem for finitely generated modules over a PID. Stating that essentially, $M \cong R^r \directsum R/(a_1) ... \directsum R/(a_m)$, $r\in \Z$ and $a_i \in R$, with the additional property that $a_i$ divides $a_j$ when $i<j$. 
+10. Invariant factor of a linear transformation: The invariant factors of a finitely generated $R$-module, $M$, and where $R$ is a PID. This is a consequence of the structure theorem for finitely generated modules over a PID. Stating that essentially, $M \cong R^r \sum R/(a_1) ... \sum R/(a_m)$, $r\in \Z$ and $a_i \in R$, with the additional property that $a_i$ divides $a_j$ when $i<j$. 
 
 An example: There is a lot of information that comes with this. First, that the minimal polynomial of a linear transformation T is its largest invariant factor. Further, the characteristic polynomial is the product of all the invariant factors of T.
 
-11. Elementary divisors of a linear transformation: If R is a PID and M a fg R-module. Then M is isomorphic to a finite sum of the form $M \cong R^r \directsum _i=1 ^{s} R / (q_i)$ with $r,s \geq 0$ and where $(q_i)$ are nonzero ideals. These $q_i$ are called the elementary divisors and are unique up to reordering. 
+11. Elementary divisors of a linear transformation: If R is a PID and M a fg R-module. Then M is isomorphic to a finite sum of the form $M \cong R^r \Osum _i=1 ^{s} R / (q_i)$ with $r,s \geq 0$ and where $(q_i)$ are nonzero ideals. These $q_i$ are called the elementary divisors and are unique up to reordering. 
 
 An example: This one is usually characterized by when you begin to factor a characteristic polynomial into its factors. The elementary divisors really are exactly your invariant factors. 
 
-12. Companion Matrix: Let $a(x)= \Sum _{i=0} ^{k} b_i x^i $ be any monic polynomial in $F[x]$, where $F$ is a field. The companion matrix of $a(x)$ is the $k x k$ matrix with 1's down the first subdiagonal and, $-b_i$ up to$-b_k-1$ on down the last column and zeroes everywhere else. 
+12. Companion Matrix: Let $a(x)= \Sigma _{i=0} ^{k} b_i x^i $ be any monic polynomial in $F[x]$, where $F$ is a field. The companion matrix of $a(x)$ is the $k x k$ matrix with 1's down the first subdiagonal and, $-b_i$ up to$-b_k-1$ on down the last column and zeroes everywhere else. 
 An example: Whenever we get the decomposition of V as a direct sum of quotients of F[x] modules. We see that the direct sum of the companion matrices of our invariant factors gives us what is called the Rational Canonical Form.
 
 13. Similarity of Matrices: Two matrices $A$ and $B$ are considered to be similar if there exists an invertible matrix $P$ such that $PAP^-1 = B$
@@ -56,8 +56,4 @@ An example: We have had several homework problems like this.
 15. Jordan Canonical Form: The JCF is  matrix along the diagonal and 1's on the super diagonal. It has jordan blocks which are mini blocks that correspond to your eigenvalues and your invariant factors. See homeworks.
 An example: The homework lol.
 
-16. The tensor product of two modules: Given modules $V,W$ over a ring $R$. The tensor product of $V$ and $W$ is the module denoted $V \otimes W$ with a billinear map $\otimes:(v,w) \rightarrow v\otimes w$ from $V \times W$ to $V \otimes W$, such that for EVERY billinear map $h: V \times W \rightarrow Z$, there is a unique linear map $h\hat : V \otimes W \rightarrow Z$ such that $h = h\hat \circ \otimes$. Meaning $h(v,w) = h\hat ( v \tensor w)$ for all $v \in V$ and $w \in W.$ 
-    							    (V \tensor W)
-    							     ^		\
-							     |           >
-MM: So if I were to draw it here in ViM it would be like (V x W)    ->     Z . Note that V \tensor W is ALWAYS defined. 
+16. The tensor product of two modules: Given modules $V,W$ over a ring $R$. The tensor product of $V$ and $W$ is the module denoted $V \otimes W$ with a billinear map $\otimes:(v,w) \rightarrow v\otimes w$ from $V \times W$ to $V \otimes W$, such that for EVERY billinear map $h: V \times W \rightarrow Z$, there is a unique linear map $h\hat : V \otimes W \rightarrow Z$ such that $h = h\hat \circ \otimes$. Meaning $h(v,w) = h\hat ( v \otimes w)$ for all $v \in V$ and $w \in W.$ 
