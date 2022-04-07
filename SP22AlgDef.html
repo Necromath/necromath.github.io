@@ -49,12 +49,12 @@ Definitions I am expected to know:
 
 <ol>
 <li>
-Group Representation: A group representation of a group G on a vector space V over a field K is a group homomorphism \rho : G \rightarrow GL(V), general linear group (group of all isomorphisms of V), So the condition is that \rho(g_1 g_2) = \rho(g_1) \rho(g_2) \forall g_1, g_2, \in G.
+Group Representation: A group representation of a group G on a vector space V over a field K is a group homomorphism \rho : G \rightarrow GL(V), general linear group (group of all isomorphisms of V), So the condition is that \(\rho(g_1 g_2) = \rho(g_1) \rho(g_2) \forall g_1, g_2, \in G.\)
 
 </ol>
 
 <p>
-An example: The group S_3 is isomorphic to D_3, which in turn has a group representation over \R and \C as the rotation by 2\pi / 3 as well as reflections.
+An example: The group \(S_3\) is isomorphic to \(D_3\), which in turn has a group representation over \R and \C as the rotation by 2\pi / 3 as well as reflections.
 </p>
 
 <ol>
@@ -64,22 +64,22 @@ Group Ring: The group ring over a ring R is defined to be the set of all finite 
 </ol>
 
 <p>
-An example: \R [\Z /3] is the set of all linear combinations of $\(x + y\sigma + z\sigma ^2 \)$ where x,y,z\in R. Since \R is a field, we can really view this as a vector space. An the real idea is to be thinking about the group ring as follows. This is a vector space over your field/ring/whatever with your group G as a basis! 
+An example: \R [\Z /3] is the set of all linear combinations of \(x + y\sigma + z\sigma ^2 \) where \(x,y,z\in R\). Since \(\R\) is a field, we can really view this as a vector space. An the real idea is to be thinking about the group ring as follows. This is a vector space over your field/ring/whatever with your group G as a basis! 
 </p>
 
 <ol>
 <li>
-Isomorphism of group representations: An isomorphism of group representations \rho: G \rightarrow GL(V) and \psi: H \rightarrow GL(W) is a \C - vector space isomorphism T: V \rightarrow W such that $$T(\rho(g))=\psi(g)T for all g \in G. 
+Isomorphism of group representations: An isomorphism of group representations \(\rho: G \rightarrow GL(V)\) and \(\psi: H \rightarrow GL(W)\) is a \(\C\) - vector space isomorphism \(T: V \rightarrow W \)such that \( T(\rho(g))=\psi(g)T for all g \in G. \)
 
 </ol>
 
 <p>
-An example: Consider the group representations of S_3 and D_3. A permutation of indices of 3-vector can be represented by rotations and reflections in D_3.
+An example: Consider the group representations of \(S_3\) and \(D_3\). A permutation of indices of 3-vector can be represented by rotations and reflections in \(D_3\).
 </p>
 
 <ol>
 <li>
-G invariant element: Let G be a finite group. Let V be a nonzero, finite dimensional \C vector space. Let \rho:G \rightarrow GL(V) be a G-representation. Any element v\in V is said to be a G_invariant element if \rho(g)(v)=v for all g \in G. i.e. 
+G invariant element: Let \(G\) be a finite group. Let \(V\) be a nonzero, finite dimensional \(\C\) vector space. Let \(\rho:G \rightarrow GL(V)\) be a \(G\)-representation. Any element \(v\in V\) is said to be a \(G\)-invariant element if \(\rho(g)(v)=v\) for all \(g \in G\).
 
 </ol>
 
@@ -89,17 +89,17 @@ An example: This is exactly the eigenvectors the image of \rho. The G-invariant 
 
 <ol>
 <li>
-G invariant subspace: Let G and V be as before. Any subspace W \subset V is said to be a G-invariant subspace if \rho(g)w \in W for all w \in W and g \in G.
+\(G\) invariant subspace: Let \(G\) and \(V\) be as before. Any subspace \(W \subset V\) is said to be a G-invariant subspace if \(\rho(g)w \in W\) for all \(w \in W\) and \(g \in G\).
 
 </ol>
 
 <p>
-An example: Consider the XY-plane in \R ^3. The set of rotation in 3-space that are a pure rotation/translation in XY coordinates would have a representation with the XY plane as a G-invariant subpsace. 
+An example: Consider the \(XY\)-plane in \(\R ^3\). The set of rotation in 3-space that are a pure rotation/translation in \(XY\) coordinates would have a representation with the \(XY\)-plane as a \(G\)-invariant subpsace. 
 </p>
 
 <ol>
 <li>
-Direct sum of representations: Let \rho: G \rightarrow GL(V) be a finite dimensional G-represntation. If V decomposes as a direct sum of G-invariant subspaces W_1 and W_2. We say that \rho: G \rightarrow GL(V) is the direct sum of the G-representations. \rho_1 : G \rightarrow GL(W_1) and \rho_2 : G \rightarrow GL(W_2)
+Direct sum of representations: Let \(\rho: G \rightarrow GL(V)\) be a finite dimensional \(G\)-represntation. If \(V\) decomposes as a direct sum of G-invariant subspaces \(W_1\) and \(W_2\). We say that \(\rho: G \rightarrow GL(V)\) is the direct sum of the \(G\)-representations. \(\rho_1 : G \rightarrow GL(W_1)\) and \(\rho_2 : G \rightarrow GL(W_2)\)
 
 </ol>
 
@@ -109,7 +109,7 @@ An example: To be filled in with something later... perhaps a calculation.
 
 <ol>
 <li>
-Irreducible representation: A G-representation \rho: G \rightarrow GL(V) is irreducible if V \neq 0 and V contatins no proper G-invariant subspaces. I.e. V\neq and V as a \C[G]-module contains no proper \C[G]-submodules.
+Irreducible representation: A \(G\)-representation \(\rho: G \rightarrow GL(V)\) is irreducible if \(V \neq 0\) and \(V\) contatins no proper \(G\)-invariant subspaces. I.e. \(V\neq W_1 \sum W_2\) and V as a \(\C[G]\)-module contains no proper \C[G]-submodules.
 
 </ol>
 
@@ -119,7 +119,7 @@ An example: Also to be filled with an example. See homework.
 
 <ol>
 <li>
-Minimial Polynomial of a linear transformation: The minimial polynomial of the linear transformation T:V \rightarrow V is the monic polynomial m_T \in F[x] of the least degree such that m_T(T)=0.
+Minimial Polynomial of a linear transformation: The minimial polynomial of the linear transformation \(T:V \rightarrow V\) is the monic polynomial \(m_T \in F[x]\) of the least degree such that \(m_T(T)=0\).
 
 </ol>
 
@@ -129,17 +129,17 @@ An example: Consider a matrix A such that \(A^2 = I\), meaning that this would h
 
 <ol>
 <li>
-Characteristic Polynomial of a linear transformation: The characteristic polynomial is something we calculate. Typically, given a linear transformation A. The characteristic polynomial f(\lambda)=det(A-\lambda I). From here we see that the roots of the charactersitic polynomial are exactly the eigen values of our linear transformation.
+Characteristic Polynomial of a linear transformation: The characteristic polynomial is something we calculate. Typically, given a linear transformation \(A\). The characteristic polynomial \(f(\lambda)=det(A-\lambda I)\). From here we see that the roots of the charactersitic polynomial are exactly the eigen values of our linear transformation.
 
 </ol>
 
 <p>
-An example: Take your favorite matrix and take the determinant of A-\lambda I. 
+An example: Take your favorite matrix and take the determinant of \(A-\lambda I\). 
 </p>
 
 <ol>
 <li>
-Invariant factor of a linear transformation: The invariant factors of a finitely generated R-module, M, and where R is a PID. This is a consequence of the structure theorem for finitely generated modules over a PID. Stating that essentially, M is iso to R^r \directsum R/(a_1) ... \directsum R/(a_m), r\in \Z and a_i \in R, with the additional property that a_i divides a_j when i&lt;j. 
+Invariant factor of a linear transformation: The invariant factors of a finitely generated \(R\)-module, \(M\), and where \(R\) is a PID. This is a consequence of the structure theorem for finitely generated modules over a PID. Stating that essentially, \(M \cong R^r \directsum R/(a_1) ... \directsum R/(a_m)\), \(r\in \Z\) and \(a_i \in R\), with the additional property that \(a_i\) divides \(a_j\) when \(i&lt;j\). 
 
 </ol>
 
@@ -149,7 +149,7 @@ An example: There is a lot of information that comes with this. First, that the 
 
 <ol>
 <li>
-Elementary divisors of a linear transformation: If R is a PID and M a fg R-module. Then M is isomorphic to a finite sum of the form M \isomorphic R<sup><small>r \directsum _i=1 </small></sup>{s} R / (q_i) with r,s \geq 0 and where (q_i) are nonzero ideals. These q_i are called the elementary divisors and are unique up to reordering. 
+Elementary divisors of a linear transformation: If R is a PID and M a fg R-module. Then M is isomorphic to a finite sum of the form \(M \cong R^r \directsum _i=1 ^{s} R / (q_i)\) with \(r,s \geq 0\) and where \((q_i)\) are nonzero ideals. These \(q_i\) are called the elementary divisors and are unique up to reordering. 
 
 </ol>
 
@@ -159,7 +159,7 @@ An example: This one is usually characterized by when you begin to factor a char
 
 <ol>
 <li>
-Companion Matrix: Let \(a(x)= \Sum _{i=0} ^{k} b_i x^i \) be any monic polynomial in F[x], where F is a field. The companion matrix of a(x) is the k x k matrix with 1's down the first subdiagonal and, -b_i up to b_k-1 on down the last column and zeroes everywhere else. 
+Companion Matrix: Let \(a(x)= \Sum _{i=0} ^{k} b_i x^i \) be any monic polynomial in \(F[x]\), where \(F\) is a field. The companion matrix of \(a(x)\) is the \(k x k\) matrix with 1's down the first subdiagonal and, \(-b_i\) up to\(-b_k-1\) on down the last column and zeroes everywhere else. 
 
 </ol>
 <p>
@@ -168,7 +168,7 @@ An example: Whenever we get the decomposition of V as a direct sum of quotients 
 
 <ol>
 <li>
-Similarity of Matrices: Two matrices A and B are considered to be similar if there exists an invertible matrix P such that PAP^-1 = B
+Similarity of Matrices: Two matrices \(A\) and \(B\) are considered to be similar if there exists an invertible matrix \(P\) such that \(PAP^-1 = B\)
 
 </ol>
 <p>
@@ -177,7 +177,7 @@ An example: Think of one yourself :-)
 
 <ol>
 <li>
-Rational Canonical Form: A matrix is said to be in rational canonical form if it is the direct sum of companion matrices for moni polynomials a_i(x) of degree at least one with a_i dividing a_j if i&lt;j. The a_i are called the invariant factors of the matrix. 
+Rational Canonical Form: A matrix is said to be in rational canonical form if it is the direct sum of companion matrices for moni polynomials \(a_i(x)\) of degree at least one with \(a_i\) dividing \(a_j\) if \(i&lt;j\). The \(a_i\) are called the invariant factors of the matrix. 
 
 </ol>
 <p>
@@ -195,7 +195,7 @@ An example: The homework lol.
 
 <ol>
 <li>
-The tensor product of two modules: Given modules V,W over a ring R. The tensor product of V and W is the module denoted V \tensor W with a billinear map \tensor:(v,w) \rightarrow v\tensor w from V \times W to V \tensor W, such that for EVERY billinear map h: V \times W \rightarrow Z, there is a unique linear map h\hat : V \tensor W \rightarrow Z such that h = h\hat \compose \tensor. Meaning h(v,w) = h\hat ( v \tensor w) for all v \in V and w \in W. 
+The tensor product of two modules: Given modules \(V,W\) over a ring \(R\). The tensor product of \(V\) and \(W\) is the module denoted \(V \otimes W\) with a billinear map \(\otimes:(v,w) \rightarrow v\otimes w\) from \(V \times W\) to \(V \otimes W\), such that for EVERY billinear map \(h: V \times W \rightarrow Z\), there is a unique linear map \(h\hat : V \otimes W \rightarrow Z\) such that \(h = h\hat \circ \otimes\). Meaning \(h(v,w) = h\hat ( v \tensor w)\) for all \(v \in V\) and \(w \in W.\) 
     							    (V \tensor W)
     							     ^		\
 							     |           &gt;
