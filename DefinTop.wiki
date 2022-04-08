@@ -1,0 +1,12 @@
+Here are some definitions to know:
+
+1. Topology: A topology $\tau$ on a set $X$ is a collection of subsets of $X$, called open subsets, denoted $U$, such that: $X \in \tau$ and arbitrary unions and finite intersections $\cup U$ and $\cap _{i=1} ^{n} U$ are subsets of $\tau$ 
+
+2. If $x \in N \subseteq X$ then we say that $N$ is a neighborhood of $x$ if there is an open set $U$ with $x\in U \subseteq N$
+
+3. If $Y \subseteq X$ and $x\in X$, then $x$ is called a limit point of $Y$ if every neighborhoood of $x$ intersects $Y$ in a point distinct from $x$. 
+   
+4. A point $x \in X$ is called an interior point of the set $Y$ if there is a neighborhood of $x$ which is contained in $Y$. We say that $x$ is an exterior point of the set $Y$ if there is a neighborhood $N$ of $x$ which is disjoint from $Y$.
+
+5. A point $x \in X$ is called a boundary point of $Y$ if and only if every neighborhood of $x$ intersects both $Y$ and $X \setminus Y$. 
+
