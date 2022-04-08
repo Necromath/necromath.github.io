@@ -6,15 +6,13 @@
    
 This is an [[art gallery]]
 
+and this is not a pipe
 
+{{https://upload.wikimedia.org/wikipedia/en/b/b9/MagrittePipe.jpg}}
 
-{{https://arthur.io/img/art/0001734506596bdf2/hiroshi-nagai/untitled-4/large/hiroshi-nagai--untitled-4.jpg}}
-
-= This will be updated later with more stuff! =
-
-= My [[solutions to Folland]]  Folland Real Analysis =
+= My [[solutions to Folland]]  Real Analysis =
 
 = My [[work for the topology prelim]] =
 
-Studying for Algebra [[Final]]:
+= Studying for Algebra [[Final]]: =
 
