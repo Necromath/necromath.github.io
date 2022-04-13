@@ -1,0 +1,43 @@
+These are my notes right now for Section 5 of Chapter 5, Hilbert Spaces. (Dated April 12, 2022)
+
+First we introduce the definition of an inner product. First let $\mathcal{H}$ be a  complex vector space. An $\textbf{inner product}$ on $\mathcal{H}$ is a map $(x,y) \rightarrow \braket{x,y}$ from $\mathcal{X} \times \mathcal{X} \rightarrow \mathbb{C} $ such that :
+	(i): $\braket{ax+by,z} = a \braket{x,z} +b \braket{y,z} $ for all $x,y,z \in \mathcal{H}$ and $a,b \in \mathbb{C}$.
+	(ii): $\braket{y,x} = \overline{\braket{x,y}}$ for all $x,y \subset \mathcal{H}$
+	(iii): $\braket{x,x} \in (0,\infty)$ for all nonzero $x\in \mathcal{X}$
+	
+A complex vector space with an inner product is called a $\bf{\textrm{pre-Hilbert space}}$. If $\mathcal{H}$ is a pre-Hilbert Space, for  $x \in \mathcal{H}$, we define $\begin{gather*} { \|x \| = \sqrt{\braket{x,x}}} \end{gather*}$
+
+$\bf{\textrm{The Schwarz Inequality}} : \| \braket{x,y} \| \leq \|x\| \|y\|$ for all $x,y \in \mathcal{H}$, with equality iff x and y are linearly dependent.
+
+$\bf{\textrm{Proposition}}:$ The function  $x\rightarrow \|x\|$ is a norm on $\mathcal{H}$  
+
+A pre-Hilbert space that is complete with respect to the norm $\|x\| = \sqrt{\braket{x,x}}$ is called a $\textrm{\bf{Hilbert Space}$. 
+
+$\bf{\textrm{Proposition}:}$ If $x_n \rightarrow x$ and $y_n \rightarrow y$, then $\braket{x_n,y_n} \rightarrow \braket{x,y}$
+
+$\bf{\textrm{The Parallelorgram Law}}:$ For all $x,y \in \mathcal{H}$, $\|x+y\|^2 + \|x-y\|^2 = 2(\|x\|^2 +\|y\|^2)$
+
+If $x,y \in \mathcal{X}$, we say that $x$ is $\bf{orthogonal}$ to $y$ and write $x \perp y$ if $\|x,y\|=0$. If $E\subset \mathcal{H} $ we define: $E^{\perp}={x\in\mathcal{H} : \braket{x,y} = 0, \mathrm{for all } y\in \mathcal{H}}$
+
+$\bf{\textrm{The Pythagorean Theorem}:}$ If $x_1,x_2,..., x_n \in \mathcal{H}$ and $x_j \perp x_k $ for $j\neq k$, $\| \Sigma_{1}^{n}x_j\|^2 = \Sigma_{1}^{n} \|x_j\|^2$
+
+
+$\bf{\textrm{Theorem 5.25}:}$ If $f \in \mathcal{H^*}$ there is a unique $y\in \mathcal{H}$ such that $f(x)=\braket{x,y}$ for all $x \in X$ 
+
+A subset $\{u_\alpha\}_{\alpha \in A}$ of $\mathcal{H}$ is called $\mathbf{orthonormal}$ if $\|u_{\alpha} \| -1 $ for all $\alpha$ and $u_\alpha \perp u_\beta$ whenever $\alpha \neq \beta$. 
+
+$\bf{\textrm{Gram-Schmidt process}}
+
+$\bf{\textrm{Bessel's Inqeuality}}
+
+$\bf{\textrm{Theorem 5.27}}
+
+$\bf{\textrm{Orthonormal Basis}}
+
+$\bf{\textrm{Proposition 5.28}}
+
+$\bf{\textrm{Proposition 5.29}}
+
+$\bf{\textrm{Unitary Map}}
+
+$\bf{\textrm{Proposition 5.30}}

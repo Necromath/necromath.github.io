@@ -34,7 +34,7 @@ MathJax = {
   <!-- src="/home/lechen/.config/MathJax/es5/tex-svg.js"> -->
 </script>
     <script src="/home/lechen/.config/MathJax/es5/tex-chtml.js" id="MathJax-script" async></script>
-    <title>solutions to Folland</title>
+    <title>ImpTopThm</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 </head>
 <body>
@@ -43,30 +43,22 @@ MathJax = {
     <!-- <hr> -->
     <div class="content">
     
-<div id="Welcome to my Folland Real Analysis notes and solutions page!"><h3 id="Welcome to my Folland Real Analysis notes and solutions page!" class="header"><a href="#Welcome to my Folland Real Analysis notes and solutions page!">Welcome to my Folland Real Analysis notes and solutions page!</a></h3></div>
-
 <p>
-Chapter 0 <a href="Preliminaries.html">Preliminaries</a>
+The Baire Category Theorem:
+First some preliminaries: 
+Given a topological space \(X\). A set \(A\subseteq X\) is nowhere dense in \(X\) if \(X \setminus \closure{A} \) is dense.
 </p>
 
 <p>
-Chapter 1 <a href="Measures.html">Measures</a>
+\(T_2\) Version: A compact Hausdorff space is not the union of countably many nowhere dense subsets. 
 </p>
 
 <p>
-Chapter 2 <a href="Integration.html">Integration</a>
+Metric Version: A complete metric space is not the union of countable many nowhere dense subsets. 
 </p>
 
 <p>
-Chapter 3 <a href="Signed Measures and Differentiation .html">Signed Measures and Differentiation</a>
-</p>
-
-<p>
-Chapter 4 <a href="Topology.html">Topology</a>
-</p>
-
-<p>
-Chapter 5 <a href="Functional Analysis .html">Functional Analysis</a>
+Proof of metric version: Let \({V_n : n\omegag}\) be a collection of dense open sets. Pick \(x_0 \in V_0\), pick \(\epsilon_0 &gt; 0\), \(\epsilon_0 &lt; 1 \). Then \((x_0-\epsilon, x_0+\epsilon) \subseteq V_0\). Pick \(x_1 \in V_1 \cap (x_0-\epsilon,x_0+\epsilon)\). Pick then \(\epsilon_1 &lt; \frac{1}{2}\) such that \((x_1-\epsilon_1,x_1+\epsilon_1) \subseteq V_1 \cap (x_0-\epsilon_0, x_0 + \epsilon_0)\). Then the set \(x_n : n\in \omega\) is Cauchy. So for any \(m&lt;n, d(x_m,x_n) &lt; \frac{1}{2^m}\)
 </p>
 
     </div>

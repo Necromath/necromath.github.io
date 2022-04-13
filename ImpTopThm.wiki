@@ -1,0 +1,9 @@
+The Baire Category Theorem:
+First some preliminaries: 
+Given a topological space $X$. A set $A\subseteq X$ is nowhere dense in $X$ if $X \setminus \closure{A} $ is dense.
+
+$T_2$ Version: A compact Hausdorff space is not the union of countably many nowhere dense subsets. 
+
+Metric Version: A complete metric space is not the union of countable many nowhere dense subsets. 
+
+Proof of metric version: Let ${V_n : n\omegag}$ be a collection of dense open sets. Pick $x_0 \in V_0$, pick $\epsilon_0 > 0$, $\epsilon_0 < 1 $. Then $(x_0-\epsilon, x_0+\epsilon) \subseteq V_0$. Pick $x_1 \in V_1 \cap (x_0-\epsilon,x_0+\epsilon)$. Pick then $\epsilon_1 < \frac{1}{2}$ such that $(x_1-\epsilon_1,x_1+\epsilon_1) \subseteq V_1 \cap (x_0-\epsilon_0, x_0 + \epsilon_0)$. Then the set $x_n : n\in \omega$ is Cauchy. So for any $m<n, d(x_m,x_n) < \frac{1}{2^m}$
