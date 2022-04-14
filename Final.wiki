@@ -6,3 +6,4 @@ I am supposed to do every homework problem... so there is that ahh... Just take 
 Definitions to know: [[SP22AlgDef]]
 Theorems to know: [[SP22AlgThm]]
 [[Homework 5]]
+[[Homework 8]]

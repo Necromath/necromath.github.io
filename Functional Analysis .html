@@ -65,11 +65,23 @@ To prove continuity of addition we use a \(\delta - \epsilon \) proof. Let \(x,x
 </p>
 
 <p>
-Thus, addition is continuous in \(X\). Next we prove continuity of multiplication. Let \(\lambda\) be an element of our field \(K\) and let \(x\) be an element of \(X\). The goal is to show that if \(\|(\lambda,x)-(\psi,x_0)\| &lt; \delta.\) Then \(\|\lambda x - \psi x_0 \| &lt; \epsilon \). Usually whenever I try to work out these sorts of inequalities, I never really see it until I see a cheesed out answer. So here is the cheesed out answer. Consider \(\| \lambda x - \psi x_0 \| = \|\lambda x -\lambda x_0 + \lambda x_0 - \psi x_0\| \leq \| \lambda x -\lambda x_0 \| + \| \lambda x_0 - \psi x_0 \| = |\lambda| \|x-x_0\|+ |\lambda - \psi| \|x_0\|\). 
+Thus, addition is continuous in \(X\). 
 </p>
 
 <p>
-What should one do in this situation? Why simply set \(\delta = \textrm{min} (1, \frac{\epsilon}{3\|x\|}, \frac{\epsilon}{3|\alpha|}, \frac{\epsilon}{3} ) \) Then we know that for \(|\lambda - \psi|\) this is less than \(\frac {\espilon}{3}\).
+Next we prove continuity of multiplication. Let \(\lambda\) be an element of our field \(K\) and let \(x\) be an element of \(X\). The goal is to show that if \(\|(\lambda,x)-(\psi,x_0)\| &lt; \delta.\) Then \(\|\lambda x - \psi x_0 \| &lt; \epsilon \). Usually whenever I try to work out these sorts of inequalities, I never really see it until I see a cheesed out answer. So here is the cheesed out answer. Consider \(\| \lambda x - \psi x_0 \| = \|\lambda x -\lambda x_0 + \lambda x_0 - \psi x_0\| \leq \| \lambda x -\lambda x_0 \| + \| \lambda x_0 - \psi x_0 \| = |\lambda| \|x-x_0\|+ |\lambda - \psi| \|x_0\|\). 
+</p>
+
+<p>
+What should one do in this situation? Why simply set \(\delta = \textrm{min} (1, \frac{\epsilon}{3\|x\|}, \frac{\epsilon}{3|\lambda|}, \frac{\epsilon}{3} ) \) Then we know that \(|\lambda - \psi| &lt; 1\). So then \(|\lambda| \|x-x_0\|+ |\lambda - \psi| \|x_0\| \leq |\lambda - \psi| \|x\| + |\psi| \|x-x_0\| + |\lambda - \psi | \|x-x_0\| &lt; \frac{\epsilon}{3} + \frac{\epsilon}{3} + \frac{\espilon}{3} &lt; \epsilon\). Thus, multiplication is continuous. 
+</p>
+
+<p>
+Now we show that the norm operation is continuous: To show that the norm \(\| \bullet \| : X \rightarrow [0,\infty)\) is continuous. 
+</p>
+
+<p>
+First we observe that \(\| x + y \| \leq \|x\| + \|y\|\)
 </p>
 
     </div>
