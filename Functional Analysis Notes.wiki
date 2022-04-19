@@ -62,3 +62,6 @@ Proof: Consider $a>0,b>0$ and $0<p<1$.
 (6.1-6.8)
 
 Next time we will start on (6.9)
+
+Dated (April 19, 2022 
+We've discussed 6.9 - 6.20

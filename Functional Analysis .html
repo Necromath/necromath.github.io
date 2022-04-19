@@ -61,7 +61,7 @@ To prove continuity of addition we use a \(\delta - \epsilon \) proof. Let \(x,x
 </p>
 
 <p>
-\(\|(x+y)-(x_0+y_0)\| = \|(x-x_0) + (y-y_0)\| \leq \|x-x_0\| + \|y-y_0\| &lt; \frac{\epsilon}{2} + \frac{\epsilon}{2} = \epsilon .\) 
+\( \begin{equation} \begin{split}  \|(x+y)-(x_0+y_0)\| &amp;= \|(x-x_0) + (y-y_0)\| \\ &amp;\leq \|x-x_0\| + \|y-y_0\| \\  &amp;&lt; \frac{\epsilon}{2} + \frac{\epsilon}{2} \\ &amp;= \epsilon \end{split}\end{equation}\) 
 </p>
 
 <p>
@@ -69,19 +69,140 @@ Thus, addition is continuous in \(X\).
 </p>
 
 <p>
-Next we prove continuity of multiplication. Let \(\lambda\) be an element of our field \(K\) and let \(x\) be an element of \(X\). The goal is to show that if \(\|(\lambda,x)-(\psi,x_0)\| &lt; \delta.\) Then \(\|\lambda x - \psi x_0 \| &lt; \epsilon \). Usually whenever I try to work out these sorts of inequalities, I never really see it until I see a cheesed out answer. So here is the cheesed out answer. Consider \(\| \lambda x - \psi x_0 \| = \|\lambda x -\lambda x_0 + \lambda x_0 - \psi x_0\| \leq \| \lambda x -\lambda x_0 \| + \| \lambda x_0 - \psi x_0 \| = |\lambda| \|x-x_0\|+ |\lambda - \psi| \|x_0\|\). 
+Next we prove continuity of multiplication. Let \(\lambda\) be an element of our field \(K\) and let \(x\) be an element of \(X\). The goal is to show that if \(\|(\lambda,x)-(\psi,x_0)\| &lt; \delta.\) Then \(\|\lambda x - \psi x_0 \| &lt; \epsilon \). Usually whenever I try to work out these sorts of inequalities, I never really see it until I see a cheesed out answer. So here is the cheesed out answer. Consider 
 </p>
 
 <p>
-What should one do in this situation? Why simply set \(\delta = \textrm{min} (1, \frac{\epsilon}{3\|x\|}, \frac{\epsilon}{3|\lambda|}, \frac{\epsilon}{3} ) \) Then we know that \(|\lambda - \psi| &lt; 1\). So then \(|\lambda| \|x-x_0\|+ |\lambda - \psi| \|x_0\| \leq |\lambda - \psi| \|x\| + |\psi| \|x-x_0\| + |\lambda - \psi | \|x-x_0\| &lt; \frac{\epsilon}{3} + \frac{\epsilon}{3} + \frac{\espilon}{3} &lt; \epsilon\). Thus, multiplication is continuous. 
+\(\begin{equation} \begin{split}    \| \lambda x - \psi x_0 \| &amp;= \|\lambda x -\lambda x_0 + \lambda x_0 - \psi x_0\| \\ &amp;\leq \| \lambda x -\lambda x_0 \| + \| \lambda x_0 - \psi x_0 \| \\ &amp;= |\lambda| \|x-x_0\|+ |\lambda - \psi| \|x_0\| \end{split} \end{equation}\). 
 </p>
 
 <p>
-Now we show that the norm operation is continuous: To show that the norm \(\| \bullet \| : X \rightarrow [0,\infty)\) is continuous. 
+What should one do in this situation? Why simply set \(\delta = \textrm{min} (1, \frac{\epsilon}{3\|x\|}, \frac{\epsilon}{3|\lambda|}, \frac{\epsilon}{3} ) \) Then we know that \(|\lambda - \psi| &lt; 1\). So then 
 </p>
 
 <p>
-First we observe that \(\| x + y \| \leq \|x\| + \|y\|\)
+\( \begin{equation} \begin{split} |\lambda| \|x-x_0\|+ |\lambda - \psi| \|x_0\| &amp; \leq |\lambda - \psi| \|x\| + |\psi| \|x-x_0\| + |\lambda - \psi | \|x-x_0\| \\ &amp;&lt; \frac{\epsilon}{3} + \frac{\epsilon}{3} + \frac{\epsilon}{3} \\ &amp;&lt; \epsilon \end{split} \end{equation}\)
+</p>
+
+<p>
+Thus, multiplication is continuous. 
+</p>
+
+<p>
+To show that the norm \(\| \bullet \| : X \rightarrow [0,\infty)\) is continuous, we must first show that \(\| x + y \| \leq \|x\| + \|y\|\). Observe that: 
+</p>
+
+<p>
+\( \|x\| = \|x-y+y\| \leq \|x-y\| + \|y\| \). Implying that \(\|x\| -\|y\| \leq \|x-y\|\). This is the reverse triangle inequality. 
+</p>
+
+<p>
+Now to show continuity: Let x,y be elements of \(X\) and let \(\delta = \|x-y\| \), then \(| \|x\| - \|y\| | \leq \|x-y\| &lt; \epsilon \), then \(\|x-y\| &lt; \epsilon\) and we see that norm is continuous. 
+</p>
+
+
+<p>
+Exercise 4: If \(X,Y\) are normed vector spaces, the map \((T,x) \rightarrow Tx \) is continuous from  \(L(X,Y) \times X \) to \(Y\). (If \(T_n \rightarrow T\) and \(x_n \rightarrow x\) then \(T_n x_n \rightarrow Tx\))
+</p>
+
+<p>
+Proof:
+To prove continuity of the operation, we must show that \(\|T_nx_n - Tx\| \rightarrow 0\). Since \(x_n\), it is bounded. So there exists some \(C&gt;0\) such that \(\|x_n\| \leq C , \forall n \in \mathbb{N}\). 
+</p>
+
+<p>
+Then we have that 
+\(\begin{equation} \begin{split}  \|T_nx_n-Tx\|  &amp; =  \|T_nx_n-Tx_n +Tx_n -Tx\| \\  &amp;= \|T_nxn_n - Tx_n\| + \|Tx_n -Tx_\| \\  &amp;= \|x_n\| \|T_n-T\|  + \|T\| \|x_n-x\| \\  &amp; \leq C \|T_n-T\| + \|T\| \|x_n -x\| \rightarrow 0,  \textrm{as } n \rightarrow \infty \end{split}\end{equation} \) 
+</p>
+
+<p>
+Thus, we see that the map is continuous.
+</p>
+
+<p>
+Exercise 7: Let \(X\) be a Banach space.
+</p>
+
+<ol>
+<li>
+If \(T \in L(X,X)\) and \(\|I-T\| &lt; 1\), where \(I\) is the identity operator, then \(T\) is invertible; in fact, the series \(\Sigma _0 ^\infty (I-T)^n \) converges in \(L(X,X)\) to \(T^{-1}\).
+
+<li>
+If \(T\in L(X,X)\) is invertible and \(\|S-T\| &lt; \|T^{-1}\|^{-1} \), then \(S\) is invertible. Thus the set of invertible operators is open in \(L(X,X)\).
+
+</ol>
+
+<p>
+Proof: 
+</p>
+
+<ol>
+<li>
+First we observe that \(\|(I-T)^n \| \leq \| I -T\| ^n\). Since we know from our hypothesis that \(\|I-T\| &lt; 1\), we can conclude that \(\Sigma_{n=0}^\infty \|(I-T)^n\| \leq \Sigma_{n=0}^\infty \|I-T\|^n\) is absolutely convergent as \(n\rightarrow \infty\). Thus \(L(X,X)\) is a Banach space and this series converges to some \(K \in L(X,X)\). Then we can see that, via induction, that:
+
+</ol>
+<p>
+\(\begin{split} KT &amp;=(I +(I-T)+ ... + (I-T)^{n-1})T \\ &amp;=  I - (I-T)^n \\ &amp;= T(I+(I-T)+...+ (I-T)^{n-1}) = TK \end{split}\)
+</p>
+
+<p>
+So then we see that as \(n \rightarrow \infty\) we see that \(KT\) simply becomes the identity operator. Thus proving invertability of \(T\).
+</p>
+<ol>
+<li>
+Observe that \( \begin{equation}\begin{split} \|I-T^{-1}S\|=\|T^{-1}S - I\| &amp;= \|T^{-1}S - T^{-1}T \| \\  &amp;\leq \|T^{-1}\| \|S-T\| \\ &amp;&lt; \|T^{-1}\| \|T^{-1}\|^{-1} = 1 \end{split}\end{equation}\). 
+
+</ol>
+
+<p>
+The last inequality comes from our given.
+</p>
+
+<p>
+From part a. We can conclude that \(T^{-1}S\) is invertible and has an operator \(K \in L(X,X)\) such that \(KT^{-1}S = T^{-1}SK = I\). Then we can see that \(KT^{-1}\) is an inverse of \(S\). So every element of a \(\frac{1}{\|T^{-1}\|}-\textrm{ball }\) around \(T\) is invertible, and thus the set of invertible operators is open in \(L(X,X)\).  
+</p>
+
+<p>
+Exercise 9: Let \(C^k([0,1])\) be the space of functions on \([0,1]\) possesing continuous derivatives up to order \(k\) on \([0,1]\), inclduing one sided derivatives at the endpoints.
+</p>
+
+<ol>
+<li>
+If \(f \in C([0,1])\), then \(f\in C^k([0,1])\) iff \(f\) is \(k\) times continuously differentiable on \((0,1)\) and \(lim_{x \searrow 0} f^{(j)}(x)\) and \(lim_{x \nearrow 1} f^{(j)}(x)\) exist for \(j \leq k\). 
+
+<li>
+\(\| f\| = \Sigma_0^k \|f^{(j)} \|_u \) is a norm on \(C^k([0,1])\) that makes it into a Banach space. 
+
+</ol>
+   
+<p>
+Proof: 
+</p>
+<ol>
+<li>
+The if direction is trivial. The definition for \(f\) to be an element of \(C^k([0,1])\) automatically satisfies the conditions on the \((0,1)\) and at the end points. Working backwards: If \(f\) is \(k\) times continuously differentiable in \((0,1)\) and \(lim_{x \searrow 0} f^{(j)}(x)\), \(lim_{x \nearrow 1} f^{(j)}(x)\) exist for \(j \leq k\). The mean value theorem tells us that for every \(c\in(0,1)\) there exists \(d \in (0,z)\) such that:
+
+</ol>
+
+<p>
+\(\frac{f^{(j-1)}(x) - f^{(j-1)} (0)} {x} = f^{(j)} (c) \)
+</p>
+
+<p>
+Taking the limit \(x \searrow 0\), we get that \(f^{(j)} (0) = lim _{c \searrow 0} f^{(j)} (c) \).
+</p>
+
+<p>
+This can be done similarly for \(x \nearrow 1\). Then, since we have that \(f\) is continuously differentiable at every point, we conclude \(f\in C^k([0,1])\)
+</p>
+
+<ol>
+<li>
+First we show that \( \| f\| = \Sigma_0^k \|f^{(j)} \|_u \) is a norm on \(C^k([0,1])\)
+
+</ol>
+<p>
+Obviously, \(\| f\| \geq 0 \) for all \(f\in C^k([0,1])\). If \(f\in C^k([0,1])\) is nonzero, then \(\|f^{(0)}\|_u &gt; 0\) and so \(\|f\|&gt;0\). 
 </p>
 
     </div>
