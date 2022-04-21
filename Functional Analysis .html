@@ -47,9 +47,7 @@ MathJax = {
 Here are my written solutions to Chapter 5 of Folland:
 </p>
 
-<p>
-<a href="Functional Analysis Notes.html">Functional Analysis Notes</a>
-</p>
+<div id="[[Functional Analysis Notes]]"><h1 id="[[Functional Analysis Notes]]" class="header"><a href="#[[Functional Analysis Notes]]"><a href="Functional Analysis Notes.html">Functional Analysis Notes</a></a></h1></div>
 
 <p>
 Exercise 1: If \(X\) is a normed vector space over \(K (= \mathbb{R} \textrm{or} \mathbb{C} )\), then addition and multiplication are continuous from \(X \times X\) and \(K \times X\) to \(X\). Moreover, the norm is continuous from \(X\) to \([0,\infty)\); in fact, \(\|x\|-\|y\| \leq \|x-y\|\). 
@@ -136,30 +134,22 @@ If \(T\in L(X,X)\) is invertible and \(\|S-T\| &lt; \|T^{-1}\|^{-1} \), then \(S
 Proof: 
 </p>
 
-<ol>
-<li>
-First we observe that \(\|(I-T)^n \| \leq \| I -T\| ^n\). Since we know from our hypothesis that \(\|I-T\| &lt; 1\), we can conclude that \(\Sigma_{n=0}^\infty \|(I-T)^n\| \leq \Sigma_{n=0}^\infty \|I-T\|^n\) is absolutely convergent as \(n\rightarrow \infty\). Thus \(L(X,X)\) is a Banach space and this series converges to some \(K \in L(X,X)\). Then we can see that, via induction, that:
-
-</ol>
 <p>
+(1) First we observe that \(\|(I-T)^n \| \leq \| I -T\| ^n\). Since we know from our hypothesis that \(\|I-T\| &lt; 1\), we can conclude that \(\Sigma_{n=0}^\infty \|(I-T)^n\| \leq \Sigma_{n=0}^\infty \|I-T\|^n\) is absolutely convergent as \(n\rightarrow \infty\). Thus \(L(X,X)\) is a Banach space and this series converges to some \(K \in L(X,X)\). Then we can see that, via induction, that:
 \(\begin{split} KT &amp;=(I +(I-T)+ ... + (I-T)^{n-1})T \\ &amp;=  I - (I-T)^n \\ &amp;= T(I+(I-T)+...+ (I-T)^{n-1}) = TK \end{split}\)
 </p>
 
 <p>
 So then we see that as \(n \rightarrow \infty\) we see that \(KT\) simply becomes the identity operator. Thus proving invertability of \(T\).
-</p>
-<ol>
-<li>
 Observe that \( \begin{equation}\begin{split} \|I-T^{-1}S\|=\|T^{-1}S - I\| &amp;= \|T^{-1}S - T^{-1}T \| \\  &amp;\leq \|T^{-1}\| \|S-T\| \\ &amp;&lt; \|T^{-1}\| \|T^{-1}\|^{-1} = 1 \end{split}\end{equation}\). 
-
-</ol>
+</p>
 
 <p>
 The last inequality comes from our given.
 </p>
 
 <p>
-From part a. We can conclude that \(T^{-1}S\) is invertible and has an operator \(K \in L(X,X)\) such that \(KT^{-1}S = T^{-1}SK = I\). Then we can see that \(KT^{-1}\) is an inverse of \(S\). So every element of a \(\frac{1}{\|T^{-1}\|}-\textrm{ball }\) around \(T\) is invertible, and thus the set of invertible operators is open in \(L(X,X)\).  
+(2) From part a. We can conclude that \(T^{-1}S\) is invertible and has an operator \(K \in L(X,X)\) such that \(KT^{-1}S = T^{-1}SK = I\). Then we can see that \(KT^{-1}\) is an inverse of \(S\). So every element of a \(\frac{1}{\|T^{-1}\|}-\textrm{ball }\) around \(T\) is invertible, and thus the set of invertible operators is open in \(L(X,X)\).  
 </p>
 
 <p>
@@ -178,31 +168,45 @@ If \(f \in C([0,1])\), then \(f\in C^k([0,1])\) iff \(f\) is \(k\) times continu
 <p>
 Proof: 
 </p>
-<ol>
-<li>
-The if direction is trivial. The definition for \(f\) to be an element of \(C^k([0,1])\) automatically satisfies the conditions on the \((0,1)\) and at the end points. Working backwards: If \(f\) is \(k\) times continuously differentiable in \((0,1)\) and \(lim_{x \searrow 0} f^{(j)}(x)\), \(lim_{x \nearrow 1} f^{(j)}(x)\) exist for \(j \leq k\). The mean value theorem tells us that for every \(c\in(0,1)\) there exists \(d \in (0,z)\) such that:
-
-</ol>
 
 <p>
-\(\frac{f^{(j-1)}(x) - f^{(j-1)} (0)} {x} = f^{(j)} (c) \)
+(1) The if direction is trivial. The definition for \(f\) to be an element of \(C^k([0,1])\) automatically satisfies the conditions on the \((0,1)\) and at the end points. Working backwards: If \(f\) is \(k\) times continuously differentiable in \((0,1)\) and \(lim_{x \searrow 0} f^{(j)}(x)\), \(lim_{x \nearrow 1} f^{(j)}(x)\) exist for \(j \leq k\). The mean value theorem tells us that for every \(c\in(0,1)\) there exists \(d \in (0,z)\) such that: \(\frac{f^{(j-1)}(x) - f^{(j-1)} (0)} {x} = f^{(j)} (c) \) Taking the limit \(x \searrow 0\), we get that \(f^{(j)} (0) = lim _{c \searrow 0} f^{(j)} (c) \).  This can be done similarly for \(x \nearrow 1\). Then, since we have that \(f\) is continuously differentiable at every point, we conclude \(f\in C^k([0,1])\)
 </p>
 
 <p>
-Taking the limit \(x \searrow 0\), we get that \(f^{(j)} (0) = lim _{c \searrow 0} f^{(j)} (c) \).
+(2) First we show that \( \| f\| = \Sigma_0^k \|f^{(j)} \|_u \) is a norm on \(C^k([0,1])\) Obviously, \(\| f\| \geq 0 \) for all \(f\in C^k([0,1])\). If \(f\in C^k([0,1])\) is nonzero, then \(\|f^{(0)}\|_u &gt; 0\) and so \(\|f\|&gt;0\). Now, let \(f,g \in C^k([0,1])\) and \(\lambda \in \mathbb{R}\). Then: \(  \|\lambda f \| = \Sigma_{j=0}^k \|\lambda f^{(j)} \|_u   = \Sigma_{j=0}^k |\lambda | \|f^{(j)} \|_u \) and \(\|f+g\| = \Sigma _{j=0} ^k \|f^{(j)} + g^{(j)} \|_u \leq \Sigma_{j=0}^k \|f^{(j)}\|_u + \Sigma_{j=0}^k \|g^{(j)}\|_u = \|f+\|g\|\)
 </p>
 
 <p>
-This can be done similarly for \(x \nearrow 1\). Then, since we have that \(f\) is continuously differentiable at every point, we conclude \(f\in C^k([0,1])\)
+Thus, we have shown this is a norm. Now we turn to show this is a Banach space.
 </p>
 
-<ol>
-<li>
-First we show that \( \| f\| = \Sigma_0^k \|f^{(j)} \|_u \) is a norm on \(C^k([0,1])\)
-
-</ol>
 <p>
-Obviously, \(\| f\| \geq 0 \) for all \(f\in C^k([0,1])\). If \(f\in C^k([0,1])\) is nonzero, then \(\|f^{(0)}\|_u &gt; 0\) and so \(\|f\|&gt;0\). 
+Proceeding by induction, we consider the base case with \(C^0([0,1])\) and the norm \(\| f\|_u = \textrm{sup}_{[0,1]} |f|\). Let \({f_n}\) be a Cauchy sequence in \(C^0([0,1])\). Then:
+</p>
+
+<p>
+\(\begin{split} \|f-f_n\|_u &amp; = \textrm{sup}_{[0,1]}|f(x)-f_n(x)| \\ &amp;= \textrm{sup}_{[0,1]} \textrm{lim}_{m \rightarrow \infty} |f_n(x)-f_m(x) | \\ &amp; \leq \textrm{lim  inf}_{m \rightarrow \infty} \textrm{sup}_{[0,1]} | f_n(x)-f_m(x) | \\ &amp;\rightarrow 0, \textrm{as  } n \rightarrow \infty  \end{split} \)
+</p>
+
+<p>
+Now let us suppose that this holds for \(j \leq k\), we wish to show that this holds for \(j=k+1\). Let \({f_n}\) be a Cauchy sequence in  \(C^{k+1}([0,1])\). Then:
+</p>
+
+<p>
+\(\Sigma_0^k \|f_n^{(j)}-f_m^{j}\|_u &lt; \Sigma_0^{k+1} \|f_n^{(j)}-f_m^{j}\|_u = \|f_n -f_m\| \)
+</p>
+
+<p>
+So then this is also a Cauchy sequence in \(C^k([0,1])\) and converges to some \(f \in C^k([0,1])\). So then our space is complete.
+</p>
+
+<p>
+Exercise 10: Let \(L^1_k([0,1])\) be the space of all \(f \in C^{k-1}([0,1])\) such that \(f^{(k-1)}\) is absolutely continuous on \([0,1]\). Then \(\|f\| = \Sigma_0^k \int _0 ^1 | f^{(j)}(x)| dx\) is a norm on \(L^1_k([0,1])\) that makes it into a Banach space.
+</p>
+
+<p>
+Proof: First we check that this is norm. First and foremost, this is obviously nonnegative. Scalars can be removed safely as well. So we really just need to show that this satisfies the triangle inequality. That is, if \(f,g \in L^1_k([0,1])\), then \(\begin{split} \|x+y\|= \Sigma_0^k \int _0 ^1 | f^{(j)}(x) + g^{(j)}(x)| dx  &amp; \leq  \Sigma_0^k(\int_0^1|f^{(j)}(x)|dx + \int_0^1|g^{(j)}(x)|dx) \\ &amp;= \Sigma_0^k \int _0 ^1 | f^{(j)}(x)| dx + \Sigma_0^k \int _0 ^1 | g^{(j)}(x)| dx \\ &amp;= \|x\| + \|y\|  \end{split}\)
 </p>
 
     </div>
