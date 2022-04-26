@@ -10,3 +10,18 @@ Here are some definitions to know:
 
 5. A point $x \in X$ is called a boundary point of $Y$ if and only if every neighborhood of $x$ intersects both $Y$ and $X \setminus Y$. 
 
+6. A topological space $X$ is called connected if there does not exist open sets $U,V \subseteq X$ such that $U \cap V = \empty $ and $U \cup V = X $. 
+   
+7. A topological space $X$ is called compact if every open cover of $X$ has a finite subcover.
+
+8. A map $p:E \rightarrow B $ is a covering map if for all $b \in B$, there exists open $U_b \subseteq B$ such that $b \in U_b$ and $p^-1 (U_b) = \cup_{i=1}V_i$. Where each $V_i \subseteq E $ is open and $\{V_i : i\in I \}$ is disjoint with $p|_{V_i} : V_i \rightarrow U_b $ is a homeomorphism. If $E$ is simply connected, then we call $E$ a universal covering space of $B$ and we refer to $p$ as a universal covering map. 
+
+9. If $f: [0,1] \rightarrow B, f(0) =b_0, p(e_0)=b_0$, then there is a unique "lift" $ \tilde{f} : [0,1] \rightarrow E$, and $\tilde{f}(0) = e_0, p \circ \tilde{f} = f$. This is the same for homotopies, $H:[0,1]^2 \rightarrow B$
+
+10. If $\tilde{f},\tilde{g}: [0,1] \rightarrow E, \tilde{f}(1)=\tilde{g}(0)$. Then $ p \circ (\tilde{f} \star \tilde{g}) = (p \circ \tilde{f}) \star (p \circ \tilde{g})$.
+
+11. If $p : \rightarrow B$ is a universal covering map and $f,g: [0,1] \rightarrow B, f(0)=g(0) = b_0$, then $f \simeq_p g$ if and only if $\tilde{f}(1) = \tilde{g}(1)$ where $\tilde{f},\tilde{g}$ are lifts with $\tilde{f}(0) = \tilde{g}(0)=e_0 \in p^{-1}(b_0)$
+
+12. Given a covering map $p:E \rightarrow B$, a deck transformation is a homeomorphism $h: E \rightarrow E $ such that $p= p \circ h$ 
+    
+13. $\pi_1(B,b_0)$ is isomorphic to the group of deck transformations. 

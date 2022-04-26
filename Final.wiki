@@ -1,5 +1,3 @@
-Here I am being asked for several definitions.
-
 
 I am supposed to do every homework problem... so there is that ahh... Just take it easy.
 Plan of action: Copy and rewrite everything from the first semester into this. Obviousy personalized for my incredible swagger
@@ -8,3 +6,5 @@ Definitions to know: [[SP22AlgDef]]
 Theorems to know: [[SP22AlgThm]]
 [[Homework 5]]
 [[Homework 8]]
+
+Update from April 22, 2022: I got an 86 on that exam. Not bad given that I didn't do /everything/. However, the prelim requires me to know more. So we need to go all the way back. Dr. Brown mentioned not looking at past prelims and rather  emphasized our coursework more. I'm not sure if starting linearly is something desriable or efficient, but I sense it guarantees a pass on the prelim. 

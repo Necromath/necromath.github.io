@@ -98,7 +98,6 @@ To show that the norm \(\| \bullet \| : X \rightarrow [0,\infty)\) is continuous
 Now to show continuity: Let x,y be elements of \(X\) and let \(\delta = \|x-y\| \), then \(| \|x\| - \|y\| | \leq \|x-y\| &lt; \epsilon \), then \(\|x-y\| &lt; \epsilon\) and we see that norm is continuous. 
 </p>
 
-
 <p>
 Exercise 4: If \(X,Y\) are normed vector spaces, the map \((T,x) \rightarrow Tx \) is continuous from  \(L(X,Y) \times X \) to \(Y\). (If \(T_n \rightarrow T\) and \(x_n \rightarrow x\) then \(T_n x_n \rightarrow Tx\))
 </p>
@@ -207,6 +206,228 @@ Exercise 10: Let \(L^1_k([0,1])\) be the space of all \(f \in C^{k-1}([0,1])\) s
 
 <p>
 Proof: First we check that this is norm. First and foremost, this is obviously nonnegative. Scalars can be removed safely as well. So we really just need to show that this satisfies the triangle inequality. That is, if \(f,g \in L^1_k([0,1])\), then \(\begin{split} \|x+y\|= \Sigma_0^k \int _0 ^1 | f^{(j)}(x) + g^{(j)}(x)| dx  &amp; \leq  \Sigma_0^k(\int_0^1|f^{(j)}(x)|dx + \int_0^1|g^{(j)}(x)|dx) \\ &amp;= \Sigma_0^k \int _0 ^1 | f^{(j)}(x)| dx + \Sigma_0^k \int _0 ^1 | g^{(j)}(x)| dx \\ &amp;= \|x\| + \|y\|  \end{split}\)
+</p>
+
+<p>
+Thus, this is in fact a norm. Now we need to show this is a Banach space. 
+</p>
+
+<p>
+A small adaptation of part b from the previous exercise will prove this is a Banach space. (incomplete)
+</p>
+
+<p>
+Exercise 11: Hoelder continuous.
+</p>
+
+<p>
+Proof: I'll only show triangle inequality, others are trivial.
+</p>
+
+<p>
+Suppose we have \(f,g \in \Lambda_\alpha ([0,1])\). Then:
+</p>
+
+<p>
+\(\begin{split} \|f+g\|_{\Lambda_\alpha} &amp;= |f(0) + g(0) | + \textrm{sup}_{x,y\in[0,1], x\neq y} \frac{|f+g(x)-f+g(y)|}{|x-y|^\alpha} \\ &amp; \leq |f(0)| +|g(0)| +  \textrm{sup}_{x,y\in[0,1], x\neq y} \frac{|f(x)-f(y)|}{|x-y|^\alpha} +  \textrm{sup}_{x,y\in[0,1], x\neq y} \frac{|g(x)-g(y)|}{|x-y|^\alpha} = \|f\|_{\Lambda_\alpha} + \|g\|_{\Lambda_\alpha} \end{split} \)
+</p>
+
+<p>
+Thus, \(\| \bullet \|_{\Lambda_\alpha}\) is a norm. 
+</p>
+
+<p>
+Now we turn to show that \(\Lambda_\alpha ([0,1])\) into a Banach space. 
+</p>
+
+<p>
+Exercise 12: Let \(X\) be a normed vector space and \(M\) a proper closed subspace of \(X\). 
+</p>
+<ol>
+<li>
+\(\| x + M \| = \textrm{inf} {\|x+y\| : y\in M}\) is a norm on \(X\setminus M\).
+
+<li>
+For any \(\epsilon &gt; 0 \) there exists \(x\in X\) such that \(\| x\| = 1\) and \(\|x + M \| \geq 1 - \epsilon\).
+
+<li>
+The projection map \(\pi(x) = x+ M \) from \(X \) to \(X \setminus M\) has norm 1.
+
+<li>
+If \(X\) is complete, so is \(X\setminus M\)
+
+<li>
+The topology defined by the quotient norm is the quotient topology as in Exercise 28 of 4.2
+
+</ol>
+
+<p>
+Proof: 
+</p>
+<ol>
+<li>
+Clearly \(0+M = M\), implying that \(0 \in M\) and so \(\| 0 + M \| = \textrm{inf}\{\|0+y \| : y \in M\} = 0\). Next, we observe that
+
+</ol>
+
+<p>
+\( \begin{split} \| \lambda x + M \| &amp;= \textrm{inf}_{y\in M} \| \lambda x +y \| \\ &amp;= | \lambda | \textrm{inf}_{y\in M} \| x + \frac{y}{a} \| \\ &amp;= |\lambda | \textrm{inf}_{ y \in M} \|x + y\| \\ &amp;= | \lambda | \|x+ M\| \end{split}\)
+</p>
+
+<p>
+Also:
+</p>
+
+<p>
+\( \begin {split} \|x+y+M\| &amp;= \textrm{inf}_{z\in M} \|x+y+z\|  \\  &amp; \leq \textrm{inf}_{z\in M} \|x + \frac{z}{2} \| + \textrm{inf}_{z \in M } \| y + \frac{z}{2} \|   \\  &amp; = \textrm{inf}_{z \in M} \|x + z\| + \textrm{inf}_{z \in M} \| y + z\|  \\ &amp; = \|x + M \| + \|y + M \| \end{split}\)
+</p>
+
+<p>
+So \(\| x + M \| \) is a norm on \(X \setminus M\).
+</p>
+
+<ol>
+<li>
+Suppose that for \(x \in X \setminus M\) we have that \(\|x+M\|  \leq \frac{\|x + M}{1-\epsilon}\). Then that means we have a \(y\in M\) such that \(\|x+y\| \leq \frac{\|x + M}{1-\epsilon}=\frac{(x+y)+M}{1-\epsilon}\). After switching fractions, we see that \(1-\epsilon \leq \| \frac{x+y}{\|x+y\|}+M\|= \| 1 + M \| \). 
+
+</ol>
+   
+<ol>
+<li>
+Observe that the projection map has norm \(\| \pi \| = \textrm{sup} \{ \frac{\| \pi x \|}{\|x\|} : x \neq 0 \} \leq 1\). However, the previous part tells us that\(\| \pi = \textrm{sup} _P{\|x\|=1} \|x+M\| \geq 1-\epsilon\| \). Since \(\epsilon\) is arbitrary, we see that \(\| \pi\| = 1 \).
+
+</ol>
+
+<ol>
+<li>
+Suppose that \(X\) is complete and that \(\sum_{n=1}^{\infty}(x_n + M)\) is an absolutely convergent series in \(X \setminus M \). Theorem 5.1 lets us find a \(y\in M\) such that the \(\sum_{n=1}{\infty} \|x_n + y\| &lt; \sum_{n=1}{\infty}(\|x_n + M \| + \frac{1}{2^n}) &lt; \infty \). 
+
+</ol>
+
+<p>
+So then the sequence \(\{x_n +y \}_{n=1}^{\infty}\) is a sequence that is absolutely convergent as a series. From completeness of \(X\), this converges to an element of \(X\), say \(x\). As a series in \( X\setminus M\), this absolutely converges to \( x +M \). 
+</p>
+   
+<ol>
+<li>
+To be continued... 
+
+</ol>
+   
+<p>
+Exericse 15:Suppose that \(X\) and \(Y\) are normed vector spaces and \(T\in L(X,Y).\)l Let \(N(T)= \{x\in X : Tx=0 \} \) 
+</p>
+<ol>
+<li>
+\(N(T)\) is a closed subspace of \(X\). 
+
+<li>
+There is a unique \( S \in L(X \setminus N(T), Y)\) such that \(T = S \circ \pi\) where \(\pi : X \rightarrow X \setminus N(T)\) is the projection \(\pi (x)= x + N(T)\) and \(\|S\| = \|T\| \) 
+
+</ol>
+   
+<p>
+Proof: 
+</p>
+<ol>
+<li>
+Since \(T\) is an element of \(L(X,Y)\), it is continuous. Note also, that \(\{0\}\) is a closed set in \(Y\). So then, \(N(T) = T^{-1}(\{0\})\) is a closed set in X.
+
+</ol>
+
+<ol>
+<li>
+Let \( S: X\setminus N(T) \rightarrow Y\) be the map such that \(S(x + N(T)) = Tx\). This map is well defined by the fact that if \(x+N(T)=y+N(T)\), then \((x-y) \ in N(T)\). So then \(S(x+N(T)) = Tx = Tx +Ty - Ty = Ty + T(x-y) = T(y) = S(y+N(T))\). Further, this map is also linear since:
+
+</ol>
+
+<p>
+\(S((\lambda x + \psi y) +N(T)) = T(\lambda x + \psi y) =\lambda T x + \psi T y = \lambda S(x+N(T)) + \psi S(y+N(T))\)
+</p>
+
+<p>
+Further, this map is also bounded below since \(\|S(x+N(T))\| = \|Tx\| \leq \|x\|\)
+</p>
+
+<p>
+So we can conclude that \(S \in L(X\setminus N(T), Y)\). 
+</p>
+
+<p>
+Then we notice that \(\begin{split} \|T\| &amp;= \textrm{sup}_{x \neq 0} \frac{\|Tx\|}{\|x\|} = \textrm{sup}_{x \notin N(T)} \frac{\|S(\pi(x))\|}{\|x\|} \\ &amp;= \textrm{sup}_{x\notin N(T)} \frac{\| S(\pi(x)) \|}{\| \pi(x) \|} \frac{\| \pi(x) \| }{\|x\|} = \textrm{sup}_{x \notin N(T)} \frac{\| S (\pi (x))\|} {\pi(x)} \textrm{sup}_{x \notin N(T)} \frac{\| \pi(x) \| } {\|x\|} = \|S\| \| \pi \| = \|S\| \end{split} \)
+</p>
+
+<p>
+Exercise 17: A linear functional \(f\) on a normed vector space \(X\) is bounded iff \(f^{-1} (\{0 \}) \) is closed. 
+</p>
+
+<p>
+Proof: In the forwards direction: If a linear functional is bouded, then it is continuous. So then the preimage of a closed set is closed. Thus, \(f^{-1}( \{0 \})\) is closed.
+</p>
+
+<p>
+In the reverse direction: Let \(K = f^{-1}(\{0 \})\) be a closed subset of \(X\). Using the previous exercise, we can find an \(x \in X\) such that it has norm 1 and \(\| x+ K ) \| \geq \frac{1}{2} \). Further, for any \(x \in X\), we have \(y \in K\) such that
+</p>
+
+<p>
+\(|f(\lambda x +y)| = |\lambda| |f(x)| \leq 2 |\lambda| \frac{1}{2} |f(x)| \leq 2 |\lambda| \|x+K\| |f(x)| \leq 2 |\lambda | \|x+ \frac{y}{\lambda}\| |f(x)| = 2|f(x)| \|\lambda x +y\|\). So then \(f\) is bounded.
+</p>
+
+<p>
+Exercise 18: Let \(X\) be a normed vector space. 
+</p>
+<ol>
+<li>
+If \(M\) is a closed subspace and \(x \in X \setminus M\) then \(M + \CC x\) is closed
+
+<li>
+Every finite dimensional subspace of \(X\) is closed. 
+
+</ol>
+   
+<p>
+Proof: 
+</p>
+<ol>
+<li>
+If \(X = M\), then \(X \setminus M = \varnothing\) and the whole statement is trivial. So let \(M\) be a proper closed subspace of \(X\). And, if $z \
+
+</ol>
+
+<p>
+Exercise 19:
+</p>
+
+<p>
+Exercise 27:
+</p>
+
+<p>
+Exercise 30:
+</p>
+
+<p>
+Exercise 38:
+</p>
+
+<p>
+Exercise 45:
+</p>
+
+<p>
+Exercise 48:
+</p>
+
+<p>
+Exercise 56:
+</p>
+
+<p>
+Exercise 60:
+</p>
+
+<p>
+Exercise 61:
 </p>
 
     </div>
