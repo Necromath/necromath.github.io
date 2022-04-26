@@ -151,27 +151,84 @@ In the reverse direction: Let $K = f^{-1}(\{0 \})$ be a closed subset of $X$. Us
 $|f(\lambda x +y)| = |\lambda| |f(x)| \leq 2 |\lambda| \frac{1}{2} |f(x)| \leq 2 |\lambda| \|x+K\| |f(x)| \leq 2 |\lambda | \|x+ \frac{y}{\lambda}\| |f(x)| = 2|f(x)| \|\lambda x +y\|$. So then $f$ is bounded.
 
 Exercise 18: Let $X$ be a normed vector space. 
-1) If $M$ is a closed subspace and $x \in X \setminus M$ then $M + \CC x$ is closed
+1) If $M$ is a closed subspace and $x \in X \setminus M$ then $M + \mathbb{C} x$ is closed
 2) Every finite dimensional subspace of $X$ is closed. 
    
 Proof: 
-1) If $X = M$, then $X \setminus M = \varnothing$ and the whole statement is trivial. So let $M$ be a proper closed subspace of $X$. And, if $z \
+1) Take a sequence $\{x_n +\lambda_n x \} \subset M + \mathbb{C} $ that converges to some $y \in X$. Since $f$ is is linear and continuous, 0 everywhere in $M$. We get that 
+   
+   $ f(y)= \textrm{lim}_n f(x_n + \lambda_n x)= \textrm{lim}_n \lambda_n f(x)  $ 
+   
+Implying that $\textrm{lim}_n \lambda_n = \frac{f(y)}{f(x)} = \lambda$
 
-Exercise 19:
+Giving us that $x_n=y -\lambda_n x \rightarrow y-\lambda = x_o \in M$.So then $y= x_0 + \lambda x \in M + \mathbb{C} x$. So we're done 
 
-Exercise 27:
+2) Every finite dimensinoal subspace of $X$ is of some $M +\mathbb{C}x$ If we start $M = \{0 \}$, we can build up any finite dimensional space by inducting on $M_1=M+\mathbb{C}x_1$ where $x_1$ is the new element we append to our finite dimensinoal space.
 
-Exercise 30:
+Exercise 19: Let $X$ be an infinite dimensional normed vector space. 
+1) There is a seqeunce $\{x_j \}$ in X such that $\| x_j\| =1 $for all $j$ and $\|x_j - x_k\| \geq \frac{1}{2}$ for $j \neq k$.
+2) $X$ is not locally compact.
 
-Exercise 38:
+Proof: 
+Start with an $x \in X$ such that it has norm 1. Then $\mathbb{C}x$ is a closed subspace of $X$ from what we showed in the previous exercise. Using 12b, set $\epsilon = \frac{1}{2}$, so then we can find a new element, $x_0 \in X$ such that it has norm 1 and also $\|x_0 -x\| \geq \frac{1}{2}$. Proceeding inductively by finding an element $x_2 \in \mathbb{C}x \oplus \mathbb{C}x_1$ 
 
-Exercise 45:
+For the next part, we can use what we just shown to find a sequence that has no convergent subsequence. Thus, no compact neighborhood, so not locally compact.
 
-Exercise 48:
+Exercise 27: There exists meager subsets of $\mathbb{R}$ that have complement with lebesegue measure 0.
+
+Proof: Let $X$ be a topological space in $\mathbb{R}$ and $E \subset X$ be a meager set and let $\{x_n \}$ be an enumeration for the rationals. Then the set $E_n = \cup _{k=1}^{\infty} (x_k - \frac{1}{2^{k-1}n}, x_k + \frac{1}{2^{k-1}n})$. Then the set $E= \cap_1^\infty E_n$ has measure 0 since $m(E_n)\leq \sum_{k=1}^{\infty} \frac{1}{2^k n} = \frac{1}{n} $. Since $E_n$ is open, then $E_n^c$ is closed. Further, $E_n$ is dense in $\mathbb{R}$ since each $E_n$ has the rationals inside it. Thus, $E_n^c$ is nowhere dense, and as such, $E^c= \cup_{n=1}^{\infty} E_n^c$ is meager. 
+
+Exercise 30: Let $Y = C([0,1])$ and $X=C^1([0,1])$, both equipped with with the uniform norm.
+1) $X$ is not complete 
+2) The map $(d/dx): X \rightarrow Y$ is closed but not bounded.
+
+Proof: 
+First we make the obersvation that $X \subset Y$, proper, since $f(x) = \sqrt{x} \in Y \setminus X $. Using exercise 9n, we have that 
+
+$f_n(x) - f_n(0) = \int_0 ^x \frac{d}{dt} f_n(t) dt$
+
+However, we get that these spaces are uniformly convergent. So then we have that pointwise: $f_n(x) - f_n(0) \rightarrow f(x) - f(0) $ converges. 
+
+Then we see that $\int_0 ^x \frac{d}{dt} f_n(t) dt \rightarrow \int_0 ^x g(t) dt$
+
+And that $g=(d/dt)f$ from FTC, thus $(d/dx)$ is closed.
+
+To see unbounded, consider $f_n(x) = sin(nx)$, this has norm 1 for all $n \in N$ but taking the first derivative, we see that the norm is $\|n cos(nx)\| = n$, which can be as large as we desire. So, unbounded. 
+
+Exercise 38: Let $X$ and $Y$ be Banach spaces, and let $\{T_n \}$ be a sequence in $L(X,Y)$ such that $\textrm{lim}T_n x $ exists for every $x \in X$. Let $Tx = lim T_n x$, then $T \in L(X,Y)$
+
+Proof: First note that $T$ is linear. 
+
+$ T(x+\lambda y) = \textrm{lim}_n T_n(x+\lambda y) = \textrm{lim}_n T_nx + \lambda \textrm{lim}_n T_n y = Tx + \lambda Ty$
+
+From the uniform boundedness principle, we can conclude that $\textrm{sup}_n \|T_n\| < \infty$ for every $x \in X$. Thus, $T$ is bounded. 
+
+Exercise 45: 
+
+Exercise 48: Suppose that $X$ is a Banach space.
+1) Show that the norm-closed unit ball $B = \{x \in X : \|x\| \leq 1 \} $ is also weakly closed.
+2) If $E \subset X$ is bounded, so is its weak closure.
+3) If $F^* \subset X$ is bounded, so is its weak* closure.
+4) Every weak* Cauchy sequence in $X^*$ converges.
+
+Proof: 
+1) Let $\braket{x_n}$ be a net in $B$ that converges weakly to $x\in X$. Applying theorem 5.8, we see that $\|x_0\| = \| \tilde{x_0}\|$ for all $x_0 \in X$. We conclude that for every $x_n$ in our net, $\tilde{x_n} \in B^{**} = \{ \x' \in X : \|x'\| = 1 \}$. It becomes appartent then that our net $\braket{\tilde{x_n}}$ converges to $\tilde{x}$ in the weak* topology on $X^{**}$. Because this is hausdorff, we see that compact sets are closed and by Alaoglu, $\tilde{x} \in B^{**}$. Then $\|x\| = \|\tilde{x}\| \leq 1 $ and $x \in B$. So $B$ is weakly closed.
+
+2) If $E \subseteq X$ is bounded, then we have a constant $\lambda > 0$ such that $\| x\| \leq \lambda$ for all $x \in E$. Clearly then, $\| \frac{x}{\lambda} \| \leq 1 $for all $x\in E$. In $E$, take a weakly convergent net $\braket{x_n}$ to $x \in X$. Continuity of multiplication dictates that our net will converge weakly to $\frac{x}{\lambda}$, the previous part indicates that it is also an element of $B$. Thus, the weak closure of $E$ is bounded.
+
+3) If $F \subseteq X^*$ is bounded, then there exists a $ \lambda > 0$ such that $\|f\| \leq \lambda $ for all $f \in X^*$. Take a net in $F$ that converges to $f\in X^*$ in the weak* topology. Continuity of scalars assures a convergence of our net to $\frac{f}{\lambda}$. We can apply Alaoglu's theorem on the net, which converges in $B^*$. Thus proving that the weak* closure of $F$ is bounded.
+
+4) Take a cauchy sequence in $X^*$ with respect to the weak* topology. Then for all $x \in X$, we have that $|f_n(x) -f_m(x)| \rightarrow 0$ as $n,m \rightarrow \infty$. Completeness of $\mathbb{C}$ tells us that this limit exists and a previous exercise lets us see that the limit converges in the weak* topology and we're done.
 
 Exercise 56:
 
+If $x \in E $ and $y \in E^\perp$, then $x \perp y $ and so $x \in (E^\perp)^\perp$. Clearly, $(E^\perp)^\perp$ is closed in $H$. If there was another closed subspace of $H$ containing $E$, call it $M$, then clearly $M^\perp \subseteq E^\perp$. Then we can extend this idea to see that $(E^\perp)^\perp \subseteq (M^\perp)^\perp$. Taking an element $ m \in (M^\perp)^\perp$, we can express it as a sum of elements, $x+y$ from $M$ and $(M ^\perp)$ respectively. But then notice that since $m \perp y$. We get that $0= \braket{m,y} = \braket{x,y} + \braket{y,y} = \|y\|^2.$ So then, $y = 0 $ and so $m \in M$. Thus proving that $(E^\perp)^\perp$ is the smallest closed subspsace containing $E$. 
+
 Exercise 60:
+
+Vague idea: What we want to see is the each $L^2 (E_n, \mu)$ is closed and so then if we consider the sequence $f_n = f \chi_{E_n}$, then f is clearly the sum of all the $f_n$'s and each $f_n \in L^2(E_n, \mu)$. Convergence of the $f_n$ follows from the dominated convergence theorem. 
+
+For the next part, fix a countable dense subset of $L^2(E_n, \mu)$, then we could make a countable union and find some some sequence that converges to $f$. 
 
 Exercise 61:
 
