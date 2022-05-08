@@ -1,0 +1,139 @@
+Chapter 6 Exercise Solutions:
+
+Exercise 1: When does equality hold in the Minkowski inequality?
+
+Solution: The Minkowsky inequality states that for $1 \leq p \leq \infty$ and for $f,g \in L^p$ we get that 
+
+$\|f + g\|_p \leq \|f\|_p + \|g\|_p$
+
+When $p=1$, we get equality whenever equality in the triangle inequality is satisfied. 
+
+When $1<p<\infty$ we get equality whenever we get equality in the triangle and hoelder inequalities. 
+
+When $p=\infty$, we get equality when $\|f+g\|_\infty=\textrm{inf} { a \geq 0 : \mu({x : |f+g(x)| > a}) = 0} = \textrm{inf} {a \geq 0 : \mu({x : |f(x)| > a }) = 0} +  \textrm{inf} {a \geq 0 : \mu({x : |g(x)| > a }) = 0} = \|f\|_\infty + \|g\|_\infty$
+
+This happens when the triangle inequality is satisfied. As seen above. 
+
+Exercise 3: The intersection of two $L^p$ spaces is a banach space with norm $\|f\| = \|f\|_p + \|f\|_r $and if $p<q<r$, the inclusion map $L^p \cap L^r \rightarrow L^q$ is continuous
+
+Proof: Note that $\|f+g\| = \| f +g\|_p + \| f +g \|_r \leq \|f\|_p +\|g\|_p +\|f\|_r +\|g\|_r = \|f\| +\|g\|$
+
+$\| \lambda f \| = \| \lambda f \|_p + \| \lambda f \| _r = |\lambda| (\|f\|_p +\|f\|_r) = |\lambda | \|f\|$
+
+The other norm properties are easily verifiable. 
+
+Thus, $L^p \cap L^r$ is a normed vector space.
+
+Next we show this is a Banach space.
+
+Take an absolutely continuous sequence ${f_n}$ in $L^p \cap L^r$ Then note that is is absolutely continuous in both of its $p,r$ componenents. Further, notice that this means $L^p \cap L^r$ is a banach space in both the p and r norms. Next, since this is a Banach space in the p and r norms,we just combine them together to realize that in fact this is a Banach space under our norm.
+
+For continuity:
+
+Take $f,g \in L^p \cap L^R$ such that $\|f - g\| < \epsilon$, then we see that
+
+$\|f-g\|_q = \|f-g\|_p ^\lambda \|f-g\|_r ^{1-\lambda} \leq \|f-g\|^\lambda \|f-g\|^{1-\lambda} < \epsilon$
+
+Where $\frac{1}{q} = \frac{\lambda}{p} + \frac{1-\lambda}{r}$. Hence this inclusion map is continuous.
+
+Exercise 8: 
+
+Exercise 9: 
+
+Suppose that $\|f_n - f\|_p \rightarrow 0$ and let $\epsilon > 0$. Let $E_{n,\epsilon} = {x : |f_n(x) - f(x) | \geq \epsilon}$.
+
+Now note that $\epsilon \mu(E_{n,\epsilon}) \leq \Int_{E_{n,\epsilon}} |f_n -f| ^p d\mu \leq \|f_n-f\|_p ^p \rightarrow 0.$
+
+So then $\mu(E_{n,\epsilon}) \rightarrow 0$ as $n \rightarrow 0$.
+
+So $f_n \rightarrow f$ in measure. So we can find an a.e. convergent subsequence. 
+
+Going in the other direction:
+
+Suppose now that $f_n \rightarrow f $ in measure adn $|f_n| \leq g \in L^p$ for all $n$. We can then find a subsequence that converges almost everywhere such that $|f| \leq g $ and $|f_n -f | \leq 2g \in L^p$ and $\textrm_{lim inf}_{n\rightarrow \infty} |f_n-f| = 0
+
+Then we we see that:
+
+$\int 2^p g^p = \int 2^p g^p + \int |f_n-f|^p \leq \textrm{lim inf}_{n \righarrow \infty} \int {2^p g^p + |f_n-f| ^p} = \int 2^p g^p + \textrm{lim inf}_{n\rightarrow \infty} \int |f_n - f| ^p$
+
+
+$\int 2^p g^p = \int 2^p g^p - \int |f_n-f|^p \leq \textrm{lim inf}_{n \righarrow \infty} \int {2^p g^p - |f_n-f| ^p} = \int 2^p g^p - \textrm{lim sup}_{n\rightarrow \infty} \int |f_n - f| ^p$
+
+So then: $\textrm{lim sup}_{n\rightarrow \infty} \int |f_n-f|^p \leq 0 \leq \textrm{lim inf}_{n \rightarrow \infty} \int |f_n -f| ^p$.
+
+So then we get that $\|f_n -f \|_p \rightarrow 0 $ as $n \rightarrow \infty$
+
+Exercise 10:
+Suppose that $\|f_n - f \|_p \rightarrow 0$
+
+Then we notice that $| \|f_n\|_p - \|f\|_p | \leq \|f_n-f\|_p \rightarrow 0 $. So then $\|f_n\|_p \righrarrow \|f\|_p$
+
+Suppose now that $\|f_n\|_p \rightarrow \|f\|_p$ and note that $\textrm{lim}_{n \righarrow \infty} \int |f_n -f| ^p = \int \textrm{lim}_{n \rightarrow \infty} |f_n -f|^p = 0$.
+
+So then, $\|f_n -f\|_p \righarrow 0$ as $n\rightarrow \infty$
+
+Exercise 13: 
+
+To see why the infinite case is not separable. Consider the set $\mathcal{H} = {f_k(x) = \chi_{B_1(0)} (x+h) : h\in \mathbb{R}^d}$. Then for any two $f,g \in \mathcal{H}$ with $f \neq g$, we get that $\|f-g\|_\infty = 1 $. This is dense and uncountable.
+
+Exercise 22: 
+
+Assume that $cos(2\pi n x) \righarrow 0 $ in measure. So then we can find a subsequence $(cos(2\pi n_j x))^2 \rightarrow 0$ a.e.
+
+Since this has absolute value less than 1 for all $n_j$, we can use the dominated convergence theorem to find out that 
+
+$\textrm{lim}_{j \rightarrow \infty} \int _{ [0,1] }  (cos(2 \pi n_j x) ^2) dm = \int_{[0,1]} 0 dm = 0$
+
+Contradicting the fact that this integral in fact evaluates to $\frac{1}{2}$ (Use Mathematica)
+
+pt 2: 
+
+Let $\epsilon > 0 $ and let $x$ be given. Find a $N \in \mathbb{N}$ such that $\frac{1}{N} < x$.
+
+Thus giving us $|f_n(x)| = |n \chi_{(0,\frac{1}{n})}(x) | = 0 < \epsilon, \forall n \in \mathbb{N}$
+
+So $f_n \rightarrow 0 $ a.e. 
+
+Next let $E_n(\epsilon) = { x\in [0,1] : |f_n(x)| > \epsilon}$
+
+Letting $n \rightarrow \infty$, the measure of this set goes to 0. So $f_n \rightarrow 0$ in measure. 
+
+However, for any $p$, we notice that $\textrm{lim}_{n \rightarrow \infty} \int f_n dm = \textrm{lim}_{n \rightarrow \infty} \int n \chi_{0, \frac{1}{n}} dm = 1.
+
+So then $f_n$ does not weakly converge to 0 in $L^p$
+
+
+Exercise 27: 
+
+$( \int _0 ^\infty | \int_0 ^\infty \frac{f(y)}{x+y} dy|^p dx )^{\frac{1}{p}} =  ( \int _0 ^\infty | \int_0 ^\infty \frac{f(xz)}{1+z} dz|^p dx )^{\frac{1}{p}} \leq ( \int _0 ^\infty ( \int_0 ^\infty |f(xz)|^p dx )^{\frac{1}{p}} \frac{1}{1+z}dz = \|f\|_p \int_0 ^\infty z^\frac{-1}{p}(1+z)^{-1} dz = \|f\|_p \pi csc(\frac{\pi}{p})$
+
+
+Exercise 28: 
+
+We show the case for $ p< \infty$. Note that 
+
+$(\int_0 ^\infty | \frac{1}{x^\alpha} \int_0 ^x f(t)(x-t)^{\alpha -1} dt | ^p dx )^\frac{1}{p} \leq (\int_0 ^\infty (\int_0 ^1 |f(xw)|(1-w)^{\alpha-1} dw)^p dx)^\frac{1}{p} \leq \int _0 ^1 (\int _0 ^\infty |f(xw)|^p (1-w)^{p(\alpha -1)} w^\frac{-1}{p} dw = \|f\|_p \frac{\Gamma(\alpha) \Gamma(1-p^{-1}}{\Gamma(\alpha + 1 - p^{-1}}$
+
+for part b: I think the function $\chi_[0,1]$ might work. But am in a rush (written at 3:35)
+
+Exercise 29:
+
+$(\int_0^\infty x^{r-1} [\int_x ^\infty h(y) dy]^p dx)^\frac{1}{p} = (\int_0^\infty x^{p+r-1} [\int_x ^\infty h(xz) dz]^p dx)^\frac{1}{p} \leq (\int_1 ^\infty (\int_0 ^\infty x^{p+r-1} (h(xz))^p dx)^\frac{1}{p} dz  = \int _1 ^\infty ( \int_0 ^\infty y^{p+r-1} h(y)^p dy)^\frac{1}{p} z^{\frac{-r}{p} -1} dz = \frac{p}{r} (\int _0 ^\infty y^{p+r-1} h(y)^p dy)^{\frac{1}{p}}$
+
+This is practically identical for when we have the $-r$ integral.
+
+Exercise 38: 
+
+Define $E_n := {x \in X : 2^n < |f(x)| \leq 2^{n+1} }$. Monotone convergence theorem tells us that 
+
+$\int |f|^p \leq \int \sum_{n \in \mathbb{Z}} (2^{n+1})^p \chi_{E_n} = 2^p \sum_{n \in \mathbb{Z}} 2^{np} \mu(E_n) \leq 2^p \sum_{n \in \mathbb{Z}} 2^{np} \lambda_f (2^n) < \infty$. 
+
+So then $f \in L^p$
+
+Suppose then that $ f \in L^p$. Then we can deduce that 
+
+$ \begin{split} \sum_{n \in \mathbb{Z}} 2^{np} \lambda _f (2^n) & = \int_0 ^\infty \sum _{n\in \mathbb{Z}} 2^{np - n +1} \lambda_f (2^n) \chi _{(2^{n-1},2^n]} \\ & \leq 2^p \int _0 ^\infty \sum_{n \in \mathbb{Z}} 2^{(n-1)(p-1)} \lambda_f (\alpha) \chi _{(2^{n-1},2^n]} (\alpha) d\alpha \\ & \leq 2^p \int _0 ^\infty \sum_{n \in \mathbb{Z}} \alpha ^{p-1} \lambda_f (\alpha) \chi _{(2^{n-1},2^n]} (\alpha) d\alpha \\ & = 2^p \int _0 ^\infty \alpha ^{p-1} \lambda_f (\alpha) \chi _{(0,\infty)} (\alpha) d\alpha \\ & =  2^p \int _0 ^\infty \alpha ^{p-1} \lambda_f (\alpha) d\alpha \\ &= 2^p p^{-1} \|f\|_p ^p < \infty \end {split}$ 
+
+I think this is enough exercises. Thank you Dr. Chen for being my instructor. Wish I was a better student.
+
+
