@@ -1,9 +1,10 @@
-=== Hello world ===
-1. My first line.
-2. Second line.
-3. I can also do some math $\int_0^x \sin(x) d x$
-4. If you want to look at our files in Ubuntu from windows explorer. Use \\wsl$ in the search bar :) 
-   
+=== Hi! ===
+
+My name is Mauricio Montes and this is my website!
+I am a second year graduate student in Mathematics at Auburn University
+Here, I have written up some of my work (possibly incorrect in some parts) for others to use for reference and understanding.
+
+
 This is an [[art gallery]]
 
 and this is not a pipe
@@ -18,4 +19,4 @@ Studying for Algebra [[Final]]:
 
 This is a message to Fernando! Hello!
 
-
+{{local:Users/maguc/Pictures/Definition.png}}
