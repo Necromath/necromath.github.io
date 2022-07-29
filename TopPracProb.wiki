@@ -9,3 +9,5 @@ Here are some topology exercises that I have done:
    (3) $Y$ contains all of its boundary points. 
    
    	Pf. Assuming $Y$ contains all its boundary points, then we see that that every limit point of $Y$ is also contained in $Y$. Since if $x \in Y $ is a limit point but not a boundary point, then it is an interior (trivial) or an exterior point (not possible by defn of limit point). Thus, we must conclude that $Y$ also contains all of its limit points. Since $Y$ contains all of its limit points.  
+	
+TODO: Write down some of the more interesting (to me) problems.

@@ -25,3 +25,5 @@ Here are some definitions to know:
 12. Given a covering map $p:E \rightarrow B$, a deck transformation is a homeomorphism $h: E \rightarrow E $ such that $p= p \circ h$ 
     
 13. $\pi_1(B,b_0)$ is isomorphic to the group of deck transformations. 
+    
+TODO: Transfer written notes here.

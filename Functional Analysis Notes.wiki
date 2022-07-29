@@ -28,19 +28,19 @@ A subset $\{u_\alpha\}_{\alpha \in A}$ of $\mathcal{H}$ is called $\mathbf{ortho
 
 $\bf{\textrm{Gram-Schmidt process}:}$ This is a process for converting a linearly independent sequence in a Hilbert space $\mathcal{H}$
 
-$\bf{\textrm{Bessel's Inqeuality}}
+$\bf{\textrm{Bessel's Inqeuality}}$
 
-$\bf{\textrm{Theorem 5.27}}
+$\bf{\textrm{Theorem 5.27}}$
 
-$\bf{\textrm{Orthonormal Basis}}
+$\bf{\textrm{Orthonormal Basis}}$
 
-$\bf{\textrm{Proposition 5.28}}
+$\bf{\textrm{Proposition 5.28}}$
 
-$\bf{\textrm{Proposition 5.29}}
+$\bf{\textrm{Proposition 5.29}}$
 
-$\bf{\textrm{Unitary Map}}
+$\bf{\textrm{Unitary Map}}$
 
-$\bf{\textrm{Proposition 5.30}}
+$\bf{\textrm{Proposition 5.30}}$
 
 Section 1 Chapter 6 (Dated April 14, 2022)
 
@@ -68,3 +68,5 @@ We've discussed 6.9 - 6.20
 
 Dated (April 21, 2022)
 We reviewed the things we learned on Tuesday. 
+
+MM: Come back later and fill this in.
