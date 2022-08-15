@@ -13,10 +13,5 @@ and this is not a pipe
 
 My [[solutions to Folland]]  Real Analysis
 
-My [[work for the topology prelim]]
+Some personal [[Miscellaneous Work]]
 
-Studying for Algebra [[Final]]
-
-This is a message to Fernando! Hello!
-
-{{local:Users/maguc/Pictures/Definition.png}}
