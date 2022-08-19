@@ -44,7 +44,45 @@ MathJax = {
     <div class="content">
     
 <p>
-Coming Soon...
+Howdy!
+</p>
+
+
+<p>
+Question 19. Suppose \({f_n} \subset L^1(\mu)\) and \(f_n \rightarrow f\) uniformly. 
+</p>
+<ol>
+<li>
+If \(\mu(x) &lt; \infty\) then \(f \in L^1(\mu)\) and \(\int f_n \rightarrow \int f\)
+
+<li>
+if \(\mu(x) = \infty\), then the previous part can fail.
+
+</ol>
+
+<p>
+Proof:(part a) Suppose \({f_n} \subset L^1(\mu)\), \(f_n \rightarrow f\) uniformly and \(\mu(x) &lt; \infty\). So then there exists some \(N \in \mathbb{N}\) such that \(|f_n(x) - f(x)| \leq 1\) for all \(n \geq N\) and for all \(x\in X\).
+</p>
+
+<p>
+This means that \(\int|f| \leq \int|f-f_N| + \int|f_N| \leq \int 1 + \int |f_N| = \mu(x) + \int |f_N|\) 
+</p>
+
+<p>
+Note that \(\mu(x) + \int|f_N| &lt; \infty\). So \(f \in L^1(\mu)\)
+</p>
+
+<p>
+Now, let \(g= 1 +|f|\). Then \(g \geq 0\) and \(\int g = \mu(x) + \int|f| &lt; \infty\). So \(g \in L^1(\mu)\) and \(|f_n| \leq g\) for all \(n \geq N\). So the dominated convergence theorem implies that \(lim_(n \rightarrow \infty) \int f_n = \int f\).
+</p>
+
+<p>
+(part b) Let \(X = \mathbb{R}\) and 
+\(f_n(x) =  \begin{cases} 0 \text{ if } x\leq n \\  \frac{1}{x} \text{ if } x&gt;n \end{cases} \)
+</p>
+
+<p>
+It is well known that \(\frac{1}{x}\) converges to \(0\) as \(x\rightarrow \infty\), so naturally \(f_n(x) \rightarrow 0\) uniformly as \(n\rightarrow \infty\). Further, we know \(\int f_n(x) = \int _n ^\infty \frac{1}{x} = \infty\). But \(\int 0 = 0 \). So the previous part fails since we didn't have the condition that \(\mu(x) &lt;\infty\)
 </p>
 
     </div>
