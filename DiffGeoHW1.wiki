@@ -27,5 +27,18 @@ Thus, we can conclude that $D\varphi$ is an injective linear map at all $(x_1, .
 
 b: To do. Derivative of $g(x_1, ..., x_n) = (x_{k+1}, ..., x_n) - f(x_1,..., x_k) = (x_{k+1} - f_1(x_1,..., x_k) , ..., x_n - f_k(x_1, ..., x_k))$
 
-Question 2: This uses the [[Implicit Function Theorem]]
+Question 2: This uses the [[Implicit Function Theorem]]. If we consider the level set $\{g=0\}$ for some function $g: \mathbb{R}^n \rightarrow \mathbb{R}^{n-k}$, where $Dg$ has rank $n-k$ at every point where $g=0$. Let $g(a_1, ..., a_n) = 0$, and apply the implicit function theorem to write some neighborhood of $(a_1, ..., a_n)$, say $U$ on the level set as the graph of a function $f: \mathbb{R}^k \rightarrow \mathbb{R}^{n-k}$. What variables in $\mathbb{R}^n$ act as the domain of $f$?
 
+Solution: Let's reimagine $g$ like this. $g: \mathbb{R}^n = \mathbb{R} ^k \times \mathbb{R}^{n-k} \rightarrow \mathbb{R}^{n-k}$. With both $U$, and $a$ are written in similar form. Since $g$ has constant rank at every zero, the derivtive of $g$ is injective. So then by the IFT, we can find neighborhoods $V_0 \subseteq \mathbb{R}^n$ of $(a_1, ..., a_k)$ and $W_0 \subseteq \mathbb{R}^{n-k}$ of $(a_{k+1}, ..., a_n)$ with a smooth function $F: V_0 \rightarrow W_0$ such that $g^{-1}(a_1, ..., a_n) \cap (V_0 \times W_0)$ is the graph of $F$. The variables in $\mathbb{R}^n$ that act as the domain of $f$ are the $k$ coordinates that we for $g: \mathbb{R}^k \times \mathbb{R}^{n-k}\rightarrow \mathbb{R}{n-k}$. Those coordinates will us the appropriate domain of $f$ that correspond to its graph.
+
+Question 3: The points of the projective plane $\mathbb{RP}^2$ correspond to the lines $ax +by +cz =0$ through the origin in $\mathbb{R}^3$. We have 3 open sets with corresponding charts. $U_1= \{a \neq 0 \}$, $U_2 = \{b \neq 0\}$, $U_3 = \{c \neq 0 \}$
+
+$\begin {equation} \varphi_1(ax+by+cz=0) = (\frac{b}{a}, \frac{c}{a}) \end{equation}$
+
+Define $\varphi_2, \varphi_3$. Compute the transition function $\psi = \varphi_2 \opencirc \varphi ^{-1}_1$ and show that it is smooth.
+
+Solution: The corresponding maps are $\varphi_2: U_2 \rightarrow \mathbb{R}^2$, $\varphi_3: U_3 \rightarrow \mathbb{R}^2$. Where
+
+$\begin{equation} \varphi_2(ax+by+cz=0) = (\frac{a}{b}, \frac{c}{b}) \end{equation}$
+
+$\begin{equation} \varphi_3(ax+by+cz=0) = (\frac{a}{c}, \frac{b}{c}) \end{equation}$
