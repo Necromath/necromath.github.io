@@ -5,8 +5,8 @@ Question 1: Consider an open set $U \in \mathbb{R}^k$ and a function $f: U \righ
 a: The graph of $f$ was parametrized by $\begin{equation}\varphi(x_1, ..., x_k) = (x_1, ..., x_k, f(x_1, ..., x_k)) \end{equation}$. Show that the derivative $D\varphi(x_1, ..., x_k)$ is an injective linear map at all $(x_1, ..., x_k) \in U$.
 
 Answer: Consider the matrix of partial derivatives $D \varphi$:
-$\begin{equation} D\varphi = [\begin{bmatrix}{ccc | ccc} \frac{\partial \varphi_1}{\partial x_1} &\ \cdots & \frac{\partial \varphi_1}{\partial  x_k} & \frac{\partial f_1}{\partial x_{k+1}} & \cdots & \frac{\partial f_1}{\partial x_n} \\ \vdots & \ddots & \vdots & \vdots & \ddots & \vdots \\ \frac{\partial \varphi_k}{\partial x_1} & \cdots & \frac{\partial \varphi_k}{\partial x_k} & \frac{\partial f_k}{\partial x_{k+1}} & \cdots & \frac{\partial f_k}{\partial x_n} \end{bmatrix}] \end{equation}$
+$\begin{equation} D\varphi = \begin{bmatrix}} \frac{\partial \varphi_1}{\partial x_1} &\ \cdots & \frac{\partial \varphi_1}{\partial  x_k} & \frac{\partial f_1}{\partial x_{k+1}} & \cdots & \frac{\partial f_1}{\partial x_n} \\ \vdots & \ddots & \vdots & \vdots & \ddots & \vdots \\ \frac{\partial \varphi_k}{\partial x_1} & \cdots & \frac{\partial \varphi_k}{\partial x_k} & \frac{\partial f_k}{\partial x_{k+1}} & \cdots & \frac{\partial f_k}{\partial x_n} \end{bmatrix} \end{equation}$
 
-Observe that for $i=j$, we get that $\frac{\nabla \varphi_i}{\nabla x_i} = 1$, otherwise, it is $0$ for $i \neq j$. So then:
+Observe that for $i=j$, we get that $\frac{\partial \varphi_i}{\partial x_i} = 1$, otherwise, it is $0$ for $i \neq j$. So then:
 
-$\begin{equation} D\varphi = [] 
+$\begin{equation} D\varphi = \begin{bmatrix} 1 & \cdots & 1 & 0 & \frac{\partial f_1}{\partial x_{k+1}} & \cdots & \partial{f_1}{\partial x_n} \\ \vdots & \ddots & \vdots & \vdots & \ddots & \vdots \\ 0 & \cdots & 1 & \frac{\partial f_k}{\partial x_{k+1}} & \cdots & \frac{\partial f_k}{\partial x_n} \end{bmatrix} \end{equation}$
