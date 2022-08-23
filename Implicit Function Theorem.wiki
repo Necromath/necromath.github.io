@@ -1,0 +1,7 @@
+Implicit Function Theorem:
+
+Let $U \subseteq \mathbb{R}^n \times \mathbb{R}^k$ be an open subset. $(x,y)= (x_1,... ,x_n ,y_1 ,... , y_k)$ be elements of that set. Suppose $\Phi : U \rightarrow \mathbb{R}^k$ is smooth, $(a,b) \in U, c = \Phi(a,b)$.
+
+If $(\frac{\partial \Phi_i}{\partial y_j}(a,b))_{k \times k}$ is nonsingular, then there exists neighborhoods, $V_0 \subseteq \mathbb{R}^n$ of $a$ and $W_0 \subseteq \mathbb{R}^k$ of $b$ and a smooth $F:V_0 \rightarrow W_0$ such that $\Phi ^{-1}(c) \cap (V_0 \times W_0)$ is the graph of $F$.
+
+Meaning: $\Phi(x,y) = c $ for $(x,y) \in (V_0,W_0) \iff y = F(x)$
