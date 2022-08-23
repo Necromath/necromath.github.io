@@ -34,7 +34,7 @@ MathJax = {
   <!-- src="/home/lechen/.config/MathJax/es5/tex-svg.js"> -->
 </script>
     <script src="/home/lechen/.config/MathJax/es5/tex-chtml.js" id="MathJax-script" async></script>
-    <title>index</title>
+    <title>DiffGeoHW1</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 </head>
 <body>
@@ -43,37 +43,21 @@ MathJax = {
     <!-- <hr> -->
     <div class="content">
     
-<div id="Hi!"><h3 id="Hi!" class="header"><a href="#Hi!">Hi!</a></h3></div>
-
 <p>
-My name is Mauricio Montes and this is my website!
-I am a second year graduate student in Mathematics at Auburn University
-Here, I have written up some of my work (possibly incorrect in some parts) for others to use for reference and understanding.
-</p>
-
-
-<p>
-This is an <a href="art gallery.html">art gallery</a>
+Homework 1:
 </p>
 
 <p>
-and this is not a pipe
+Question 1: Consider an open set \(U \ in \mathbb{R}^k\) and a function \(f: U \rightarrow \mathbb{R}^{n-k}\). The graph of \(f\) is the set of points \((x_1, ..., x_n) \in \mathbb{R}^n\) with \((x_{k+1}, ..., x_n) = f(x_1, ..., x_k)\).
 </p>
 
 <p>
-<img src="https://upload.wikimedia.org/wikipedia/en/b/b9/MagrittePipe.jpg" />
+a: The graph of \(f\) was parametrized by \(\begin{equation}\varphi(x_1, ..., x_k) = (x_1, ..., x_k, f(x_1, ..., x_k)) \end{equation}\). Show that the derivative \(D\varphi(x_1, ..., x_k)\) is an injective linear map at all \((x_1, ..., x_k) \ in U\).
 </p>
 
 <p>
-My <a href="solutions to Folland.html">solutions to Folland</a>  Real Analysis
-</p>
-
-<p>
-My solutions to questions in my <a href="Differential Geometry.html">Differential Geometry</a> class
-</p>
-
-<p>
-Some personal <a href="Miscellaneous Work.html">Miscellaneous Work</a>
+Answer: Consider the matrix of partial derivatives \(D \varphi\):
+\(\begin{equation} D\varphi = [\begin{array}{ccc | ccc} \frac{\nabla \varphi_1}{\nabla x_1} &amp;\ \cdots &amp; \frac{\nabla \varphi_1}{\nabla x_k} &amp; \frac{\nabla f_1}{\nabla x_{k+1}} \cdots \frac{\nabla f_1}{\nabla x_n}]\)
 </p>
 
     </div>

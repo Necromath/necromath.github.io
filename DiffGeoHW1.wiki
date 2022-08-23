@@ -1,0 +1,8 @@
+Homework 1:
+
+Question 1: Consider an open set $U \ in \mathbb{R}^k$ and a function $f: U \rightarrow \mathbb{R}^{n-k}$. The graph of $f$ is the set of points $(x_1, ..., x_n) \in \mathbb{R}^n$ with $(x_{k+1}, ..., x_n) = f(x_1, ..., x_k)$.
+
+a: The graph of $f$ was parametrized by $\begin{equation}\varphi(x_1, ..., x_k) = (x_1, ..., x_k, f(x_1, ..., x_k)) \end{equation}$. Show that the derivative $D\varphi(x_1, ..., x_k)$ is an injective linear map at all $(x_1, ..., x_k) \ in U$.
+
+Answer: Consider the matrix of partial derivatives $D \varphi$:
+$\begin{equation} D\varphi = [\begin{array}{ccc | ccc} \frac{\nabla \varphi_1}{\nabla x_1} &\ \cdots & \frac{\nabla \varphi_1}{\nabla x_k} & \frac{\nabla f_1}{\nabla x_{k+1}} \cdots \frac{\nabla f_1}{\nabla x_n}]$
