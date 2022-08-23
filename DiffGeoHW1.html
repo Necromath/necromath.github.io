@@ -57,7 +57,7 @@ a: The graph of \(f\) was parametrized by \(\begin{equation}\varphi(x_1, ..., x_
 
 <p>
 Answer: Consider the matrix of partial derivatives \(D \varphi\):
-\(\begin{equation} D\varphi = \begin{bmatrix}} \frac{\partial \varphi_1}{\partial x_1} &amp;\ \cdots &amp; \frac{\partial \varphi_1}{\partial  x_k} &amp; \frac{\partial f_1}{\partial x_{k+1}} &amp; \cdots &amp; \frac{\partial f_1}{\partial x_n} \\ \vdots &amp; \ddots &amp; \vdots &amp; \vdots &amp; \ddots &amp; \vdots \\ \frac{\partial \varphi_k}{\partial x_1} &amp; \cdots &amp; \frac{\partial \varphi_k}{\partial x_k} &amp; \frac{\partial f_k}{\partial x_{k+1}} &amp; \cdots &amp; \frac{\partial f_k}{\partial x_n} \end{bmatrix} \end{equation}\)
+\(\begin{equation} D\varphi = \begin{bmatrix} \frac{\partial \varphi_1}{\partial x_1} &amp;\ \cdots &amp; \frac{\partial \varphi_1}{\partial  x_k} &amp; \frac{\partial f_1}{\partial x_{k+1}} &amp; \cdots &amp; \frac{\partial f_1}{\partial x_n} \\ \vdots &amp; \ddots &amp; \vdots &amp; \vdots &amp; \ddots &amp; \vdots \\ \frac{\partial \varphi_k}{\partial x_1} &amp; \cdots &amp; \frac{\partial \varphi_k}{\partial x_k} &amp; \frac{\partial f_k}{\partial x_{k+1}} &amp; \cdots &amp; \frac{\partial f_k}{\partial x_n} \end{bmatrix} \end{equation}\)
 </p>
 
 <p>
@@ -65,7 +65,7 @@ Observe that for \(i=j\), we get that \(\frac{\partial \varphi_i}{\partial x_i} 
 </p>
 
 <p>
-\(\begin{equation} D\varphi = \begin{bmatrix} 1 &amp; \cdots &amp; 1 &amp; 0 &amp; \frac{\partial f_1}{\partial x_{k+1}} &amp; \cdots &amp; \partial{f_1}{\partial x_n} \\ \vdots &amp; \ddots &amp; \vdots &amp; \vdots &amp; \ddots &amp; \vdots \\ 0 &amp; \cdots &amp; 1 &amp; \frac{\partial f_k}{\partial x_{k+1}} &amp; \cdots &amp; \frac{\partial f_k}{\partial x_n} \end{bmatrix} \end{equation}\)
+\(\begin{equation} D\varphi = \begin{bmatrix} 1 &amp; \cdots &amp; 0 &amp; \frac{\partial f_1}{\partial x_{k+1}} &amp; \cdots &amp; \frac{partial{f_1}}{{\partial x_n}} \\ \vdots &amp; \ddots &amp; \vdots &amp; \vdots &amp; \ddots &amp; \vdots \\ 0 &amp; \cdots &amp; 1 &amp; \frac{\partial f_k}{\partial x_{k+1}} &amp; \cdots &amp; \frac{\partial f_k}{\partial x_n} \end{bmatrix} \end{equation}\)
 </p>
 
 <p>
@@ -73,7 +73,7 @@ Since the matrix of partial derivatives has full rank, we can conclude it is an 
 </p>
 
 <p>
-To see why \(D \varphi\) is linear observe that for \(\alpha \in \mathbb{R}\), \(aD\varphi= a * \begin{bmatrix}} \frac{\partial \varphi_1}{\partial x_1} &amp;\ \cdots &amp; \frac{\partial \varphi_1}{\partial  x_k} &amp; \frac{\partial f_1}{\partial x_{k+1}} &amp; \cdots &amp; \frac{\partial f_1}{\partial x_n} \\ \vdots &amp; \ddots &amp; \vdots &amp; \vdots &amp; \ddots &amp; \vdots \\ \frac{\partial \varphi_k}{\partial x_1} &amp; \cdots &amp; \frac{\partial \varphi_k}{\partial x_k} &amp; \frac{\partial f_k}{\partial x_{k+1}} &amp; \cdots &amp; \frac{\partial f_k}{\partial x_n} \end{bmatrix} =  \begin{bmatrix}} a *\frac{\partial \varphi_1}{\partial x_1} &amp;\ \cdots &amp; a* \frac{\partial \varphi_1}{\partial  x_k} &amp; a* \frac{\partial f_1}{\partial x_{k+1}} &amp; \cdots &amp; a* \frac{\partial f_1}{\partial x_n} \\ \vdots &amp; \ddots &amp; \vdots &amp; \vdots &amp; \ddots &amp; \vdots \\ a* \frac{\partial \varphi_k}{\partial x_1} &amp; \cdots &amp; a* \frac{\partial \varphi_k}{\partial x_k} &amp; a* \frac{\partial f_k}{\partial x_{k+1}} &amp; \cdots &amp; a* \frac{\partial f_k}{\partial x_n} \end{bmatrix} = D(a\varphi)\)
+To see why \(D \varphi\) is linear observe that for \(\alpha \in \mathbb{R}\), \(aD\varphi= a * \begin{bmatrix} \frac{\partial \varphi_1}{\partial x_1} &amp;\ \cdots &amp; \frac{\partial \varphi_1}{\partial  x_k} &amp; \frac{\partial f_1}{\partial x_{k+1}} &amp; \cdots &amp; \frac{\partial f_1}{\partial x_n} \\ \vdots &amp; \ddots &amp; \vdots &amp; \vdots &amp; \ddots &amp; \vdots \\ \frac{\partial \varphi_k}{\partial x_1} &amp; \cdots &amp; \frac{\partial \varphi_k}{\partial x_k} &amp; \frac{\partial f_k}{\partial x_{k+1}} &amp; \cdots &amp; \frac{\partial f_k}{\partial x_n} \end{bmatrix} =  \begin{bmatrix} a *\frac{\partial \varphi_1}{\partial x_1} &amp;\ \cdots &amp; a* \frac{\partial \varphi_1}{\partial  x_k} &amp; a* \frac{\partial f_1}{\partial x_{k+1}} &amp; \cdots &amp; a* \frac{\partial f_1}{\partial x_n} \\ \vdots &amp; \ddots &amp; \vdots &amp; \vdots &amp; \ddots &amp; \vdots \\ a* \frac{\partial \varphi_k}{\partial x_1} &amp; \cdots &amp; a* \frac{\partial \varphi_k}{\partial x_k} &amp; a* \frac{\partial f_k}{\partial x_{k+1}} &amp; \cdots &amp; a* \frac{\partial f_k}{\partial x_n} \end{bmatrix} = D(a\varphi)\)
 </p>
 
     </div>
