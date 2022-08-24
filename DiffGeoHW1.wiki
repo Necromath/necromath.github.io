@@ -25,7 +25,7 @@ $\begin{equation} D\varphi(a+b) = \begin{bmatrix} \frac{\partial \varphi_1}{\par
 
 Thus, we can conclude that $D\varphi$ is an injective linear map at all $(x_1, ..., x_k) \in U$.
 
-b: To do. Derivative of $g(x_1, ..., x_n) = (x_{k+1}, ..., x_n) - f(x_1,..., x_k) = (x_{k+1} - f_1(x_1,..., x_k) , ..., x_n - f_k(x_1, ..., x_k))$
+b: To do. Derivative of $g(x_1, ..., x_n) = (x_{k+1}, ..., x_n) - f(x_1,..., x_k) = (x_{k+1} - f_1(x_1,..., x_k) , ..., x_n - f_k(x_1, ..., x_k))$. The associated matrix of partial derivatives is a $n \times (n-k)$ matrix. When we look at the matrix of partial derivatives of $g$. We see that we would have an upper block of size $k$ with the diagonal of the form $1 - \frac{\partial f_i}{x_i}$, which is zero when $g=0$ what we have left is then the partials of $f$ which would give us the appropriate $(n-k)$ linearly indepent vectors of $Dg$, making it full rank.
 
 Question 2: This uses the [[Implicit Function Theorem]]. If we consider the level set $\{g=0\}$ for some function $g: \mathbb{R}^n \rightarrow \mathbb{R}^{n-k}$, where $Dg$ has rank $n-k$ at every point where $g=0$. Let $g(a_1, ..., a_n) = 0$, and apply the implicit function theorem to write some neighborhood of $(a_1, ..., a_n)$, say $U$ on the level set as the graph of a function $f: \mathbb{R}^k \rightarrow \mathbb{R}^{n-k}$. What variables in $\mathbb{R}^n$ act as the domain of $f$?
 
@@ -51,4 +51,4 @@ Solution: Let's recall the definition of smoothly compatible. Two charts $(V, \p
 
 Problem 5: Let $M$ be a manifold with boundary. Let $x \in M$ be a point and $(U_1, \varphi_1)$ a chart on $M$ with $x\in U_1$ and $\varphi_1(x) \in \partial \mathbb{H}^n = \{(x_1, ..., x_n) | x_n=0 \}$. If $(U_2, \varphi_2)$ is any other chart on $M$ with $x\in U_2$, show that $\varphi_2(x) \in \partial \mathbb{H}^n$ as well. 
 
-Solution: Since $U_1 \cap U_2 \neq \emptyset$. The transition function $\varphi_2 \circ \varphi^{-1}_1: \varphi_1(U_1 \cap U_2) \rightarrow \varphi_2(U_1 \cap U_2)$ is a homeomorphism. $\varphi_1(x) \in \mathbb{H}^n$ guarantees our homeomorphism $\varphi_2(x) \in \partial \mathbb{H}^n$.
+Solution: Since $U_1 \cap U_2 \neq \emptyset$. The transition function $\varphi_2 \circ \varphi^{-1}_1: \varphi_1(U_1 \cap U_2) \rightarrow \varphi_2(U_1 \cap U_2)$ is a homeomorphism. $\varphi_1(x) \in \mathbb{H}^n$ guarantees our homeomorphism $\varphi_2(x) \in \partial \mathbb{H}^n$, any open set $V \cap \mathbb{H}^n$ containing $\varphi_(x)$ would be mapped to another open $W \cap \mathbb{H}^n$.
