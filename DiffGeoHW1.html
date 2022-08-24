@@ -115,7 +115,7 @@ Question 3: The points of the projective plane \(\mathbb{RP}^2\) correspond to t
 </p>
 
 <p>
-Define \(\varphi_2, \varphi_3\). Compute the transition function \(\psi = \varphi_2 \opencirc \varphi ^{-1}_1\) and show that it is smooth.
+Define \(\varphi_2, \varphi_3\). Compute the transition function \(\psi = \varphi_2 \circ \varphi ^{-1}_1\) and show that it is smooth.
 </p>
 
 <p>
@@ -131,7 +131,7 @@ Solution: The corresponding maps are \(\varphi_2: U_2 \rightarrow \mathbb{R}^2\)
 </p>
 
 <p>
-Now, let \((a,b) \in \mathbb{R}^2\) and consider the the transition function \(\varphi_2 \opencirc \varphi^{-1}_1: \varphi_1(U_1 \cap U_2) \rightarrow varphi_2(U_1 \cap U_2)\). Upon evaluation, \(\varphi_2 ( \varphi^{-1}_1(b,c)) = \varphi_2(x+by+cz=0) = (\frac{1}{b}, \frac{c}{b})\). Since \(\frac{1}{x}\) is smooth for \(x\neq0\), we can see that the transition function is smooth on its components and thus, a smooth function.
+Now, let \((a,b) \in \mathbb{R}^2\) and consider the the transition function \(\varphi_2 \circ \varphi^{-1}_1: \varphi_1(U_1 \cap U_2) \rightarrow varphi_2(U_1 \cap U_2)\). Upon evaluation, \(\varphi_2 ( \varphi^{-1}_1(b,c)) = \varphi_2(x+by+cz=0) = (\frac{1}{b}, \frac{c}{b})\). Since \(\frac{1}{x}\) is smooth for \(x\neq0\), we can see that the transition function is smooth on its components and thus, a smooth function.
 </p>
 
 <p>
@@ -139,7 +139,7 @@ Problem 4: Let \(\mathcal{A}\) be an atlas of charts on a smooth manifold \(M\).
 </p>
 
 <p>
-Solution: Let's recall the definition of smoothly compatible. Two charts \((V, \psi) , (W, \kappa)\) are called smoothly compatible whenever \(V \cap W = \empty\) or \(\psi \opencirc \kappa ^{-1}\) is a diffeomorphism. If we are in the first case, then we are already finished. The empty intersection implies that \(\varphi_1 , \varphi_2\) are smoothly compatible. If we are in the second case, consider the following. Since each of the maps is smoothly compatible with \(\mathcal{A}\), let \(\nu\) be a chart in \(\mathcal{A}\) that is smoothly compatible with both \(\varphi_1\) and \(\varphi_2\) in the latter sense. From this, we can observe that \(\varphi_1 \opencirc \nu ^{-1}\) and \(\nu \opencirc \varphi_2\) are diffeomorphisms. So then \(\varphi_1 \opencirc \nu ^{-1} \opencirc \nu \opencirc \varphi_2 = \varphi_1 \opencirc \varphi_2\) is also a diffeomorphism. Thus, our two charts are also smoothly compatible.
+Solution: Let's recall the definition of smoothly compatible. Two charts \((V, \psi) , (W, \kappa)\) are called smoothly compatible whenever \(V \cap W = \emptyset\) or \(\psi \circ \kappa ^{-1}\) is a diffeomorphism. If we are in the first case, then we are already finished. The empty intersection implies that \(\varphi_1 , \varphi_2\) are smoothly compatible. If we are in the second case, consider the following. Since each of the maps is smoothly compatible with \(\mathcal{A}\), let \(\nu\) be a chart in \(\mathcal{A}\) that is smoothly compatible with both \(\varphi_1\) and \(\varphi_2\) in the latter sense. From this, we can observe that \(\varphi_1 \circ \nu ^{-1}\) and \(\nu \circ \varphi_2\) are diffeomorphisms. So then \(\varphi_1 \circ \nu ^{-1} \circ \nu \circ \varphi_2 = \varphi_1 \circ \varphi_2\) is also a diffeomorphism. Thus, our two charts are also smoothly compatible.
 </p>
 
 <p>
@@ -147,7 +147,7 @@ Problem 5: Let \(M\) be a manifold with boundary. Let \(x \in M\) be a point and
 </p>
 
 <p>
-Solution: Since \(U_1 \cap U_2 \neq \empty\). The transition function \(\varphi_2 \opencirc \varphi^{-1}_1: \varphi_1(U_1 \cap U_2) \rightarrow \varphi_2(U_1 \cap U_2)\) is a homeomorphism. \(\varphi_1(x) \in \mathbb{H}^n\) guarantees our homeomorphism \(\varphi_2(x) \in \partial \mathbb{H}^n\).
+Solution: Since \(U_1 \cap U_2 \neq \emptyset\). The transition function \(\varphi_2 \opencirc \varphi^{-1}_1: \varphi_1(U_1 \cap U_2) \rightarrow \varphi_2(U_1 \cap U_2)\) is a homeomorphism. \(\varphi_1(x) \in \mathbb{H}^n\) guarantees our homeomorphism \(\varphi_2(x) \in \partial \mathbb{H}^n\).
 </p>
 
     </div>
