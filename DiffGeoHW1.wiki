@@ -51,4 +51,4 @@ Solution: Let's recall the definition of smoothly compatible. Two charts $(V, \p
 
 Problem 5: Let $M$ be a manifold with boundary. Let $x \in M$ be a point and $(U_1, \varphi_1)$ a chart on $M$ with $x\in U_1$ and $\varphi_1(x) \in \partial \mathbb{H}^n = \{(x_1, ..., x_n) | x_n=0 \}$. If $(U_2, \varphi_2)$ is any other chart on $M$ with $x\in U_2$, show that $\varphi_2(x) \in \partial \mathbb{H}^n$ as well. 
 
-Solution: Since $U_1 \cap U_2 \neq \emptyset$. The transition function $\varphi_2 \opencirc \varphi^{-1}_1: \varphi_1(U_1 \cap U_2) \rightarrow \varphi_2(U_1 \cap U_2)$ is a homeomorphism. $\varphi_1(x) \in \mathbb{H}^n$ guarantees our homeomorphism $\varphi_2(x) \in \partial \mathbb{H}^n$.
+Solution: Since $U_1 \cap U_2 \neq \emptyset$. The transition function $\varphi_2 \circ \varphi^{-1}_1: \varphi_1(U_1 \cap U_2) \rightarrow \varphi_2(U_1 \cap U_2)$ is a homeomorphism. $\varphi_1(x) \in \mathbb{H}^n$ guarantees our homeomorphism $\varphi_2(x) \in \partial \mathbb{H}^n$.
