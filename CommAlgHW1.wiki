@@ -4,7 +4,7 @@ Homework 1: This contains exercises from Chapter 1 of Atiyah-Mcdonald
 
 Exercise 1: Let $x$ be a nilpotent element of a ring $A$. Show that $1+x$ is a unit of $A$. Deduce that the sum of a nilpotent element and a unit is a unit.
 
-Solution: The first part follows by observing that $(1+x)(1-x+x^2-x^3+x^4- \ldots \pm x^{n-1}) = 1 + x - x + x^2 - x^2 + \ldots +x^{n-1} - x^{n-1} \pm x^n =1$. Now to see this more generally, let $y \in A$ be a unit. Because of this, we can write $(x+y) = (1+xy^{-1})$. Our previous result indicates that this should be similar. Observe that $(1+xy^{-1})(\sum _k=0 ^{n-1} (-1)^k (xy^{-1})^k) = (1+xy^{-1})(1-xy^{-1}+(xy^{-1})^2 - \ldots \pm (xy^{-1})^{n-1}) = (1 +xy^{-1} - xy^{-1} - (xy^{-1})^2 + (xy^{-1})^2 - \ldots \pm (xy^{-1})^n) = 1$ 
+Solution: The first part follows by observing that $(1+x)(1-x+x^2-x^3+x^4- \ldots \pm x^{n-1}) = 1 + x - x + x^2 - x^2 + \ldots +x^{n-1} - x^{n-1} \pm x^n =1$. Now to see this more generally, let $y \in A$ be a unit. Because of this, we can write $(x+y) = (1+xy^{-1})$. Our previous result indicates that this should be similar. Observe that $(1+xy^{-1})(\sum _{k=0} ^{n-1} (-1)^k (xy^{-1})^k) = (1+xy^{-1})(1-xy^{-1}+(xy^{-1})^2 - \ldots \pm (xy^{-1})^{n-1}) = (1 +xy^{-1} - xy^{-1} - (xy^{-1})^2 + (xy^{-1})^2 - \ldots \pm (xy^{-1})^n) = 1$ 
 
 Exercise 12: A local ring, $A$, contains no idempotent $\neq 0, 1$.
 
