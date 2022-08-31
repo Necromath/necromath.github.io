@@ -34,7 +34,7 @@ MathJax = {
   <!-- src="/home/lechen/.config/MathJax/es5/tex-svg.js"> -->
 </script>
     <script src="/home/lechen/.config/MathJax/es5/tex-chtml.js" id="MathJax-script" async></script>
-    <title>Differential Geometry</title>
+    <title>DiffGeoHW2</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 </head>
 <body>
@@ -44,19 +44,39 @@ MathJax = {
     <div class="content">
     
 <p>
-This page serves as a repository for my work in my Differential geometry class
+Here we deal with the the "avoid feverish tomato map"
 </p>
 
 <p>
-Here goes!
+Problem 1: Find smooth bijection \(f: \mathbb{R} \rightarrow \mathbb{R}\) whose inverse is not smooth. Then add another condition to make \(f^{-1}\) smooth and prove it.
 </p>
 
 <p>
-<a href="DiffGeoHW1.html">DiffGeoHW1</a>
+Solution: Let \(f(x)=x^3\). It has inverse \(g(x)=x^{\frac{1}{3}}\). This does not have continuous derivative at \(x=0\). So it is not smooth. If we add the condition that \(f\) has nonzero derivative, then we can conclude that its inverse is smooth.
 </p>
 
 <p>
-<a href="DiffGeoHW2.html">DiffGeoHW2</a>
+Problem 2:
+</p>
+
+<p>
+Problem 3:
+</p>
+
+<p>
+Problem 4: 
+</p>
+
+<p>
+part a: If \(\gamma_1 \sim \gamma_2\), then \(d_pf(\gamma_1) \sim d_pf(\gamma_2)\). 
+</p>
+
+<p>
+Solution: Let \((U, \varphi)\) be a chart on \(M\) and let \(p \in U\) such that \(\gamma_i(0) = p , i=1,2\). Observe that \(d_pf(\gamma_1'(0)) = (f \circ \gamma_1)'(0) = (f \circ\varphi ^{-1} \varphi \gamma_1)'(0) = d_p(f \circ \varphi^{-1})(0)(\varphi \circ \gamma_1)'(0) = d_p(f \circ \varphi^{-1})(0)(\varphi \circ \gamma_2)'(0) = (f \circ\varphi ^{-1} \varphi \gamma_2)'(0) = (f \circ \gamma_2)'(0) = d_pf(\gamma_2'(0))\)
+</p>
+
+<p>
+part b: 
 </p>
 
     </div>
