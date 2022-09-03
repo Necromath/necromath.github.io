@@ -68,15 +68,19 @@ Problem 4:
 </p>
 
 <p>
-part a: If \(\gamma_1 \sim \gamma_2\), then \(d_pf(\gamma_1) \sim d_pf(\gamma_2)\). 
+part a: If \(\gamma_1 \sim \gamma_2\), then \(d_pf(\gamma_1) \sim d_pf(\gamma_2)\). (Where \(\gamma_1 \sim \gamma_2\) if for any chart \((U, \varphi)\) around \(p \in M\), we have that \((\varphi \circ \gamma_1)'(0) = (\varphi \circ \gamma_2)'(0)\) ) 
 </p>
 
 <p>
-Solution: Let \((U, \varphi)\) be a chart on \(M\) and let \(p \in U\) such that \(\gamma_i(0) = p , i=1,2\). Observe that \(d_pf(\gamma_1'(0)) = (f \circ \gamma_1)'(0) = (f \circ\varphi ^{-1} \varphi \gamma_1)'(0) = d_p(f \circ \varphi^{-1})(0)(\varphi \circ \gamma_1)'(0) = d_p(f \circ \varphi^{-1})(0)(\varphi \circ \gamma_2)'(0) = (f \circ\varphi ^{-1} \varphi \gamma_2)'(0) = (f \circ \gamma_2)'(0) = d_pf(\gamma_2'(0))\)
+Solution: Let \((U, \varphi)\) be a chart on \(N\) and let \(p \in U\) such that \(\gamma_i(0) = p , i=1,2\). Observe that \((\varphi \circ (\f \circ \gamma_1))'(0) = \varphi(f \circ \gamma_1(0))(f \circ \gamma_1)'(0) = \varphi(f(p))(f \circ \gamma_1)'(0)\). Using the fact that \(\gamma_1 \sim \gamma_2 \Rightarrow \gamma_1'(0) = \gamma_2'(0)\). It follows that \(\varphi(f(p))(f \circ \gamma_1)'(0) = \varphi(f(p))f(\gamma_1(0))\gamma_1'(0) = \varphi(f(p))f(\gamma_2(0))\gamma_2'(0) = \varphi(f(p))(f \circ \gamma_2)'(0) = \varphi(f \circ \gamma_2(0))(f \circ \gamma_2)'(0) = (\varphi \circ (f \circ \gamma_2))'(0)\). Thus \(d_pf(\gamma_1) \sim d_pf(\gamma_2)\) 
 </p>
 
 <p>
-part b: 
+part b: Suppose \((U , \varphi)\) is a chart around \(p\) with coordinate functions, \(x^i\), and \(\vec{v}\) is represented in those coordinates as \(\vec{v} = v^i \frac{\partial}{\partial x^i}\). If \((V, \psi)\) is a chart aroudn \(f(p)\) with coordinate functions \(y^j\), what is the representation of \(d_pf(\vec{v})\) in the \(y^j\) coordinates?
+</p>
+
+<p>
+Solution: 
 </p>
 
     </div>
