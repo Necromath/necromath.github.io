@@ -1,3 +1,5 @@
 Here are some solutions to exercises from Atiyah-Mcdonald:
 
 [[CommAlgHW1]]
+
+[[CommAlgHW2]]

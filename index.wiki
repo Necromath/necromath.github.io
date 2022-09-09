@@ -2,7 +2,7 @@
 
 My name is Mauricio Montes and this is my website!
 I am a second year graduate student in Mathematics at Auburn University
-Here, I have written up some of my work (possibly incorrect in some parts) for others to use for reference and understanding.
+Here, I have written up some of my work (incorrect in some parts) for others to use for reference and understanding.
 
 
 This is an [[art gallery]]
@@ -16,5 +16,7 @@ My [[solutions to Folland]]  Real Analysis
 My solutions to questions in my [[Differential Geometry]] class
 
 My solutions to questions in [[commutative algebra]] class following Atiyah-Mcdonald
+
+My solutions to questions in my [[probability]] class following Billingsley
 
 Some personal [[Miscellaneous Work]]

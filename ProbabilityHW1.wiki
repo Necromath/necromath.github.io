@@ -1,0 +1,89 @@
+This is from Section 1 of Chapter 1
+
+Problem 1.1 a)
+
+Solution: Following the hint, we saw that for the case where we had only 2 possible events with probability $\frac{1}{2}$ that a point in our discrete space, $\omega$, is in the intersection of 1 of 4 possible different events. Proceeding by induction, for any n, $\omega$ lies in one of the $2^n$ possible configurations of intersections of our event spaces. i.e. $P(\omega | \omega \textrm{ lies in one of the configuration spaces}) = \frac{1}{2^n}$. So then as $n \rightarrow \infty, P(\omega) = 0$. Thus making our space not discrete
+
+Problem 1.1 b)
+
+Solution: Following the hint, the probability of the intersection of n events from $\{A_n \}$ or $\{A_n^c\}$ is less than $(1-p_n)^n$. But as $n \rightarrow \infty$, $(1-p_n)^n \rightarrow 0$. Which would make our space not discrete.
+
+Problem 1.2
+
+Solution: It is known that the rational numbers are not normal. Since the base-2 expansion of any such number terminates with infinitely many 0's or it is a repeating sequence of digits not satisfying the definition of normal. However, the rationals are dense in $(0,1]$. So any open set $U$ in $(0,1]$ intersects $\mathbb{Q} \cap (0,1]$. Thus including an element of $N^c$. So $N^c$ is dense in $(0,1]$. 
+
+Consider $N^c \cap U$ for some open set $U \subseteq (0,1]$. Since $N^c$ is negligible. We can find some collection $I_j$ such that $N^c \cap U \subset \Cup I_j \subseteq U$. Note that $(\Cup I_j)^c$ is  Then $(\Cup I_j)^c \cap U \subset U$ contains normal numbers. So for any subset $U$, we have some element of $N$
+
+Problem 1.3 a)
+
+Solution::
+
+Problem 1.3 b)
+
+Solution:
+
+Problem 1.3 c)
+
+Solution:
+
+Problem 1.3 d)
+
+Solution:
+
+Problem 1.3 e)
+
+Solution:
+
+Problem 1.4 a)
+
+Solution:
+
+Problem 1.4 b)
+
+Solution:
+
+Problem 1.4 c)
+
+Solution:
+
+Problem 1.5 a)
+
+Solution:
+
+Problem 1.5 b)
+
+Solution:
+
+Problem 1.5 c)
+
+Solution:
+
+Problem 1.7)
+
+Solution: In the case where $n=2$. $\begin{align*} \int_0 ^{1}{2} exp(-ia_1 + ia_2r_2(\omega)) d\omega + \int_{\frac{1}{2}}^1 exp(ia_1 + ia_2r_2(\omega)) d\omega &= \frac{1}{4} (exp (-i(a_1+a_2) ) + exp(-i(a_1 -a_2))) + \frac{1}{4}(exp(i(a_1-a_2) + exp(i(a_1+a_2))) \\ &= \prod _{n=1}^2 \frac{(exp(ia_n) +exp(-ia_n))}{2} = \prod_{n=1}^2 cos(a_n) \end{align*}$
+
+In the case for arbitrary $n$, 
+
+Problem 1.8)
+
+Solution:
+
+Problem 1.9 a)
+
+Solution:
+
+Problem 1.9 b)
+
+Solution:
+
+Problem 1.9 c)
+
+Solution:
+
+Problem 1.10 a)
+
+Solution:
+
+Problem 1.10 b)
+
+Solution:

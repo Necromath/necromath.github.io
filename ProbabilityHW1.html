@@ -1,0 +1,234 @@
+<html>
+<head>
+<meta name="robots" content="noindex">
+<link rel="Stylesheet" type="text/css" href="style.css" />
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({ TeX: {
+    extensions: [	"autobold.js",
+		"AMSmath.js",
+		"AMSsymbols.js",
+		"AMScd.js",
+		"color.js"]
+    Macros: {
+	  R: "\mathbb{R}",
+	  P: "\mathbb{P}",
+	  Norm: ["\left\|| #1 \right||",1]
+    }
+  }});
+</script>
+<script>
+MathJax = {
+  tex: {
+    inlineMath: [['$', '$'], ['\\(', '\\)']]
+  },
+  svg: {
+    fontCache: 'global'
+  }
+};
+</script>
+<!-- <script type="text/javascript" async -->
+<!--   src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"> -->
+<!-- </script> -->
+<script type="text/javascript" id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex&#45;svg.js">
+  <!-- src="/home/lechen/.config/MathJax/es5/tex-svg.js"> -->
+</script>
+    <script src="/home/lechen/.config/MathJax/es5/tex-chtml.js" id="MathJax-script" async></script>
+    <title>ProbabilityHW1</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head>
+<body>
+    <a href="index.html">Index</a>
+    <!-- <!&#45;&#45; |<a href="diary/diary.html">Diary</a> | Something else &#45;&#45;> -->
+    <!-- <hr> -->
+    <div class="content">
+    
+<p>
+This is from Section 1 of Chapter 1
+</p>
+
+<p>
+Problem 1.1 a)
+</p>
+
+<p>
+Solution: Following the hint, we saw that for the case where we had only 2 possible events with probability \(\frac{1}{2}\) that a point in our discrete space, \(\omega\), is in the intersection of 1 of 4 possible different events. Proceeding by induction, for any n, \(\omega\) lies in one of the \(2^n\) possible configurations of intersections of our event spaces. i.e. \(P(\omega | \omega \textrm{ lies in one of the configuration spaces}) = \frac{1}{2^n}\). So then as \(n \rightarrow \infty, P(\omega) = 0\). Thus making our space not discrete
+</p>
+
+<p>
+Problem 1.1 b)
+</p>
+
+<p>
+Solution: Following the hint, the probability of the intersection of n events from \(\{A_n \}\) or \(\{A_n^c\}\) is less than \((1-p_n)^n\). But as \(n \rightarrow \infty\), \((1-p_n)^n \rightarrow 0\). Which would make our space not discrete.
+</p>
+
+<p>
+Problem 1.2
+</p>
+
+<p>
+Solution: It is known that the rational numbers are not normal. Since the base-2 expansion of any such number terminates with infinitely many 0's or it is a repeating sequence of digits not satisfying the definition of normal. However, the rationals are dense in \((0,1]\). So any open set \(U\) in \((0,1]\) intersects \(\mathbb{Q} \cap (0,1]\). Thus including an element of \(N^c\). So \(N^c\) is dense in \((0,1]\). 
+</p>
+
+<p>
+Consider \(N^c \cap U\) for some open set \(U \subseteq (0,1]\). Since \(N^c\) is negligible. We can find some collection \(I_j\) such that \(N^c \cap U \subset \Cup I_j \subseteq U\). Note that \((\Cup I_j)^c\) is  Then \((\Cup I_j)^c \cap U \subset U\) contains normal numbers. So for any subset \(U\), we have some element of \(N\)
+</p>
+
+<p>
+Problem 1.3 a)
+</p>
+
+<dl>
+<dt>Solution</dt>
+</dl>
+
+<p>
+Problem 1.3 b)
+</p>
+
+<p>
+Solution:
+</p>
+
+<p>
+Problem 1.3 c)
+</p>
+
+<p>
+Solution:
+</p>
+
+<p>
+Problem 1.3 d)
+</p>
+
+<p>
+Solution:
+</p>
+
+<p>
+Problem 1.3 e)
+</p>
+
+<p>
+Solution:
+</p>
+
+<p>
+Problem 1.4 a)
+</p>
+
+<p>
+Solution:
+</p>
+
+<p>
+Problem 1.4 b)
+</p>
+
+<p>
+Solution:
+</p>
+
+<p>
+Problem 1.4 c)
+</p>
+
+<p>
+Solution:
+</p>
+
+<p>
+Problem 1.5 a)
+</p>
+
+<p>
+Solution:
+</p>
+
+<p>
+Problem 1.5 b)
+</p>
+
+<p>
+Solution:
+</p>
+
+<p>
+Problem 1.5 c)
+</p>
+
+<p>
+Solution:
+</p>
+
+<p>
+Problem 1.7)
+</p>
+
+<p>
+Solution: In the case where \(n=2\). \(\begin{align*} \int_0 ^{1}{2} exp(-ia_1 + ia_2r_2(\omega)) d\omega + \int_{\frac{1}{2}}^1 exp(ia_1 + ia_2r_2(\omega)) d\omega &amp;= \frac{1}{4} (exp (-i(a_1+a_2) ) + exp(-i(a_1 -a_2))) + \frac{1}{4}(exp(i(a_1-a_2) + exp(i(a_1+a_2))) \\ &amp;= \prod _{n=1}^2 \frac{(exp(ia_n) +exp(-ia_n))}{2} = \prod_{n=1}^2 cos(a_n) \end{align*}\)
+</p>
+
+<p>
+In the case for arbitrary \(n\), 
+</p>
+
+<p>
+Problem 1.8)
+</p>
+
+<p>
+Solution:
+</p>
+
+<p>
+Problem 1.9 a)
+</p>
+
+<p>
+Solution:
+</p>
+
+<p>
+Problem 1.9 b)
+</p>
+
+<p>
+Solution:
+</p>
+
+<p>
+Problem 1.9 c)
+</p>
+
+<p>
+Solution:
+</p>
+
+<p>
+Problem 1.10 a)
+</p>
+
+<p>
+Solution:
+</p>
+
+<p>
+Problem 1.10 b)
+</p>
+
+<p>
+Solution:
+</p>
+
+    </div>
+<hr>
+<script language="Javascript">
+document.write("This page was powered by Vimwiki and was last modified on: " + document.lastModified +"");
+</SCRIPT>
+<hr>
+<center>&copy; Mauricio Montes, 2022, myfirstname.mylast@auburn.edu </center>
+</body>
+</html>
