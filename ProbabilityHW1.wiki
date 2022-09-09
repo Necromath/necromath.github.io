@@ -58,7 +58,7 @@ Next, if we take $a_k = t2^{-k}$ and $\sum _{k=1}^{\infty} r_k(\omega)2^{-k} = 2
 
 Thus $\frac{sin(t)}{t} = \prod_{k=1}{\infty} cos(\frac{t}{2^k})$.
 
-When we set $t = \frac{\pi}{2}$. We get that $\frac{sin(\pi}{2})}{\frac{\pi}{2}} = \frac{2}{\pi} = \prod_{k=1}^{\infty} cos(\frac{\frac{\pi}{2}}{2^k}) = \prod_{k=1}{\infty}cos(\frac{\pi}{2^{k+1}})$.
+When we set $t = \frac{\pi}{2}$. We get that $\frac{sin(\frac{\pi}{2})}{\frac{\pi}{2}} = \frac{2}{\pi} = \prod_{k=1}^{\infty} cos(\frac{\frac{\pi}{2}}{2^k}) = \prod_{k=1}{\infty}cos(\frac{\pi}{2^{k+1}})$.
 
 We can then use the identity that $cos(\frac{\pi}{2^{k+1}}) = \sqrt{\frac{1+cos(\frac{\pi}{2^k})}{2}}$ to derive $\prod_{k=1}^\infty cos(\frac{\pi}{2^{k+1}}) = \sqrt{\frac{1+ cos(\frac{\pi}{2})}{2}} \sqrt{\frac{1+cos(\frac{\pi}{2^2})}{2}} \ldots = \frac{\sqrt{2}}{2} \frac{\sqrt{2 + \sqrt{2}}}{2} \ldots$
 
