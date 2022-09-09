@@ -62,7 +62,7 @@ Problem 1.7)
 
 Solution: In the case where $n=2$. $\begin{align*} \int_0 ^{1}{2} exp(-ia_1 + ia_2r_2(\omega)) d\omega + \int_{\frac{1}{2}}^1 exp(ia_1 + ia_2r_2(\omega)) d\omega &= \frac{1}{4} (exp (-i(a_1+a_2) ) + exp(-i(a_1 -a_2))) + \frac{1}{4}(exp(i(a_1-a_2) + exp(i(a_1+a_2))) \\ &= \prod _{n=1}^2 \frac{(exp(ia_n) +exp(-ia_n))}{2} = \prod_{n=1}^2 cos(a_n) \end{align*}$
 
-In the case for arbitrary $n$, 
+In the case for arbitrary $n$,  
 
 Problem 1.8)
 
