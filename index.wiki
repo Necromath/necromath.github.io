@@ -23,4 +23,4 @@ Some personal [[Miscellaneous Work]]
 
 Hello Dr. Chen!!
 
-
+Note to self: git push and then inserting the proper credentials allowed us to use lazygit push without having to use authorization. But then the program reverted back to asking for credentials again.
