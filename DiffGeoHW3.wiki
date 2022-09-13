@@ -1,0 +1,22 @@
+This is my work for homework 3. The lost sushi mob fandom. One day I will understand these cryptic titles.
+
+
+Problem 1: Let $X,Y \in \mathcal{X}(M)$ be linearly independent vector fields with $[X,Y]=0$. 
+
+Part a: Omitted, and I forgot to copy down the exact statement of the amended question. But iirc, the statement was that if two integral curves for the same vector field only differ by a coordinate in the one direction, then they move exactly the same way differing only by a translation. Mathematically: If $\gamma, \phi$ are integral curves for $Y$. With $\gamma^i ' = \phi^i '$ for $1<i\leq m$. Then $\gamma(t) = \phi(t) +ce_1$. 
+
+Part b: Find coordinates where $X = \frac{\partial}{\partial x^1}$ and $Y = \frac{\partial}{\partialx^2}$
+
+Solution: These are just the coordinate vector fields. These form a smooth global frame for $\mathbb{R}^2$. Consider $M = \mathbb{R}^2$. and the identity function. The derivation of the identity function at a point is $\frac{\partial}{x^1} + \frac{\partial}{x^2} = X + Y$. 
+
+Part c: Do the previous problem for $k$ linearly independent vector fields. 
+
+Solution: Still the coordinate vector field on $\mathbb{R}^n$?
+
+Problem 2: Classify the map as an immersion, submersion, local diffeomorphism, embedding, or none of the above. Classify the image of each map as an immersed submanifold, embedded submanifold, or neither.
+
+Part a: $f: \mathbb{R} \rightarrow \mathbb{S}^1, f(x)=(cos(x),sin(x))$
+
+Solution: This map is a local diffeomorphism. But not a smooth embedding. Given $x\in \mathbb{R}$, the differential of $f$ at $x$ is $d_xf = (-sin(x), cos(x))$. Clearly, $d_xf$ is not the zero matrix. We can eliminate one column, giving the result that $d_xf$ has rank 1, which is the dimension of $\mathbb{R}$. Hence, $f$ is an immersion. Note, however that $dim \mathbb{S}^1 = 1$, so then the matrix is also a surjection. Hence, $f$ is a submersion. So we can conclude that $\mathbb{R}$ is locally diffeomorphic to $\mathbb{S}^1$. We can also conclude that $f(\mathbb{R})$ is an immersed submanifold of $\mathbb{S}^1$. However, $f$ is not a smooth embedding. $\mathbb{R}$ is not homeomorphic to $\mathbb{S}^1$ due to the fact that $\mathbb{R}$ is not compact while $\mathbb{S}^1$ as a subset of $\mathbb{R}^2$ is. Homeomorphisms carry compact sets to compact sets.
+
+Part b: 
