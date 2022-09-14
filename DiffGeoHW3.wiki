@@ -13,10 +13,60 @@ Part c: Do the previous problem for $k$ linearly independent vector fields.
 
 Solution: Still the coordinate vector field on $\mathbb{R}^n$?
 
-Problem 2: Classify the map as an immersion, submersion, local diffeomorphism, embedding, or none of the above. Classify the image of each map as an immersed submanifold, embedded submanifold, or neither.
+Problem 2: Prove the following
+
+Part a: A smooth map is a local diffeomorphism if and only if it is both an immersion and a submersion.
+
+Proof: $(\Rightarrow)$ Let $F: M \rightarrow N$ be a smooth map and suppose that $F$ is a local diffeomorphism. Then $d_pF$ is an isomorphism of vector spaces. This means that $d_pF$ is a bijection for all $p \in M$. Thus it is both injective and surjective. Hence an immersion and a submersion.
+
+$(\Leftarrow)$ Suppose that $d_pF$ is injective and surjective. This is the definition of a vector space isomorphism. So we are done.
+
+Part b: A smooth map is a diffeomorphism if and only if it is a local diffeomorphism.
+
+Proof: $(\Rightarrow)$ A property of differentials is that if $F$ is a diffeomorphism, it follows that $d_pF$ is an isomorphism (Lee 3.6). So $F$ is a local diffeomorphism. 
+
+$(\Leftarrow)$ Since $F$ is a smooth bijection, we know that $F^{-1}$ exists and is bijective. Since $d_pF$ is an isomorphism, we have an inverse map $(d_pF)^{-1}$ that is also an isomorphism. So then $F^{-1}$ is also differentiable, hence smooth. Thus, $F$ is a diffeomorphism.  
+
+Part c: Every diffeomorphism is an embedding.
+
+Proof: Let $F:M \rightarrow N$ be a diffeomorphism. $F$ is obviously a homeomorphism. It is an immersion from the fact that diffeomorphism induce isomorphisms on their tangent spaces. Thus, $d_pF$ is also an immersion. Hence, $F: M \rightarrow F(M) = N$ is an embedding.   
+
+Problem 3: Classify the map as an immersion, submersion, local diffeomorphism, embedding, or none of the above. Classify the image of each map as an immersed submanifold, embedded submanifold, or neither.
 
 Part a: $f: \mathbb{R} \rightarrow \mathbb{S}^1, f(x)=(cos(x),sin(x))$
 
-Solution: This map is a local diffeomorphism. But not a smooth embedding. Given $x\in \mathbb{R}$, the differential of $f$ at $x$ is $d_xf = (-sin(x), cos(x))$. Clearly, $d_xf$ is not the zero matrix. We can eliminate one column, giving the result that $d_xf$ has rank 1, which is the dimension of $\mathbb{R}$. Hence, $f$ is an immersion. Note, however that $dim \mathbb{S}^1 = 1$, so then the matrix is also a surjection. Hence, $f$ is a submersion. So we can conclude that $\mathbb{R}$ is locally diffeomorphic to $\mathbb{S}^1$. We can also conclude that $f(\mathbb{R})$ is an immersed submanifold of $\mathbb{S}^1$. However, $f$ is not a smooth embedding. $\mathbb{R}$ is not homeomorphic to $\mathbb{S}^1$ due to the fact that $\mathbb{R}$ is not compact while $\mathbb{S}^1$ as a subset of $\mathbb{R}^2$ is. Homeomorphisms carry compact sets to compact sets.
+Solution: This map is a local diffeomorphism. But not a smooth embedding. Given $x\in \mathbb{R}$, the differential of $f$ at $x$ is $d_xf = (-sin(x), cos(x))$. Clearly, $d_xf$ is not the zero matrix. We can eliminate one column, giving the result that $d_xf$ has rank 1, which is the dimension of $\mathbb{R}$. Hence, $f$ is an immersion. Note, however that $dim \mathbb{S}^1 = 1$, so then the matrix is also a surjection. Hence, $f$ is a submersion. So we can conclude that $\mathbb{R}$ is locally diffeomorphic to $\mathbb{S}^1$. We can also conclude that $f(\mathbb{R})$ is an immersed submanifold of $\mathbb{S}^1$. However, $f$ is not a smooth embedding. $\mathbb{R}$ is not homeomorphic to $\mathbb{S}^1$ due to the fact that $\mathbb{R}$ is not compact while $\mathbb{S}^1$ as a subset of $\mathbb{R}^2$ is. Homeomorphisms carry compact sets to compact sets. The image, $f(\mathbb{R})$ is an immersed submanifold but not an embedded submanifold. 
 
-Part b: 
+Part b: $f: \mathbb{R} \rightarrow \mathbb{R}^2 , f(x) = (cos(x),sin(2x))$
+
+Solution: This map is not continuous at $x = \pi$. So it is none of the above possible classifications.
+
+Part c: $f: \mathbb{R} \rightarrow \mathbb{C}^2, f(x) = (e^{ix}, e^{i \pi x})$.
+
+Solution: The differential of $f$ at $x$ is $d_xf = (ie^{ix},i \pi e^{i \pi x})$. This is a smooth immersion since $d_xf$ does not vanish. However, $f$ is not a homeomorphism onto its image. Further, it also not a submersion, since $dim(\mathbb{R}) < dim(\mathbb{C}^2)$. So $f(\mathbb{R})$ is an immersed submanifold but not an embedded submanifold. 
+
+Part d: $f: \mathbb{R} \rightarrow \mathbb{R}^2 , f(x) = (x^3,0)$
+
+Solution: The differential of $f$ at $x$ is $d_xf = (3t^2,0)$. When $x = 0, d_xf(0)=0$. This means our derivative has rank 0. Making this not an immersion, since for $x\neq 0$ we have that the rank of $d_xf$ is 1. Clearly not a submersion for the previous reasons. So this map gets no alternative names. The image of this map doesn't get any either. 
+
+Part e: $f: \mathbb{S}^1 \times \mathbb{S}^1 \rightarrow \mathbb{S}^1, f(z,w) = zw) $
+
+Solution: The transpose of the differential of $f$ at $x$ is $(d_{(z,w)}f)^T = (w z)$ (here I mean w and z are separate entries). This has rank 2 when $z,w \neq 0$ and rank 1 when one of $z,w = 0$ whereas $\mathbb{S}^1$ has rank 1. So this map is not an immersion. This map is also not a submersion because the points $(0,1) ,(1,0)$ map to $0$ and so we cannot find a smooth local section of $f$, $\sigma$ such that $f \opencirc \sigma = Id_{\mathbb{S}^1}$. So we conclude that this map is none of the above and the image of the map is neither an immersed submanifold or embedded submanifold.
+
+Part g: $f: \partial M \rightarrow M, f(x) = x$ for a manifold $M$ with boundary $\partial M$.
+
+Solution: This map is in fact the inclusion map. Which was shown to be an immersion and an immersed submanifold. This isn't a submersion since the dimension of the boundary is one less than the manifold's. This map is also a homeomorphism onto its image, since it is just the identity map restricted to the boundary, which is a homeomorphism.
+
+Problem 4:
+
+Part a: Let $A$ be the linear transformation in $\mathbb{R}^n$ that inverts the order of the coordinates. Then the vector field in the first direction is not tangent to $S$.
+
+Part b:
+
+Part c:
+
+Problem 5: Let $S \subset M$ be an embedded submanifold and $f: N \rightarrow S \subseteq M$ an embedding. We say that $g: S \rightarrow \mathbb{R}$ is smooth if $g \circ f : N \rightarrow \mathbb{R}$ is smooth. Show that $g$ is smooth if and only if there is an open neighborhood $S \subseteq U \subseteq M$ and a smooth function $G: U \rightarrow \mathbb{R}$ so that $g = G|_S$.
+
+Solution: $(\Rightarrow)$ Choose smooth charts $\tilde{U}_\alpha \subset M$ around $p\in S$ such that $S \subset \cup \tilde{U}_\alpha = \tilde{U}_\alpha$ and $S \cap \tilde{U}_\alpha = U_\alpha$. Where $U_\alpha$ are slice charts for $S$. We define $G: \tilde{U} \rightarrow \mathbb{R}$ by $G(x_1, \ldots, x_n , \ldots,  x_m) = g(x_1, \ldots , x_n)$.
+
+(\Leftarrow) Since $G$ is smooth. It is smooth on its components. So $g = G|_S$ is a smooth function. Since $f$ is an embedding, it is diffeomorphic to its image. So $g \circ f$ is also smooth.
