@@ -1,0 +1,224 @@
+<html>
+	<head>
+		    <link rel="Stylesheet" type="text/css" href="style.css" />
+
+				<!-- Begin of MathJax Code -->
+					<!-- The following codes are for mathjax -->
+						<!-- First we include some packages. -->
+							<script type="text/x-mathjax-config">
+									  MathJax.Hub.Config({ TeX: {
+										  extensions: [	"autobold.js",
+													"AMSmath.js",
+																"AMSsymbols.js",
+																			"AMScd.js",
+																						"color.js"]
+																							  }});
+																								</script>
+																									<!-- Secondly, here are some settings -->
+																											<script>
+																														MathJax = {
+																																  tex: {
+																																		    inlineMath: [['$', '$'], ['\\(', '\\)']]
+																																		  },
+																																  svg: {
+																																		    fontCache: 'global'
+																																		  }
+																																};
+	</script>
+		<script type="text/javascript" id="MathJax-script" async
+										  <!-- src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex&#45;svg.js"> -->
+	  src="/home/lechen/.config/MathJax/es5/tex-svg.js"> </script>
+			<script src="/home/lechen/.config/MathJax/es5/tex-chtml.js" id="MathJax-script" async></script>
+				<!-- End of MathJax Code -->
+
+					<!-- Begin of Statcounter Code -->
+						<script type="text/javascript">
+									var sc_project=12346340;
+		var sc_invisible=1;
+		var sc_security="15d6d37d";
+	</script>
+					<noscript>
+								<div class="statcounter">
+												<a title="Web Analytics" href="https://statcounter.com/" target="_blank">
+																	<img class="statcounter" src="https://c.statcounter.com/12346340/0/15d6d37d/1/" alt="Web Analytics">
+																				</a>
+																						</div>
+																							</noscript>
+																								<!-- End of Statcounter Code -->
+
+
+
+																									<!-- Begin of JavaScript Code for updated date -->
+																										<!-- source: http://www.chami.com/tips/internet/041198I.html -->
+																											<script type="text/JavaScript" language="JavaScript">
+																													<!--
+	//
+	// format date as dd-mmm-yy
+	// example: 12-Jan-99
+	//
+	function date_ddmmmyy(date)
+	{
+			  var d = date.getDate();
+			  var m = date.getMonth() + 1;
+			  var y = date.getYear();
+
+			  // handle different year values
+			  // returned by IE and NS in
+			  // the year 2000.
+			  if(y >= 2000)
+				  {
+						    y -= 2000;
+						  }
+			  if(y >= 100)
+				  {
+						    y -= 100;
+						  }
+
+			  // could use splitString() here
+			  // but the following method is
+			  // more compatible
+			  var mmm =
+				    ( 1==m)?'Jan':( 2==m)?'Feb':(3==m)?'Mar':
+				    ( 4==m)?'Apr':( 5==m)?'May':(6==m)?'Jun':
+				    ( 7==m)?'Jul':( 8==m)?'Aug':(9==m)?'Sep':
+				    (10==m)?'Oct':(11==m)?'Nov':'Dec';
+
+			  return "" + (d<10?"0"+d:d) + "-" + mmm + "-" + (y<10?"0"+y:y);
+			}
+
+
+	//
+	// get last modified date of the
+	// current document.
+	//
+	function date_lastmodified()
+	{
+			  var lmd = document.lastModified;
+			  var s   = "Unknown";
+			  var d1;
+
+			  // check if we have a valid date
+			  // before proceeding
+			  if(0 != (d1=Date.parse(lmd)))
+				  {
+						    s = "" + date_ddmmmyy(new Date(d1));
+						  }
+
+			  return s;
+			}
+
+	//
+	// finally display the last modified date
+	// as DD-MMM-YY
+	//
+	document.write(
+			  "This page was updated on " +
+				date_lastmodified() );
+	// -->
+	</script>
+					for <small>Math 221 Fall 2020 at Emory</small>.
+						<!-- End of JavaScript Code for updated date -->
+
+							<title>DefinTop</title>
+								<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	</head>
+
+
+
+	<body>
+		    <!-- <a href="index.html">Index</a>  -->
+			    <!-- |<a href="diary/diary.html">Diary</a> | Something else -->
+				    <hr>
+					    <div class="content">
+							    
+<p>
+Here are some definitions to know:
+</p>
+
+<ol>
+<li>
+Topology: A topology \(\tau\) on a set \(X\) is a collection of subsets of \(X\), called open subsets, denoted \(U\), such that: \(X \in \tau\) and arbitrary unions and finite intersections \(\cup U\) and \(\cap _{i=1} ^{n} U\) are subsets of \(\tau\) 
+
+</ol>
+
+<ol>
+<li>
+If \(x \in N \subseteq X\) then we say that \(N\) is a neighborhood of \(x\) if there is an open set \(U\) with \(x\in U \subseteq N\)
+
+</ol>
+
+<ol>
+<li>
+If \(Y \subseteq X\) and \(x\in X\), then \(x\) is called a limit point of \(Y\) if every neighborhoood of \(x\) intersects \(Y\) in a point distinct from \(x\). 
+
+</ol>
+   
+<ol>
+<li>
+A point \(x \in X\) is called an interior point of the set \(Y\) if there is a neighborhood of \(x\) which is contained in \(Y\). We say that \(x\) is an exterior point of the set \(Y\) if there is a neighborhood \(N\) of \(x\) which is disjoint from \(Y\).
+
+</ol>
+
+<ol>
+<li>
+A point \(x \in X\) is called a boundary point of \(Y\) if and only if every neighborhood of \(x\) intersects both \(Y\) and \(X \setminus Y\). 
+
+</ol>
+
+<ol>
+<li>
+A topological space \(X\) is called connected if there does not exist open sets \(U,V \subseteq X\) such that \(U \cap V = \empty \) and \(U \cup V = X \). 
+
+</ol>
+   
+<ol>
+<li>
+A topological space \(X\) is called compact if every open cover of \(X\) has a finite subcover.
+
+</ol>
+
+<ol>
+<li>
+A map \(p:E \rightarrow B \) is a covering map if for all \(b \in B\), there exists open \(U_b \subseteq B\) such that \(b \in U_b\) and \(p^-1 (U_b) = \cup_{i=1}V_i\). Where each \(V_i \subseteq E \) is open and \(\{V_i : i\in I \}\) is disjoint with \(p|_{V_i} : V_i \rightarrow U_b \) is a homeomorphism. If \(E\) is simply connected, then we call \(E\) a universal covering space of \(B\) and we refer to \(p\) as a universal covering map. 
+
+</ol>
+
+<ol>
+<li>
+If \(f: [0,1] \rightarrow B, f(0) =b_0, p(e_0)=b_0\), then there is a unique "lift" \( \tilde{f} : [0,1] \rightarrow E\), and \(\tilde{f}(0) = e_0, p \circ \tilde{f} = f\). This is the same for homotopies, \(H:[0,1]^2 \rightarrow B\)
+
+</ol>
+
+<ol>
+<li>
+If \(\tilde{f},\tilde{g}: [0,1] \rightarrow E, \tilde{f}(1)=\tilde{g}(0)\). Then \( p \circ (\tilde{f} \star \tilde{g}) = (p \circ \tilde{f}) \star (p \circ \tilde{g})\).
+
+</ol>
+
+<ol>
+<li>
+If \(p : \rightarrow B\) is a universal covering map and \(f,g: [0,1] \rightarrow B, f(0)=g(0) = b_0\), then \(f \simeq_p g\) if and only if \(\tilde{f}(1) = \tilde{g}(1)\) where \(\tilde{f},\tilde{g}\) are lifts with \(\tilde{f}(0) = \tilde{g}(0)=e_0 \in p^{-1}(b_0)\)
+
+</ol>
+
+<ol>
+<li>
+Given a covering map \(p:E \rightarrow B\), a deck transformation is a homeomorphism \(h: E \rightarrow E \) such that \(p= p \circ h\) 
+
+</ol>
+    
+<ol>
+<li>
+\(\pi_1(B,b_0)\) is isomorphic to the group of deck transformations. 
+
+</ol>
+    
+<p>
+<span class="todo">TODO</span>: Transfer written notes here.
+</p>
+
+								    </div>
+									<hr>
+									<center>&copy; Nacromath, Auburn, 2022. </center>
+	</body>
+</html>
