@@ -1,148 +1,31 @@
 <html>
 	<head>
-	<link rel="Stylesheet" type="text/css" href="style.css" />
+		    <link relesheet" type="text/css" href=_path%style.css" />
 
-				<!-- Begin of MathJax Code -->
-					<!-- The following codes are for mathjax -->
-						<!-- First we include some packages. -->
-							<script type="text/x-mathjax-config">
-									  MathJax.Hub.Config({ TeX: {
-										  extensions: [	"autobold.js",
-													"AMSmath.js",
-																"AMSsymbols.js",
-																			"AMScd.js",
-																						"color.js"]
-																							  }});
-																								</script>
-																									<!-- Secondly, here are some settings -->
-																											<script>
-																														MathJax = {
-																																  tex: {
-																																		    inlineMath: [['$', '$'], ['\\(', '\\)']]
-																																		  },
-																																  svg: {
-																																		    fontCache: 'global'
-																																		  }
-																																};
-	</script>
-		<script type="text/javascript" id="MathJax-script" async
-										  <!-- src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex&#45;svg.js"> -->
-	  src="/home/lechen/.config/MathJax/es5/tex-svg.js"> </script>
-			<script src="/home/lechen/.config/MathJax/es5/tex-chtml.js" id="MathJax-script" async></script>
-				<!-- End of MathJax Code -->
-
-																									<!-- Begin of JavaScript Code for updated date -->
-																										<!-- source: http://www.chami.com/tips/internet/041198I.html -->
-																											<script type="text/JavaScript" language="JavaScript">
-																													<!--
-	//
-	// format date as dd-mmm-yy
-	// example: 12-Jan-99
-	//
-	function date_ddmmmyy(date)
-	{
-			  var d = date.getDate();
-			  var m = date.getMonth() + 1;
-			  var y = date.getYear();
-
-			  // handle different year values
-			  // returned by IE and NS in
-			  // the year 2000.
-			  if(y >= 2000)
-				  {
-						    y -= 2000;
-						  }
-			  if(y >= 100)
-				  {
-						    y -= 100;
-						  }
-
-			  // could use splitString() here
-			  // but the following method is
-			  // more compatible
-			  var mmm =
-				    ( 1==m)?'Jan':( 2==m)?'Feb':(3==m)?'Mar':
-				    ( 4==m)?'Apr':( 5==m)?'May':(6==m)?'Jun':
-				    ( 7==m)?'Jul':( 8==m)?'Aug':(9==m)?'Sep':
-				    (10==m)?'Oct':(11==m)?'Nov':'Dec';
-
-			  return "" + (d<10?"0"+d:d) + "-" + mmm + "-" + (y<10?"0"+y:y);
-			}
-
-
-	//
-	// get last modified date of the
-	// current document.
-	//
-	function date_lastmodified()
-	{
-			  var lmd = document.lastModified;
-			  var s   = "Unknown";
-			  var d1;
-
-			  // check if we have a valid date
-			  // before proceeding
-			  if(0 != (d1=Date.parse(lmd)))
-				  {
-						    s = "" + date_ddmmmyy(new Date(d1));
-						  }
-
-			  return s;
-			}
-
-	//
-	// finally display the last modified date
-	// as DD-MMM-YY
-	//
-	document.write(
-			  "This page was updated on " +
-				date_lastmodified() );
-	// -->
-	</script>
-					for <small>Math 221 Fall 2020 at Emory</small>.
-						<!-- End of JavaScript Code for updated date -->
-
-							<title>TopPracProb</title>
-								<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		    <script type="mathjax-config">
+			      Maub.Config({ TeX: {
+			        extensions: [	"aumath.js",
+						"AMSsy",
+								"AMScd.js",
+										"colorb{R}",
+											  P: "\ma ["\left\|| #1 \right||",1]
+											      }>
+											      MathJax = {
+											        tex: {
+												    inlineMechen/.c#45;svg.js"> -->
+												    <!-- </script> -->
+		    <cript tysync -->
+		    <!--   src="https:cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_C"> -->
+		        <script src="MathJax/es5/tex-MathJax-script" async></script>
+			    <title>TopPracProb</ta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	</head>
-
-
-
 	<body>
-		    <!-- <a href="index.html">Index</a>  -->
-			    <!-- |<a href="diary/diary.html">Diary</a> | Something else -->
-				    <hr>
-					    <div class="content">
-							    
-<p>
-Here are some topology exercises that I have done:
-</p>
-
-<ol>
-<li>
-Define the cofinite topology \(\tau _{cof}\) on a set to be the collection of all sets \(U\) such that \(X \setminus U\) is finite, plus the empty set. Show this is a topology.
-	Pf. First we observe that \(X\) is in our topology by remarking that \(X \setminus X = \varnothing\), the empty set is contained trivially in \(\tau\). So we just need to check that artbitary unions and finite intersections are in the topology.Observe that if \(U,V \in \tau\), then \( (X \setminus (U \cup V) \subseteq (X \subseteq U)\) is also finite. Induct on the number of sets. For finite intersections, if \(U \cap V = Z\), then \(X \setminus Z = (X \setminus U) \cup (X \setminnus V)\) which is still finite. Induct on your number of sets and you're done.
-
-</ol>
-
-<ol>
-<li>
-Let \((X,\tau)\) be a toplogical space, and let \(Y \subseteq X\). Then the following are equivalent: 
-   (1) \(Y\) is closed.
-   (2) \(Y\) contains all of its limit points
-   (3) \(Y\) contains all of its boundary points. 
-
-</ol>
-<blockquote>
-Pf. Assuming \(Y\) contains all its boundary points, then we see that that every limit point of \(Y\) is also contained in \(Y\). Since if \(x \in Y \) is a limit point but not a boundary point, then it is an interior (trivial) or an exterior point (not possible by defn of limit point). Thus, we must conclude that \(Y\) also contains all of its limit points. Since \(Y\) contains all of its limit points.  
-</blockquote>
-	
-<p>
-<span class="todo">TODO</span>: Write down some of the more interesting (to me) problems.
-</p>
-
-								    </div>
-									<hr>
-									<center>&copy; Nacromath, Auburn, 2022. </center>
+		    <div class="content">
+			        %hr>
+	<script language="Javascript">
+		  document.write("<center>ia Vimwiki and was last modified on: " + document.lastModified +"</center>");
+		  </SCRIPT>
+		  <hr>
+		  <center>&copy; Nacromath, 2022, Auburn</center>
 	</body>
 </html>

@@ -1,260 +1,31 @@
 <html>
 	<head>
-	<link rel="Stylesheet" type="text/css" href="style.css" />
+		    <link relesheet" type="text/css" href=_path%style.css" />
 
-				<!-- Begin of MathJax Code -->
-					<!-- The following codes are for mathjax -->
-						<!-- First we include some packages. -->
-							<script type="text/x-mathjax-config">
-									  MathJax.Hub.Config({ TeX: {
-										  extensions: [	"autobold.js",
-													"AMSmath.js",
-																"AMSsymbols.js",
-																			"AMScd.js",
-																						"color.js"]
-																							  }});
-																								</script>
-																									<!-- Secondly, here are some settings -->
-																											<script>
-																														MathJax = {
-																																  tex: {
-																																		    inlineMath: [['$', '$'], ['\\(', '\\)']]
-																																		  },
-																																  svg: {
-																																		    fontCache: 'global'
-																																		  }
-																																};
-	</script>
-		<script type="text/javascript" id="MathJax-script" async
-										  <!-- src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex&#45;svg.js"> -->
-	  src="/home/lechen/.config/MathJax/es5/tex-svg.js"> </script>
-			<script src="/home/lechen/.config/MathJax/es5/tex-chtml.js" id="MathJax-script" async></script>
-				<!-- End of MathJax Code -->
-
-																									<!-- Begin of JavaScript Code for updated date -->
-																										<!-- source: http://www.chami.com/tips/internet/041198I.html -->
-																											<script type="text/JavaScript" language="JavaScript">
-																													<!--
-	//
-	// format date as dd-mmm-yy
-	// example: 12-Jan-99
-	//
-	function date_ddmmmyy(date)
-	{
-			  var d = date.getDate();
-			  var m = date.getMonth() + 1;
-			  var y = date.getYear();
-
-			  // handle different year values
-			  // returned by IE and NS in
-			  // the year 2000.
-			  if(y >= 2000)
-				  {
-						    y -= 2000;
-						  }
-			  if(y >= 100)
-				  {
-						    y -= 100;
-						  }
-
-			  // could use splitString() here
-			  // but the following method is
-			  // more compatible
-			  var mmm =
-				    ( 1==m)?'Jan':( 2==m)?'Feb':(3==m)?'Mar':
-				    ( 4==m)?'Apr':( 5==m)?'May':(6==m)?'Jun':
-				    ( 7==m)?'Jul':( 8==m)?'Aug':(9==m)?'Sep':
-				    (10==m)?'Oct':(11==m)?'Nov':'Dec';
-
-			  return "" + (d<10?"0"+d:d) + "-" + mmm + "-" + (y<10?"0"+y:y);
-			}
-
-
-	//
-	// get last modified date of the
-	// current document.
-	//
-	function date_lastmodified()
-	{
-			  var lmd = document.lastModified;
-			  var s   = "Unknown";
-			  var d1;
-
-			  // check if we have a valid date
-			  // before proceeding
-			  if(0 != (d1=Date.parse(lmd)))
-				  {
-						    s = "" + date_ddmmmyy(new Date(d1));
-						  }
-
-			  return s;
-			}
-
-	//
-	// finally display the last modified date
-	// as DD-MMM-YY
-	//
-	document.write(
-			  "This page was updated on " +
-				date_lastmodified() );
-	// -->
-	</script>
-					for <small>Math 221 Fall 2020 at Emory</small>.
-						<!-- End of JavaScript Code for updated date -->
-
-							<title>Functional Analysis Notes</title>
-								<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		    <script type="mathjax-config">
+			      Maub.Config({ TeX: {
+			        extensions: [	"aumath.js",
+						"AMSsy",
+								"AMScd.js",
+										"colorb{R}",
+											  P: "\ma ["\left\|| #1 \right||",1]
+											      }>
+											      MathJax = {
+											        tex: {
+												    inlineMechen/.c#45;svg.js"> -->
+												    <!-- </script> -->
+		    <cript tysync -->
+		    <!--   src="https:cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_C"> -->
+		        <script src="MathJax/es5/tex-MathJax-script" async></script>
+			    <title>Functional Analysis Notes</ta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	</head>
-
-
-
 	<body>
-		    <!-- <a href="index.html">Index</a>  -->
-			    <!-- |<a href="diary/diary.html">Diary</a> | Something else -->
-				    <hr>
-					    <div class="content">
-							    
-<p>
-These are my notes right now for Section 5 of Chapter 5, Hilbert Spaces. (Dated April 12, 2022)
-</p>
-
-<p>
-First we introduce the definition of an inner product. First let \(\mathcal{H}\) be a  complex vector space. An \(\textbf{inner product}\) on \(\mathcal{H}\) is a map \((x,y) \rightarrow \braket{x,y}\) from \(\mathcal{X} \times \mathcal{X} \rightarrow \mathbb{C} \) such that :
-	(i): \(\braket{ax+by,z} = a \braket{x,z} +b \braket{y,z} \) for all \(x,y,z \in \mathcal{H}\) and \(a,b \in \mathbb{C}\).
-	(ii): \(\braket{y,x} = \overline{\braket{x,y}}\) for all \(x,y \subset \mathcal{H}\)
-	(iii): \(\braket{x,x} \in (0,\infty)\) for all nonzero \(x\in \mathcal{X}\)
-</p>
-	
-<p>
-A complex vector space with an inner product is called a \(\bf{\textrm{pre-Hilbert space}}\). If \(\mathcal{H}\) is a pre-Hilbert Space, for  \(x \in \mathcal{H}\), we define \(\begin{gather*} { \|x \| = \sqrt{\braket{x,x}}} \end{gather*}\)
-</p>
-
-<p>
-\(\bf{\textrm{The Schwarz Inequality}} : \| \braket{x,y} \| \leq \|x\| \|y\|\) for all \(x,y \in \mathcal{H}\), with equality iff x and y are linearly dependent.
-</p>
-
-<p>
-\(\bf{\textrm{Proposition}}:\) The function  \(x\rightarrow \|x\|\) is a norm on \(\mathcal{H}\)  
-</p>
-
-<p>
-A pre-Hilbert space that is complete with respect to the norm \(\|x\| = \sqrt{\braket{x,x}}\) is called a \(\textrm{\bf{Hilbert Space}\). 
-</p>
-
-<p>
-\(\bf{\textrm{Proposition}:}\) If \(x_n \rightarrow x\) and \(y_n \rightarrow y\), then \(\braket{x_n,y_n} \rightarrow \braket{x,y}\)
-</p>
-
-<p>
-\(\bf{\textrm{The Parallelorgram Law}}:\) For all \(x,y \in \mathcal{H}\), \(\|x+y\|^2 + \|x-y\|^2 = 2(\|x\|^2 +\|y\|^2)\)
-</p>
-
-<p>
-If \(x,y \in \mathcal{X}\), we say that \(x\) is \(\bf{orthogonal}\) to \(y\) and write \(x \perp y\) if \(\|x,y\|=0\). If \(E\subset \mathcal{H} \) we define: \(E^{\perp}={x\in\mathcal{H} : \braket{x,y} = 0, \mathrm{for all } y\in \mathcal{H}}\)
-</p>
-
-<p>
-\(\bf{\textrm{The Pythagorean Theorem}:}\) If \(x_1,x_2,..., x_n \in \mathcal{H}\) and \(x_j \perp x_k \) for \(j\neq k\), \(\| \Sigma_{1}^{n}x_j\|^2 = \Sigma_{1}^{n} \|x_j\|^2\)
-</p>
-
-
-<p>
-\(\bf{\textrm{Theorem 5.25}:}\) If \(f \in \mathcal{H^*}\) there is a unique \(y\in \mathcal{H}\) such that \(f(x)=\braket{x,y}\) for all \(x \in X\) 
-</p>
-
-<p>
-A subset \(\{u_\alpha\}_{\alpha \in A}\) of \(\mathcal{H}\) is called \(\mathbf{orthonormal}\) if \(\|u_{\alpha} \| -1 \) for all \(\alpha\) and \(u_\alpha \perp u_\beta\) whenever \(\alpha \neq \beta\). 
-</p>
-
-<p>
-\(\bf{\textrm{Gram-Schmidt process}:}\) This is a process for converting a linearly independent sequence in a Hilbert space \(\mathcal{H}\)
-</p>
-
-<p>
-\(\bf{\textrm{Bessel's Inqeuality}}\)
-</p>
-
-<p>
-\(\bf{\textrm{Theorem 5.27}}\)
-</p>
-
-<p>
-\(\bf{\textrm{Orthonormal Basis}}\)
-</p>
-
-<p>
-\(\bf{\textrm{Proposition 5.28}}\)
-</p>
-
-<p>
-\(\bf{\textrm{Proposition 5.29}}\)
-</p>
-
-<p>
-\(\bf{\textrm{Unitary Map}}\)
-</p>
-
-<p>
-\(\bf{\textrm{Proposition 5.30}}\)
-</p>
-
-<p>
-Section 1 Chapter 6 (Dated April 14, 2022)
-</p>
-
-<p>
-First we introduce the definition of the \(L^p\) norm. Given a fixed measure space \((X,\mathcal{M},\mu)\). If \(f\) is a measureable function on \(X\) and \(0&lt;p&lt;\infty\), we define:
-</p>
-
-<p>
-\(\|f\|_p = [ \int |f|^p d\mu ]^{1/p}\)
-</p>
-
-<p>
-with the added possibility that \(\|f\|_p = \infty\). We then define:
-</p>
-
-<p>
-\(L^{p}(X, \mathal{M}, \mu) = {f: X \rightarrow \mathbb{C} : f \mathrm{is measurable and} \|f\|_p &lt; \infty}\)
-</p>
-
-<p>
-This is abbreviated by \(L^p(\mu), L^p(X), L^p\) whenever the domain is understood. 
-</p>
-
-<p>
-There are some interesting properties for the norm depending on the value of p. For example, the triangle inequality does not hold when \(0&lt;p&lt;1\). 
-</p>
-
-<p>
-Proof: Consider \(a&gt;0,b&gt;0\) and \(0&lt;p&lt;1\).
-</p>
-
-
-<p>
-(6.1-6.8)
-</p>
-
-<p>
-Next time we will start on (6.9)
-</p>
-
-<p>
-Dated (April 19, 2022 
-We've discussed 6.9 - 6.20
-</p>
-
-<p>
-Dated (April 21, 2022)
-We reviewed the things we learned on Tuesday. 
-</p>
-
-<p>
-MM: Come back later and fill this in.
-</p>
-
-								    </div>
-									<hr>
-									<center>&copy; Nacromath, Auburn, 2022. </center>
+		    <div class="content">
+			        %hr>
+	<script language="Javascript">
+		  document.write("<center>ia Vimwiki and was last modified on: " + document.lastModified +"</center>");
+		  </SCRIPT>
+		  <hr>
+		  <center>&copy; Nacromath, 2022, Auburn</center>
 	</body>
 </html>
