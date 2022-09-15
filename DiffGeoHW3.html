@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="Stylesheet" type="text/css" href="style.css">
+<title>DiffGeoHW3</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+<p>
+This is my work for homework 3. The lost sushi mob fandom. One day I will understand these cryptic titles.
+</p>
+
+
+<p>
+Problem 1: Let \(X,Y \in \mathcal{X}(M)\) be linearly independent vector fields with \([X,Y]=0\). 
+</p>
+
+<p>
+Part a: Omitted, and I forgot to copy down the exact statement of the amended question. But iirc, the statement was that if two integral curves for the same vector field only differ by a coordinate in the one direction, then they move exactly the same way differing only by a translation. Mathematically: If \(\gamma, \phi\) are integral curves for \(Y\). With \(\gamma^i ' = \phi^i '\) for \(1&lt;i\leq m\). Then \(\gamma(t) = \phi(t) +ce_1\). 
+</p>
+
+<p>
+Part b: Find coordinates where \(X = \frac{\partial}{\partial x^1}\) and \(Y = \frac{\partial}{\partialx^2}\)
+</p>
+
+<p>
+Solution: These are just the coordinate vector fields. These form a smooth global frame for \(\mathbb{R}^2\). Consider \(M = \mathbb{R}^2\). and the identity function. The derivation of the identity function at a point is \(\frac{\partial}{x^1} + \frac{\partial}{x^2} = X + Y\). 
+</p>
+
+<p>
+Part c: Do the previous problem for \(k\) linearly independent vector fields. 
+</p>
+
+<p>
+Solution: Still the coordinate vector field on \(\mathbb{R}^n\)?
+</p>
+
+<p>
+Problem 2: Prove the following
+</p>
+
+<p>
+Part a: A smooth map is a local diffeomorphism if and only if it is both an immersion and a submersion.
+</p>
+
+<p>
+Proof: \((\Rightarrow)\) Let \(F: M \rightarrow N\) be a smooth map and suppose that \(F\) is a local diffeomorphism. Then \(d_pF\) is an isomorphism of vector spaces. This means that \(d_pF\) is a bijection for all \(p \in M\). Thus it is both injective and surjective. Hence an immersion and a submersion.
+</p>
+
+<p>
+\((\Leftarrow)\) Suppose that \(d_pF\) is injective and surjective. This is the definition of a vector space isomorphism. So we are done.
+</p>
+
+<p>
+Part b: A smooth map is a diffeomorphism if and only if it is a local diffeomorphism.
+</p>
+
+<p>
+Proof: \((\Rightarrow)\) A property of differentials is that if \(F\) is a diffeomorphism, it follows that \(d_pF\) is an isomorphism (Lee 3.6). So \(F\) is a local diffeomorphism. 
+</p>
+
+<p>
+\((\Leftarrow)\) Since \(F\) is a smooth bijection, we know that \(F^{-1}\) exists and is bijective. Since \(d_pF\) is an isomorphism, we have an inverse map \((d_pF)^{-1}\) that is also an isomorphism. So then \(F^{-1}\) is also differentiable, hence smooth. Thus, \(F\) is a diffeomorphism.  
+</p>
+
+<p>
+Part c: Every diffeomorphism is an embedding.
+</p>
+
+<p>
+Proof: Let \(F:M \rightarrow N\) be a diffeomorphism. \(F\) is obviously a homeomorphism. It is an immersion from the fact that diffeomorphism induce isomorphisms on their tangent spaces. Thus, \(d_pF\) is also an immersion. Hence, \(F: M \rightarrow F(M) = N\) is an embedding.   
+</p>
+
+<p>
+Problem 3: Classify the map as an immersion, submersion, local diffeomorphism, embedding, or none of the above. Classify the image of each map as an immersed submanifold, embedded submanifold, or neither.
+</p>
+
+<p>
+Part a: \(f: \mathbb{R} \rightarrow \mathbb{S}^1, f(x)=(cos(x),sin(x))\)
+</p>
+
+<p>
+Solution: This map is a local diffeomorphism. But not a smooth embedding. Given \(x\in \mathbb{R}\), the differential of \(f\) at \(x\) is \(d_xf = (-sin(x), cos(x))\). Clearly, \(d_xf\) is not the zero matrix. We can eliminate one column, giving the result that \(d_xf\) has rank 1, which is the dimension of \(\mathbb{R}\). Hence, \(f\) is an immersion. Note, however that \(dim \mathbb{S}^1 = 1\), so then the matrix is also a surjection. Hence, \(f\) is a submersion. So we can conclude that \(\mathbb{R}\) is locally diffeomorphic to \(\mathbb{S}^1\). We can also conclude that \(f(\mathbb{R})\) is an immersed submanifold of \(\mathbb{S}^1\). However, \(f\) is not a smooth embedding. \(\mathbb{R}\) is not homeomorphic to \(\mathbb{S}^1\) due to the fact that \(\mathbb{R}\) is not compact while \(\mathbb{S}^1\) as a subset of \(\mathbb{R}^2\) is. Homeomorphisms carry compact sets to compact sets. The image, \(f(\mathbb{R})\) is an immersed submanifold but not an embedded submanifold. 
+</p>
+
+<p>
+Part b: \(f: \mathbb{R} \rightarrow \mathbb{R}^2 , f(x) = (cos(x),sin(2x))\)
+</p>
+
+<p>
+Solution: This map is not continuous at \(x = \pi\). So it is none of the above possible classifications.
+</p>
+
+<p>
+Part c: \(f: \mathbb{R} \rightarrow \mathbb{C}^2, f(x) = (e^{ix}, e^{i \pi x})\).
+</p>
+
+<p>
+Solution: The differential of \(f\) at \(x\) is \(d_xf = (ie^{ix},i \pi e^{i \pi x})\). This is a smooth immersion since \(d_xf\) does not vanish. However, \(f\) is not a homeomorphism onto its image. Further, it also not a submersion, since \(dim(\mathbb{R}) &lt; dim(\mathbb{C}^2)\). So \(f(\mathbb{R})\) is an immersed submanifold but not an embedded submanifold. 
+</p>
+
+<p>
+Part d: \(f: \mathbb{R} \rightarrow \mathbb{R}^2 , f(x) = (x^3,0)\)
+</p>
+
+<p>
+Solution: The differential of \(f\) at \(x\) is \(d_xf = (3t^2,0)\). When \(x = 0, d_xf(0)=0\). This means our derivative has rank 0. Making this not an immersion, since for \(x\neq 0\) we have that the rank of \(d_xf\) is 1. Clearly not a submersion for the previous reasons. So this map gets no alternative names. The image of this map doesn't get any either. 
+</p>
+
+<p>
+Part e: \(f: \mathbb{S}^1 \times \mathbb{S}^1 \rightarrow \mathbb{S}^1, f(z,w) = zw) \)
+</p>
+
+<p>
+Solution: The transpose of the differential of \(f\) at \(x\) is \((d_{(z,w)}f)^T = (w z)\) (here I mean w and z are separate entries). This has rank 2 when \(z,w \neq 0\) and rank 1 when one of \(z,w = 0\) whereas \(\mathbb{S}^1\) has rank 1. So this map is not an immersion. This map is also not a submersion because the points \((0,1) ,(1,0)\) map to \(0\) and so we cannot find a smooth local section of \(f\), \(\sigma\) such that \(f \opencirc \sigma = Id_{\mathbb{S}^1}\). So we conclude that this map is none of the above and the image of the map is neither an immersed submanifold or embedded submanifold.
+</p>
+
+<p>
+Part f: \(\varphi: U \rightarrow mathbb{R}^n\) for a chart \((U, \varphi)\) on \(M\)
+</p>
+
+<p>
+Solution: I'm going to assume that \(M\) is a smooth manifold. Since it wouldn't really make sense to talk about a manifold that doesn't admit a smooth structure. Since \(\varphi\) is a homeomorphism, it admits an inverse. To check that the map \(\varphi\) is smooth at any \(p \in U\), we observe that \(Id \circ \varphi \circ \varphi ^{-1} = Id : \varphi(U) \rightarrow \varphi\). This is a composition is smooth. So \(\varphi\) is a diffeomorphism, thus, the differential of \(\vaprhi\) is an isomorphism for all \(p \in U\). So this is a smooth embedding, and the image of the map an embedded submanifold. 
+</p>
+
+<p>
+Part g: \(f: \partial M \rightarrow M, f(x) = x\) for a manifold \(M\) with boundary \(\partial M\).
+</p>
+
+<p>
+Solution: This map is in fact the inclusion map. Which was shown to be an immersion and an immersed submanifold. This isn't a submersion since the dimension of the boundary is one less than the manifold's. This map is also a homeomorphism onto its image, since it is just the identity map restricted to the boundary, which is a homeomorphism.
+</p>
+
+<p>
+Problem 4: If \(S \subset M\) is an embedded \((n-k)\) dimensinoal submanifold and \(p \in S\), then there is a chart \((U, \vaprhi)\) around \(p \in M\) so that \(\varphi(S \cap U) = \{x^1, \ldots ,x^n | x^1 = \ldots = x^k = 0 \}\). Here we work in the case that \(k=1\). So let's assume that \(S\) is the hypersurface in \(M\) with coordinates \((x^1 , \ldots , x^{n-1})\)
+</p>
+
+<p>
+Part a: Consider \(S \xrightarrow{F} M \xrightarrow{\varphi} \mathbb{R}^n \xrightarrow{A} \mathbb{R}^n\). Where \(F\) is the map embedding \(S\) into \(M\). Let \(A\) be the linear transformation in \(\mathbb{R}^n\) that inverts the order of the coordinates, \(A(x_1, \ldots, x_n) = (x_n, \ldots, x_1)\). This is a smooth, invertible map. Define a new chart \((\tilde{U}, \tilde{\varphi})\) where \(\tilde{\varphi}(\tilde{U}) = A \varphi(U)\). Then for \(q \in S \cap \tilde{U}, X_q = \frac{\partial}{\partial x^1}(q) = 0 \). If we interpret this in terms of the vector field as a differential, then this means that it has rank 0 for all \(q \in S \cap \tilde{U}\). 
+</p>
+
+<p>
+Part b: 
+</p>
+
+<p>
+Suppose that there isn't such a \(\delta\) as defined in the question. Then an integral curve \(\gamma_q\) of \(X\) has that any \(q \in S \cap \tilde{U}\) satisfies \(\gamma_q((-2\delta(q),2\delta(q))) \cap S = S'\), where \(S' \subseteq S\). So then \(X\) is nonzero on this subset of \(S\). Hence, it is tangent to \(S\) at this subset.(?) If two integral curves of \(X\) do intersect, then they must be the same curve because if they are not, then we would get a situation similar to before... 
+</p>
+
+<p>
+Part c: Not really sure what to be visualizing. The upper half plane?
+</p>
+
+<p>
+Problem 5: Let \(S \subset M\) be an embedded submanifold and \(f: N \rightarrow S \subseteq M\) an embedding. We say that \(g: S \rightarrow \mathbb{R}\) is smooth if \(g \circ f : N \rightarrow \mathbb{R}\) is smooth. Show that \(g\) is smooth if and only if there is an open neighborhood \(S \subseteq U \subseteq M\) and a smooth function \(G: U \rightarrow \mathbb{R}\) so that \(g = G|_S\).
+</p>
+
+<p>
+Solution: \((\Rightarrow)\) Choose smooth charts \(\tilde{U}_\alpha \subset M\) around \(p\in S\) such that \(S \subset \cup \tilde{U}_\alpha = \tilde{U}_\alpha\) and \(S \cap \tilde{U}_\alpha = U_\alpha\). Where \(U_\alpha\) are slice charts for \(S\). We define \(G: \tilde{U} \rightarrow \mathbb{R}\) by \(G(x_1, \ldots, x_n , \ldots,  x_m) = g(x_1, \ldots , x_n)\).
+</p>
+
+<p>
+(\Leftarrow) Since \(G\) is smooth. It is smooth on its components. So \(g = G|_S\) is a smooth function. Since \(f\) is an embedding, it is diffeomorphic to its image which is equal to \(S\). So \(g \circ f\) is also smooth.
+</p>
+
+</body>
+</html>
