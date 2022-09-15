@@ -1,34 +1,215 @@
 <html>
-	<head>
-		    <link relesheet" type="text/css" href=_path%style.css" />
+<head>
+    <link rel="Stylesheet" type="text/css" href="style.css" />
 
-		    <script type="mathjax-config">
-			      Maub.Config({ TeX: {
-			        extensions: [	"aumath.js",
-						"AMSsy",
-								"AMScd.js",
-										"colorb{R}",
-											  P: "\ma ["\left\|| #1 \right||",1]
-											      }>
-											      MathJax = {
-											        tex: {
-												    inlineMechen/.c#45;svg.js"> -->
-												    <!-- </script> -->
-		    <cript tysync -->
-		    <!--   src="https:cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_C"> -->
-		        <script src="MathJax/es5/tex-MathJax-script" async></script>
-	 <script src="MathJax/es5/tex-chtml.js" id="MathJax-script" async></script>
-		    <title>ProbabilityHW1</title>
-			    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	</head>
-	<body>
-		    <div class="content">
-			        %hr>
-	<script language="Javascript">
-		  document.write("<center>ia Vimwiki and was last modified on: " + document.lastModified +"</center>");
-		  </SCRIPT>
-		  <hr>
-		  <center>&copy; Nacromath, 2022, Auburn</center>
-	</body>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({ TeX: {
+  extensions: [	"autobold.js",
+  		"AMSmath.js",
+		"AMSsymbols.js",
+		"AMScd.js",
+		"color.js"]
+    Macros: {
+	  R: "\mathbb{R}",
+	  P: "\mathbb{P}",
+	  Norm: ["\left\|| #1 \right||",1]
+    }
+  }});
+</script>
+<script>
+MathJax = {
+  tex: {
+    inlineMath: [['$', '$'], ['\\(', '\\)']]
+  },
+  svg: {
+    fontCache: 'global'
+  }
+};
+</script>
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+    <title>ProbabilityHW1</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head>
+<body>
+    <div class="content">
+    
+<p>
+This is from Section 1 of Chapter 1
+</p>
+
+<p>
+Problem 1.1 a)
+</p>
+
+<p>
+Solution: Following the hint, we saw that for the case where we had only 2 possible events with probability \(\frac{1}{2}\) that a point in our discrete space, \(\omega\), is in the intersection of 1 of 4 possible different events. Proceeding by induction, for any n, \(\omega\) lies in one of the \(2^n\) possible configurations of intersections of our event spaces. i.e. \(P(\omega | \omega \textrm{ lies in one of the configuration spaces}) = \frac{1}{2^n}\). So then as \(n \rightarrow \infty, P(\omega) = 0\). Thus making our space not discrete
+</p>
+
+<p>
+Problem 1.1 b)
+</p>
+
+<p>
+Solution: Following the hint, the probability of the intersection of n events from \(\{A_n \}\) or \(\{A_n^c\}\) is less than \((1-p_n)^n\). But as \(n \rightarrow \infty\), \((1-p_n)^n \rightarrow 0\). Which would make our space not discrete.
+</p>
+
+<p>
+Problem 1.2
+</p>
+
+<p>
+Solution: It is known that the rational numbers are not normal. Since the base-2 expansion of any such number terminates with infinitely many 0's or it is a repeating sequence of digits not satisfying the definition of normal. However, the rationals are dense in \((0,1]\). So any open set \(U\) in \((0,1]\) intersects \(\mathbb{Q} \cap (0,1]\). Thus including an element of \(N^c\). So \(N^c\) is dense in \((0,1]\). 
+</p>
+
+<p>
+Consider \(N^c \cap U\) for some open set \(U \subseteq (0,1]\). Since \(N^c\) is negligible. We can find some collection \(I_j\) such that \(N^c \cap U \subset \Cup I_j \subseteq U\). Note that \((\Cup I_j)^c\) is  Then \((\Cup I_j)^c \cap U \subset U\) contains normal numbers. So for any subset \(U\), we have some element of \(N\)
+</p>
+
+<p>
+Problem 1.3 a)
+</p>
+
+<p>
+Solution: If \(A\) is trifling, then \(\forall \epsilon &gt; 0\), there exists a finite collection of intevals \(I_k\) such that \(A\subset \cup_k I_k, \sum_k |I_k| &lt; \epsilon\). The definition of negligible allows the collection of the \(I_k\)'s to be countable OR finite. Thus, \(A\) is also negligible. 
+</p>
+
+<p>
+Problem 1.3 b)
+</p>
+
+<p>
+Solution: Let \(A\) be a trifling set. So \(\forall \epsilon &gt; 0\) there exists a finite sequence of intevals \(I_k\) such that \(\sum |I_k| &lt; \epsilon\). Then \(\forall x \in \partial A, J_x= \cap_{k=1}^n (x- \frac{\epsilon}{2^k}, x]\) is negligible. Then, for any \(\epsilon &gt; 0 \), we can choose our \(I_k\) such that their sum is \(\leq \epsilon - \frac{\epsilon}{2^k}\) and we choose our \(J_x\) so that their length is less than \(\frac{\epsilon}{2^k}\). Combining the two trifling sets of \(A\) and \(\partial A\), we find that the closure \((= A \cup \partial A)\) is covered by \((\cup I_k) \cup (\cup J_x)\) where \(\sum |I_k| + \sum |J_x| &lt; \\epsilon - \frac{\epsilon}{2^k} + \frac{\epsilon}{2^k} = \epsilon\). So, the closure of a trifling set is also trifling.
+</p>
+
+<p>
+Problem 1.3 c)
+</p>
+
+<p>
+Solution: Consider the set \(A = \mathbb{Q} \cap [0,1]\). This is bounded and negligible. But it is not trifling. We need a countable number of intervals to cover \(A\). 
+</p>
+
+<p>
+Problem 1.3 d)
+</p>
+
+<p>
+Solution: Consider the set of rational numbers, \(\mathbb{Q}\). This is a negligble set. But the closure of this is \(\mathbb{R}\) a nonneglibile set.
+</p>
+
+<p>
+Problem 1.3 e)
+</p>
+
+<p>
+Solution: In the case of finite unions. This is obvious. Say that we have a union of \(n\) trifling sets. For any \(\epsilon &gt; 0\), we can force the trifling sets to be covered by collections of intervals \(\{I_{k_n}\}\) with the property that \(\sum |I_{k_n}| &lt; \frac{\epsilon}{n+1}\). Then, the union of the collection of intervals is finite, with a sum that is less than \(\epsilon\). To see how this fails for countable unions of triflin sets. Consider the following: We know that singletons are trifling sets. So if we take the countable union of singletons \(\{x\}\) such that \(x \in \mathbb{Q} \cap [0,1]\). This union is in fact the whole set \(\mathbb{Q} \cap [0,1]\) which we pointed out earlier was not trifling. 
+</p>
+
+<p>
+Problem 1.5 a) (I solve part b first so that I can use it in this part)
+</p>
+
+<p>
+Solution: To see why the cantor set is negligible. Upon the first step / removal of the middle third interval. We see that the length of the intervals being removed is \(\frac{1}{3}\). Removing the next middle thirds results in removing two intervals of length \(\frac{1}{3^2}\), and so on. Adding together the succesive removed intervals gives us the summation: \(\frac{1}{3} + 2 \frac{1}{3^2} + 4 \frac{1}{3^3} + \ldots = \sum_{k=0}^\infty 2^n \frac{1}{3^{n+1}} = 1.\) I.e. This set has length 0 as we let \(n\rightarrow \infty\). So given any \(\epsilon &gt; 0\), we simply have to pick an \(n\) large enough so that when we remove enough intervals from the unit interval, the remaining intervals have length less than \(\epsilon\). These would be finite intervals too since we can always stop at step \(n\) and have \(2^n\) intervals to cover. 
+</p>
+
+<p>
+To see why the cantor set is uncountable. Assume for the sake of contradiction that the cantor set is countable. Then we could write all the elements of \(C\) as a set of elements in an unordered list, wherein we index the numbers by the natural numbers. We have the each \(x_i \in C\) can be written as \(x_i = 0.d_1 ^i d_2 ^i d_3 ^i \ldots\) where \(d_i = \{0,2\}\). The upper index indicates what number on our unordered list this element corresponds to. However, if we consider the element \(x = 0. d_{c1} ^ 1 d_{c2} ^2 d_{c3} ^3 \ldots\). Where \(d_{ci} = 0\) if \(d_i ^i =2\) and \(d_{ci} = 2\) if \(d_i ^i = 0\). This is not represented anywhere on our list. Since it always differs from any element on our list at the \(i\)th coordinate. This is clearly an element of \(C\). But \(x\) does not appear anywhere on our list, contradicting the fact that \(C\) is countable. So then \(C\) has to be uncountable. 
+</p>
+
+<p>
+Problem 1.5 b)
+</p>
+
+<p>
+Solution: Let \(C_n\) denote the unit interval after the \(nth\) removal of a middle third set. It should be clear that \(C_n\) is a closed set, since we remove the open set that is the middle third. Leaving us with \(2^n\) closed intervals of length \(3^{-n}\). We want to show \(\cap C_n = \overline{A_3(1)}\). Note that \(\overline{A_3(1)}\) contains elements which have 
+</p>
+
+<p>
+Problem 1.5 c)
+</p>
+
+<p>
+Solution: First we make the observation that the intersection of closed sets is closed. Thus, \(C\) is also closed. Given any \(x \in C\) we can always find a sequence of points \(x_n \in C\) that converge by having \(x_n\) be in the \(n\)th subdivision of \(C_n\) containing \(x\). 
+</p>
+
+<p>
+Problem 1.7)
+</p>
+
+<p>
+Solution: In the case where \(n=2\). \(\begin{align*} \int_0 ^{1}{2} exp(-ia_1 + ia_2r_2(\omega)) d\omega + \int_{\frac{1}{2}}^1 exp(ia_1 + ia_2r_2(\omega)) d\omega &amp;= \frac{1}{4} (exp (-i(a_1+a_2) ) + exp(-i(a_1 -a_2))) + \frac{1}{4}(exp(i(a_1-a_2) + exp(i(a_1+a_2))) \\ &amp;= \prod _{n=1}^2 \frac{(exp(ia_n) +exp(-ia_n))}{2} = \prod_{n=1}^2 cos(a_n) \end{align*}\)
+</p>
+
+<p>
+In the case for arbitrary \(n\),  we integrate over all the possible \(\omega\) in \([0,1]\). So \(\begin{equation} \int_0 ^{\frac{1}{2^{n-1}}} exp(i((a_1)(-1)+a_2(-1)+ \ldots +a_nr_n(\omega))) d\omega + \ldots + \int_{\frac{2^{n-1}-1}{2^n-1}}^1 exp(i(a_1(1) +a_2(1) + \ldots + a_nr_n(\omega))) d\omega \end{equation}\). Which is equal to \(\prod_{k=1}^n \frac{e^{ia_k} +e^{-ia_k}}{2} = \prod_{k=1}{n} cos(a_k)\).
+</p>
+
+<p>
+Next, if we take \(a_k = t2^{-k}\) and \(\sum _{k=1}^{\infty} r_k(\omega)2^{-k} = 2\omega -1\). We see \(\prod_{k=1}^{\infty} cos(a_k) = \int_0 ^{1} exp(i \sum_{k=1}^\infty a_k r_k(\omega)) d\omega = \int_0 ^1 exp(i \sum_{k=1}^\infty \frac{tr_k(\omega)}{2^k} )d\omega\). Where we evaluate this as \(\int _0 ^1 exp(it(2\omega -1)) d\omega = (\frac{exp(it(2\omega -1))}{2i})|_{0}^1 = \frac{exp(it)}{2it} - \frac{exp(-it)}{2it} = \frac{1}{t} \frac{exp(it) - exp(-it)}{2i} = \frac{sin(t)}{t}\)
+</p>
+
+<p>
+Thus \(\frac{sin(t)}{t} = \prod_{k=1}{\infty} cos(\frac{t}{2^k})\).
+</p>
+
+<p>
+When we set \(t = \frac{\pi}{2}\). We get that \(\frac{sin(\frac{\pi}{2})}{\frac{\pi}{2}} = \frac{2}{\pi} = \prod_{k=1}^{\infty} cos(\frac{\frac{\pi}{2}}{2^k}) = \prod_{k=1}{\infty}cos(\frac{\pi}{2^{k+1}})\).
+</p>
+
+<p>
+We can then use the identity that \(cos(\frac{\pi}{2^{k+1}}) = \sqrt{\frac{1+cos(\frac{\pi}{2^k})}{2}}\) to derive \(\prod_{k=1}^\infty cos(\frac{\pi}{2^{k+1}}) = \sqrt{\frac{1+ cos(\frac{\pi}{2})}{2}} \sqrt{\frac{1+cos(\frac{\pi}{2^2})}{2}} \ldots = \frac{\sqrt{2}}{2} \frac{\sqrt{2 + \sqrt{2}}}{2} \ldots\)
+</p>
+
+<p>
+Problem 1.8)
+</p>
+
+<p>
+Solution: This problem reduces to showing that there is for \(\epsilon &lt; \frac{1}{2}\) there is no one \(n_0(\epsilon, \omega)\) such that for all \(n &gt; n_0(\epsilon, \omega0)\), \(| \frac{2\sum d_i(\omega) - n}{2n} | &lt; \epsilon\). Suppose there was such a \(n_0(\epsilon, \omega)\). Letting \(\epsilon = \frac{1}{n_0(\epsilon, \omega) + 2}\) we see that \(| \frac{2\sum d_i(\omega) - n_0(\epsilon, \omega) -1}{2n_0(\epsilon,\omega)+2} | &lt; \epsilon\). This won't be less than \(\epsilon\) since the top part of the fraction can not be more than \(|n_0(\epsilon, \omega) +1|\).
+</p>
+
+<p>
+Problem 1.9 a)
+</p>
+
+<p>
+Solution: Suppose we have a trifling set \(A \subset \mathbb{R}\). Let \(U\) be an open set in \(\mathbb{R}\). Then, since \(A\) is trifling. We can take arbitrarily smaller finite intervals \(I_k\) whose sum is less than any \(\epsilon &gt;0\). Thereby increasing the size of any interval between two such \(I_k\). This is a subset of the compliment of \(A\). Then \(U\) will intersect \(A^c\) as \(\epsilon \rightarrow 0\).
+</p>
+
+<p>
+Problem 1.9 b)
+</p>
+
+<p>
+Solution:
+</p>
+
+<p>
+Problem 1.9 c)
+</p>
+
+<p>
+Solution: Suppose we have a compact negligble set, \(A\). Because it is compact, it is closed and bounded. Since closed intervals are not negligble. It must be the case that \(A\) consists of only points. Meanining it is a discrete set. However, since \(A\) is compact. Then it must be the case that \(A\) is also finite. We already proved that any finite set is trifling. Thus, \(A\) is trifling too. 
+</p>
+
+
+<p>
+Problem 1.11 a)
+</p>
+
+<p>
+Solution attempt: Observe that \(|\frac{a}{b} - \frac{p}{q} | = | \frac{aq -bp}{bq} | \geq \frac{1}{bq}\). The original statement of the problem argues that \(\frac{a}{b}\) should always lie somewhere in \((- \frac{pq-1}{q^2} , \frac{pq-1}{q^2})\) for infinitely many \(\frac{p}{q}\). But the previous inequality tells us that \(|\frac{a}{b} - \frac{p}{q}|\) lies in an interval of size at most \(\frac{1}{bq}\). So there is a finite number of \(p ,q \) where our inequality holds in this interval.
+</p>
+
+    </div>
+<hr>
+<script language="Javascript">
+  document.write("<center>This page was created via Vimwiki and was last modified on: " + document.lastModified +"</center>");
+</SCRIPT>
+<hr>
+<center>&copy; Nacromath, 2022, Auburn</center>
+</body>
 </html>
-

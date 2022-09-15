@@ -1,34 +1,69 @@
 <html>
-	<head>
-		    <link relesheet" type="text/css" href=_path%style.css" />
+<head>
+    <link rel="Stylesheet" type="text/css" href="style.css" />
 
-		    <script type="mathjax-config">
-			      Maub.Config({ TeX: {
-			        extensions: [	"aumath.js",
-						"AMSsy",
-								"AMScd.js",
-										"colorb{R}",
-											  P: "\ma ["\left\|| #1 \right||",1]
-											      }>
-											      MathJax = {
-											        tex: {
-												    inlineMechen/.c#45;svg.js"> -->
-												    <!-- </script> -->
-		    <cript tysync -->
-		    <!--   src="https:cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_C"> -->
-		        <script src="MathJax/es5/tex-MathJax-script" async></script>
-	 <script src="MathJax/es5/tex-chtml.js" id="MathJax-script" async></script>
-		    <title>Homework 5</title>
-			    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	</head>
-	<body>
-		    <div class="content">
-			        %hr>
-	<script language="Javascript">
-		  document.write("<center>ia Vimwiki and was last modified on: " + document.lastModified +"</center>");
-		  </SCRIPT>
-		  <hr>
-		  <center>&copy; Nacromath, 2022, Auburn</center>
-	</body>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({ TeX: {
+  extensions: [	"autobold.js",
+  		"AMSmath.js",
+		"AMSsymbols.js",
+		"AMScd.js",
+		"color.js"]
+    Macros: {
+	  R: "\mathbb{R}",
+	  P: "\mathbb{P}",
+	  Norm: ["\left\|| #1 \right||",1]
+    }
+  }});
+</script>
+<script>
+MathJax = {
+  tex: {
+    inlineMath: [['$', '$'], ['\\(', '\\)']]
+  },
+  svg: {
+    fontCache: 'global'
+  }
+};
+</script>
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+    <title>Homework 5</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head>
+<body>
+    <div class="content">
+    
+<p>
+Here is homework 5 questions.
+</p>
+
+<ol>
+<li>
+What is the correspondence between group representations and modules over the group ring.
+
+<li>
+Let G be a finite group of order n the free \C[G]-Module of rank 1 determines an n-dimensional represntation of G. Called the regular representation of G. Write this rep. down in the form of a homomorphism \rho : G \rightarrow GL(V), where V is a vector space of dimension n.
+
+<li>
+Let S_n denote the symmetric group on n elements and let V be a vector space of dimension n equppied with a basis e_1,...,e_n. 
+   	(a) Prove the map \rho : S_ \rightarrow GL(V) given by $\(\rho(g)(\Sum _{i=1}^{n}z_i e_i) =(\Sum _{i=1}^{n}z_i e_i)\)$
+	(b) Show that \rho is injective. When a representation is injective, it is called faithful. What does faithfullness mean in terms of \C[G]-Modules?
+	(c) Find a nontrivial, G-invariant subspace of V.
+
+</ol>
+	
+<p>
+	Solutions are here <a href="ALGSP22HW5.html">ALGSP22HW5</a>
+</p>
+
+    </div>
+<hr>
+<script language="Javascript">
+  document.write("<center>This page was created via Vimwiki and was last modified on: " + document.lastModified +"</center>");
+</SCRIPT>
+<hr>
+<center>&copy; Nacromath, 2022, Auburn</center>
+</body>
 </html>
-
