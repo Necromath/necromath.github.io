@@ -1,0 +1,139 @@
+<html>
+<head>
+<meta name="robots" content="noindex">
+<link rel="Stylesheet" type="text/css" href="style.css" />
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({ TeX: {
+    extensions: [	"autobold.js",
+		"AMSmath.js",
+		"AMSsymbols.js",
+		"AMScd.js",
+		"color.js"]
+    Macros: {
+	  R: "\mathbb{R}",
+	  P: "\mathbb{P}",
+	  Norm: ["\left\|| #1 \right||",1]
+    }
+  }});
+</script>
+<script>
+MathJax = {
+  tex: {
+    inlineMath: [['$', '$'], ['\\(', '\\)']]
+  },
+  svg: {
+    fontCache: 'global'
+  }
+};
+</script>
+<script type="text/javascript" id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex&#45;svg.js">
+</script>
+    <script src="/home/lechen/.config/MathJax/es5/tex-chtml.js" id="MathJax-script" async></script>
+    <title>DiffGeoHW4</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head>
+<body>
+    <a href="index.html">Index</a>
+    <!-- <!&#45;&#45; |<a href="diary/diary.html">Diary</a> | Something else &#45;&#45;> -->
+    <!-- <hr> -->
+    <div class="content">
+    
+<p>
+This is for "Trouble, send CV"
+</p>
+
+
+<p>
+Problem 1:
+</p>
+
+<p>
+Part a: Show that \(T\mathbb{S}^1\) is a trivial bundle, but that \(T \mathbb{S}^2\) is not trivial.
+</p>
+
+<p>
+Proof: To see why \(T \mathbb{S}^1\) is trivial. 
+</p>
+
+<p>
+To see why \(T \mathbb{S}^2\) is not trivial. A global trivialization would mean that there is a global section of the tangent space, i.e. we can give assign a nontrivial tangent vector to every point on the manifold. This is vector field that is nonvanishing at every point on \(\mathbb{S}^2\). Which is a contradiction of the Hairy Ball theorem. Thus, \(T \mathbb{S}^2\) is not a trivial bundle.
+</p>
+
+<p>
+Part b: Viewing \(\mathbb{S}^2 \subset \mathbb{R}^3\) as an embedded submanifold, let \(N \mathbb{S}^2\) be the orthogonal complement to \(T\mathbb{S}^2\) inside \(T\mathbb{R}^3\). Show that \(N\mathbb{S}^2\) is a trivial bundle.
+</p>
+
+<p>
+Proof: The normal vector to a point \(p \in \mathbb{S}^2\) is the vector pointing radially outward, set at \(p\). Passing it to \(\{p\} \times \mathbb{R}^3\), the vector is exactly the one at the origin that points to \(p\).
+</p>
+
+<p>
+Part c: For a smooth manifold \(M\), show that \(T^*M\) is trivial if and only if \(TM\) is trivial.
+</p>
+
+<p>
+Proof: If any one of them is trivial, then there is a global frame. By 
+</p>
+
+<p>
+Problem 2:
+</p>
+
+<p>
+Part a: Show that \(f \in \mathcal{J}_p ^2\) if and only if in any smooth local coordinates, its first order Taylor expansion at \(p\) is zero.
+</p>
+
+<p>
+Proof:
+</p>
+
+<p>
+Part b: Define a map \(\Phi : \mathcal{J}_p \rightarrow T^*_pM\) by setting \(\Phi(f) = d_p f\). Show that the restriction of \(\Phi\) to \(\mathcal{J}_p ^2\) is zero, and that \(\Phi\) descends to a vector space isomorphism from \(\mathcal{J}_p / \mathcal{J}_p ^2\) to \(T^* _p M\).
+</p>
+
+<p>
+Proof:
+</p>
+
+<p>
+Problem 3: If \(F: M \rightarrow N\) is a smooth map and \(\eta \in \mathfrak{X}^* (N)\) is a covector field on \(N\), then for all curves \(\gamma: J \rightarrow M\). \(\begin{equation} \int_{\gamma} F^* \eta = \int_{F \circ \gamma} \eta \end{equation}\).
+</p>
+
+<p>
+Proof:
+</p>
+
+<p>
+Problem 4: Let \(f: M \rightarrow \mathbb{R}\) be a smooth function, \(S \subset M\) an embedded submanifold, and \(\iota : S \rightarrow M\) the inclusion/embedding. Show that \(d(f|_S) = \iota ^*(df)\). Conclude that \(\iota ^*(df) \equiv 0\) if and only if \(f\) is constant on each component of \(S\), and that if \(f|_S\) has a local maximum or minimum at \(p \in S\), then \(\iota ^* (d_pf) = 0 \).
+</p>
+
+<p>
+Proof:For the first equality, observe that \(\iota^* df_p(v) = df_p(di_p(v)) = df_p(v) = d(f|_S)\). 
+</p>
+
+<p>
+Next, if \(\iota^*(df) \equiv 0\), then \(df_p(v) = \frac{\partial f}{\partial x^i} \frac{\partial}{\partial x} |_{f(p)} = 0\) for all \(p \in S\). Since \(\frac{\partial f}{\partial x^i} = 0\) only when \(f\) is a constant function. Hence, \(f\) is constant on every point of \(S\) and so it is also constant on every component. In the other direction, if \(f\) is constant on each component of \(S\), then \(df|_S : T_pS \rightarrow \mathbb{R}\) is the zero map. So \(df_p(v) = df_p(d\iota_p(v)) = i^*df_p(v)\) still maps to zero. I.e. \(\iota^*(df) \equiv 0\). 
+</p>
+
+<p>
+Finally, if \(f|_S\) has a local min or max at \(p \in S\). This corresponds to the fact that the differential of \(f\) at \(p\) is zero. So, \(0 = df_p(v) = df_p(di_p(v)) = \iota^* df_p(v)\). 
+</p>
+
+<p>
+Problem 5: Let \(M\) be a smooth manifold and \(S \subset M\) an embedded submanifold of codimension \(k\). Let \(f\ \in C^{\infty}(M)\), and suppose that \(f|_S\) attains a local maximum or minimum at \(p\in S\). If \(\Phi = (\Phi_1, \ldots, \Phi_k) : U \rightarrow \mathbb{R}^k\) is a local defining function of \(S\) in a neighborhood \(U\) of \(p\) (meaning \(S \cap U = \Phi^{-1}(0)\)). Show that there are real numbers \(\lambda_1, \ldots, \lambda_k\) such that \(\begin{equation} d_pf = \lambda_1 d_p \Phi ^1 + \ldots + \lambda_k d_p \Phi ^k \end{equation}\).
+</p>
+
+<p>
+Proof:
+</p>
+
+    </div>
+<hr>
+<script language="Javascript">
+document.write("This page was powered by Vimwiki and was last modified on: " + document.lastModified +"");
+</SCRIPT>
+<hr>
+<center>&copy; Nacromath, 2022, Auburn</center>
+</body>
+</html>

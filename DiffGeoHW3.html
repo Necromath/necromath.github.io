@@ -49,11 +49,11 @@ Problem 1: Let \(X,Y \in \mathcal{X}(M)\) be linearly independent vector fields 
 </p>
 
 <p>
-Part a: Omitted, and I forgot to copy down the exact statement of the amended question. But iirc, the statement was that if two integral curves for the same vector field only differ by a coordinate in the one direction, then they move exactly the same way differing only by a translation. Mathematically: If \(\gamma, \phi\) are integral curves for \(Y\). With \(\gamma^i ' = \phi^i '\) for \(1&lt;i\leq m\). Then \(\gamma(t) = \phi(t) +ce_1\). 
+Part a: Omitted, and I forgot to copy down the exact statement of the amended question. But iirc, the statement was that if two integral curves for the same vector field only differ by a coordinate in the one direction, then they move exactly the same way differing only by a translation. Mathematically: If \(\gamma, \phi\) are integral curves for \(Y\). With \((\gamma^i) ^{'} = (\phi^{i})^{'}\) for \(1&lt;i\leq m\). Then \(\gamma(t) = \phi(t) +ce_1\). 
 </p>
 
 <p>
-Part b: Find coordinates where \(X = \frac{\partial}{\partial x^1}\) and \(Y = \frac{\partial}{\partialx^2}\)
+Part b: Find coordinates where \(X = \frac{\partial}{\partial x^1}\) and \(Y = \frac{\partial}{\partial x^2}\)
 </p>
 
 <p>
@@ -145,15 +145,15 @@ Part e: \(f: \mathbb{S}^1 \times \mathbb{S}^1 \rightarrow \mathbb{S}^1, f(z,w) =
 </p>
 
 <p>
-Solution: The transpose of the differential of \(f\) at \(x\) is \((d_{(z,w)}f)^T = (w z)\) (here I mean w and z are separate entries). This has rank 2 when \(z,w \neq 0\) and rank 1 when one of \(z,w = 0\) whereas \(\mathbb{S}^1\) has rank 1. So this map is not an immersion. This map is also not a submersion because the points \((0,1) ,(1,0)\) map to \(0\) and so we cannot find a smooth local section of \(f\), \(\sigma\) such that \(f \opencirc \sigma = Id_{\mathbb{S}^1}\). So we conclude that this map is none of the above and the image of the map is neither an immersed submanifold or embedded submanifold.
+Solution: The transpose of the differential of \(f\) at \(x\) is \((d_{(z,w)}f)^T = (w z)\) (here I mean w and z are separate entries). This has rank 2 when \(z,w \neq 0\) and rank 1 when one of \(z,w = 0\) whereas \(\mathbb{S}^1\) has rank 1. So this map is not an immersion. This map is also not a submersion because the points \((0,1) ,(1,0)\) map to \(0\) and so we cannot find a smooth local section of \(f\), \(\sigma\) such that \(f \circ \sigma = Id_{\mathbb{S}^1}\). So we conclude that this map is none of the above and the image of the map is neither an immersed submanifold or embedded submanifold.
 </p>
 
 <p>
-Part f: \(\varphi: U \rightarrow mathbb{R}^n\) for a chart \((U, \varphi)\) on \(M\)
+Part f: \(\varphi: U \rightarrow \mathbb{R}^n \) for a chart \((U, \varphi)\) on \(M\)
 </p>
 
 <p>
-Solution: I'm going to assume that \(M\) is a smooth manifold. Since it wouldn't really make sense to talk about a manifold that doesn't admit a smooth structure. Since \(\varphi\) is a homeomorphism, it admits an inverse. To check that the map \(\varphi\) is smooth at any \(p \in U\), we observe that \(Id \circ \varphi \circ \varphi ^{-1} = Id : \varphi(U) \rightarrow \varphi\). This is a composition is smooth. So \(\varphi\) is a diffeomorphism, thus, the differential of \(\vaprhi\) is an isomorphism for all \(p \in U\). So this is a smooth embedding, and the image of the map an embedded submanifold. 
+Solution: I'm going to assume that \(M\) is a smooth manifold. Since it wouldn't really make sense to talk about a manifold that doesn't admit a smooth structure. Since \(\varphi\) is a homeomorphism, it admits an inverse. To check that the map \(\varphi\) is smooth at any \(p \in U\), we observe that \(Id \circ \varphi \circ \varphi ^{-1} = Id : \varphi(U) \rightarrow \varphi\). This is a composition is smooth. So \(\varphi\) is a diffeomorphism, thus, the differential of \(\varphi\) is an isomorphism for all \(p \in U\). So this is a smooth embedding, and the image of the map an embedded submanifold. 
 </p>
 
 <p>
@@ -165,7 +165,7 @@ Solution: This map is in fact the inclusion map. Which was shown to be an immers
 </p>
 
 <p>
-Problem 4: If \(S \subset M\) is an embedded \((n-k)\) dimensinoal submanifold and \(p \in S\), then there is a chart \((U, \vaprhi)\) around \(p \in M\) so that \(\varphi(S \cap U) = \{x^1, \ldots ,x^n | x^1 = \ldots = x^k = 0 \}\). Here we work in the case that \(k=1\). So let's assume that \(S\) is the hypersurface in \(M\) with coordinates \((x^1 , \ldots , x^{n-1})\)
+Problem 4: If \(S \subset M\) is an embedded \((n-k)\) dimensinoal submanifold and \(p \in S\), then there is a chart \((U, \varphi)\) around \(p \in M\) so that \(\varphi(S \cap U) = \{x^1, \ldots ,x^n | x^1 = \ldots = x^k = 0 \}\). Here we work in the case that \(k=1\). So let's assume that \(S\) is the hypersurface in \(M\) with coordinates \((x^1 , \ldots , x^{n-1})\)
 </p>
 
 <p>

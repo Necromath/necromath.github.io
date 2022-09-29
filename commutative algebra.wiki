@@ -3,3 +3,7 @@ Here are some solutions to exercises from Atiyah-Mcdonald:
 [[CommAlgHW1]]
 
 [[CommAlgHW2]]
+
+[[CommAlgHW3]]
+
+[[CommAlgHW4]]

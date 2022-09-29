@@ -1,0 +1,22 @@
+This is my solution to problems 1,4,5 and 14 in Atiyah Mcdonald 
+
+Problem 1: Let $S$ be a multiplicatively closed subset of a ring $A$, and let $M$ be a finitely generated $A$-module. Prove that $S^{-1}M=0$ if and only if there exists $s \in S$ such that $sM = 0$
+
+Solution: $(\Rightarrow)$ Let $M$ be a finitely generated $A$ module. With elements $b_1 , \ldots, b_n$ as the generators of $M$ and suppose that $S^{-1}M = 0$. Then for any $b_i$, we have that $\frac{b_i}{1} = \frac{0}{1}$ in $S^{-1}M$. Hence, there exists an elements $u_i \in S$ such that $(b_i - 0)u_i=0$. If we take the collection of these such $u_i$, then for any element $m \in M$, we can express it as the sum $m = \sum h_i b_i$, where $h_i \in M$. Taking the product of the corresponding $u_i$'s, call it $u$. We see that $0 = um = u(1m - 1\dot 0)$. The necessary form for an element of $S^{-1}M$. Thus, $\frac{m}{1} = \frac{0}{1}$ for any $m \in M$ 
+
+In the other direction, suppose that $sM = 0 $ for some $s \in S$. Then for any $\frac{m}{u} \ in S^{-1}M$ we have that $s(m- u\dot 0)=sm=0$. So, $\frac{m}{u} = \frac{0}{1}$ in $S^{-1}M$.
+
+Problem 4: Let $f : A \rightarrow B$ be a homomorphism of rings and let $S$ be a multaplicatively closed subset of $A$. Let $T = f(S)$. Show that $S^{-1}B$ and $T^{-1}B$ are isomorphic as $S^{-1}A modules$
+
+Solution: Let $f: S^{-1}B \rightarrow T^{-1}B$ send $\frac{b}{s} \rightarrow \frac{b}{f(s)}$ and let $g: T^{-1}B \rightarrow S^{-1}B$ send $\frac{b}{t} \rightarrow \frac{b}{f(t)^{-1}}$. Then we see that $g \circ f (\frac{b}{s}) = g ( \frac{b}{f(s)} ) = \frac{b}{f(f(s))^{-1}} = \frac{b}{s}$ for any $\frac{b}{s} \in S^{-1}B$. Thus, this is an isomorphism. 
+
+Problem 5: Let $A$ be a ring. Suppose that for each prime ideal $\mathfrak{p}$, the local ring $A_{\mathfrak{p}$ has no nilpotent element $\neq 0$. Show that $A$ has no nilpotent element $\neq 0$. If each $A_\mathfrak{p}$ is an integral domain, is $A$ necessarily an integral domain?
+
+Solution: From one of the corrolaries in the book, the nilradical, $N$, of $A_p$ is exactly $N_p = \{ \frac{h}{n} | h \in \mathfrak{p}, n \in N \}$. But $N_p = 0$ for any prime ideal $\mathfrak{p}$, then we can conclude that $N =0$ from another previous corrolary. For a counterexample, consider the ring $(\mathbb{Z} / 2 \mathbb{Z}) \times (\mathbb{Z} /2 \mathbb{Z})$. The localization of this ring at its prime ideals is exactly $\mathbb{Z} / 2 \mathbb{Z}$. However, we also have that $(1,0) * (0,1) = 0$. So this is not an integral domain.
+
+Problem 14: Let $M$ be an $A$-module and $a$ an ideal of $A$. Suppose that $M_m = 0$for all maximal ideals $m \supseteq a$. Prove that $M = \mathfrak{a}M$.
+
+Solution: Since $M_m = 0$, we can write it as $ 0 = M_m / (aM)_m \cong (M / aM)_m$ by a previous corrolary (3.4). This is then isomorphic to $ A_m \otimes_A (M / aM) $ by corrolary (3.5). If we consider the element $\frac{x}{p} \otimes m \in A_m \otimes M/aM$, where $p \in A \setminus m$. This element is equal to $\frac{1}{p} \otimes xm = 0$. This means that $(A / a)_m \otimes_{A /a} M /aM = 0$. This is because we are using fewer elements in $A/a$. (3.5) Tells us that we can write $(M/aM)_{m/a} \cong (A/a)_{m/a} \otimes _{A/a} M/aM$. It follows then that $(A / a)_m$ and $(A/a)_{m/a}$ are isomorphic since $(A/a)_m \otimes_{A/a} M/aM = 0 = (A/a)_{m/a} \otimes_{A /a} M/aM$. Since we have a correspondence between maximal ideals $m \supseteq a$ and maximal ideals $m' \subseteq A/a$, the localization of $M/aM$ at a maximal ideal of $A/a$ is then zero. Now we apply corollary (3.8) to see $M /aM =0$. Hence, $M = aM$
+
+
+
