@@ -7,7 +7,7 @@ Here, I have written up some of my work (incorrect in some parts) for others to 
 
 This is an [[art gallery]]
 
-and this is not a pipe
+And this is not a pipe
 
 {{https://upload.wikimedia.org/wikipedia/en/b/b9/MagrittePipe.jpg}}
 
