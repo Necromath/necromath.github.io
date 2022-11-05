@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="Stylesheet" type="text/css" href="style.css">
+<title>SP22AlgThm</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+<p>
+Here are some theorems and results I should know. Of which I only need to know how to prove 2. These are starred for my ease of viewing. 
+</p>
+
+<p>
+(*) A representation of a group \(G\) is the same thing as a \(\mathbb{C} [G]\) - module.
+	Proof: Given a representation of \(G\), the homomorphism \(\rho: G \rightarrow GL(V)\), where \(V\) is our vectorspace or module over our field or ring. We can also interperet \(V\) as \(\mathbb{C}[G]\) module by thinking about \(V\) as a \(\mathbb{C}\) vector space with a basis given by elements of \(G\).
+</p>
+	
+<p>
+(*) The four key properties of tensor products: Commutativity, Associativity, compatibility with direct sums, and tensoring with the ring does nothing. 
+	Proof: 
+</p>
+	
+<p>
+	(1) Associativity: We must show that there is unique isomorphism \((M \otimes N) \otimes L \cong M \otimes (N \otimes L)\)
+	This is given by the map \((m \otimes n) \otimes l \rightarrow m \otimes (n \otimes l)\). The big takeaway is abusing and reabusing the universal properties for the tensor to make it happen. The universal property is that as long as you can form a billinear map from \((M \times N)\) to your target space \(L\) (which is a module over your base space). Then there exists a unique module homomorphism from \((M \otimes N) \rightarrow L\). So then first write the obvious billinear form from \((M \times N) to  (M \otimes (N \otimes L ))\) and then using universal properties of tensor to summon a homomorphism from \((M \otimes N) \times L to M \otimes (N \otimes L)\). That sends \(((m \otimes n),l)\) to \(m \otimes (n \otimes l)\). Then reapply the property of universal tensors to establish a module isomomorphism between \((M \otimes N) \otimes L and M \otimes (N \otimes L)\)
+</p>
+	
+<p>
+Maschke's Theorem: The minimal polynomial divides the characteristic polynomial.
+</p>
+
+<p>
+Cayley Hamilton Theorem: Given the characteristic polynomial \(\chi_A\), for a matrix \(A\). \(F(A)=0\)
+</p>
+
+<p>
+The invariant factors \(a_1, ... , a_m\) satisfy \(a_1 | ... | a_m\)
+</p>
+
+<p>
+The characterstic plynomial is the product of the invaritn factors and hence also the product of thelemetnary divisors. 
+</p>
+
+<p>
+Every matrix over a field \(F\) whose eigenvalues lie in \(F\) has a jordan canonical form
+</p>
+
+<p>
+One can compute the invariant factors of an \(n \times n\) matrix \(A\), and hence its jordan canonical form, by finding the smith normal form of \(xI_n -A\). I should be able to do this with my eyes closed.
+</p>
+
+</body>
+</html>
