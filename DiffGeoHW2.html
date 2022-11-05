@@ -1,44 +1,13 @@
+<!DOCTYPE html>
 <html>
 <head>
-<meta name="robots" content="noindex">
-<link rel="Stylesheet" type="text/css" href="style.css" />
-<script type="text/x-mathjax-config">
-    MathJax.Hub.Config({ TeX: {
-    extensions: [	"autobold.js",
-		"AMSmath.js",
-		"AMSsymbols.js",
-		"AMScd.js",
-		"color.js"]
-    Macros: {
-	  R: "\mathbb{R}",
-	  P: "\mathbb{P}",
-	  Norm: ["\left\|| #1 \right||",1]
-    }
-  }});
-</script>
-<script>
-MathJax = {
-  tex: {
-    inlineMath: [['$', '$'], ['\\(', '\\)']]
-  },
-  svg: {
-    fontCache: 'global'
-  }
-};
-</script>
-<script type="text/javascript" id="MathJax-script" async
-  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex&#45;svg.js">
-</script>
-    <script src="/home/lechen/.config/MathJax/es5/tex-chtml.js" id="MathJax-script" async></script>
-    <title>DiffGeoHW2</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="Stylesheet" type="text/css" href="style.css">
+<title>DiffGeoHW2</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-    <a href="index.html">Index</a>
-    <!-- <!&#45;&#45; |<a href="diary/diary.html">Diary</a> | Something else &#45;&#45;> -->
-    <!-- <hr> -->
-    <div class="content">
-    
+
 <p>
 Here we deal with the the "avoid feverish tomato map"
 </p>
@@ -155,12 +124,5 @@ part b: Show that \(i_*:T_eG \rightarrow T_eG\) is given by \(i_*X = -X\) where 
 Solution: Consider the maps \(f: G \rightarrow G \times G, f(x) = (x,x) , g: G\times G \rightarrow G \times G, g(x,y) = (x, y^{-1}), m:G\times G \rightarrow G, m(x,y) = xy\). Note that the composition \(c = m \circ g \circ f\) is the constant map to the identity. The derivation of a constant map is zero. No change! Thus \(0 = c_*(X) = m_*(g_*(f_*(X))) = m_*(g_*(X,X)) = m_*(X, i_*(X)) = X +i_*(X)\). Thus, \(i_*(X) = - X\). The last equality follows from our previous result and the one before that follows from the fact that \(g\) is the identity and the inverse componentwise. 
 </p>
 
-    </div>
-<hr>
-<script language="Javascript">
-document.write("This page was powered by Vimwiki and was last modified on: " + document.lastModified +"");
-</SCRIPT>
-<hr>
-<center>&copy; Nacromath, 2022, Auburn</center>
 </body>
 </html>

@@ -1,44 +1,13 @@
+<!DOCTYPE html>
 <html>
 <head>
-<meta name="robots" content="noindex">
-<link rel="Stylesheet" type="text/css" href="style.css" />
-<script type="text/x-mathjax-config">
-    MathJax.Hub.Config({ TeX: {
-    extensions: [	"autobold.js",
-		"AMSmath.js",
-		"AMSsymbols.js",
-		"AMScd.js",
-		"color.js"]
-    Macros: {
-	  R: "\mathbb{R}",
-	  P: "\mathbb{P}",
-	  Norm: ["\left\|| #1 \right||",1]
-    }
-  }});
-</script>
-<script>
-MathJax = {
-  tex: {
-    inlineMath: [['$', '$'], ['\\(', '\\)']]
-  },
-  svg: {
-    fontCache: 'global'
-  }
-};
-</script>
-<script type="text/javascript" id="MathJax-script" async
-  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex&#45;svg.js">
-</script>
-    <script src="/home/lechen/.config/MathJax/es5/tex-chtml.js" id="MathJax-script" async></script>
-    <title>CommAlgHW3</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="Stylesheet" type="text/css" href="style.css">
+<title>CommAlgHW3</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-    <a href="index.html">Index</a>
-    <!-- <!&#45;&#45; |<a href="diary/diary.html">Diary</a> | Something else &#45;&#45;> -->
-    <!-- <hr> -->
-    <div class="content">
-    
+
 <p>
 Problem 1: Show that \(\mathbb{Z} / m \mathbb{Z} \otimes \mathbb{Z} / n \mathbb{Z} = 0\) if \(m,n\) are coprime.
 </p>
@@ -93,12 +62,5 @@ Thus, \(M[x]\) is also an \(A[x]\) module. Further, we can observe that \(M = AM
 Now we show that \(M[x] \cong A[x] \otimes M\). To see this, if we consider the homomorphism \(\varphi: A[x] \otimes M \rightarrow (AM)[x] = M[x]\) where \(\varphi(a(x) \otimes m ) \rightarrow a(x)\). We can see the inverse map clearly, \(\varphi(a(x) m)^{-1} \rightarrow a(x) \otimes m\). This gives us an isomorphism between \(A[x] \otimes M\) and \((AM)[x] = M[x]\). 
 </p>
 
-    </div>
-<hr>
-<script language="Javascript">
-document.write("This page was powered by Vimwiki and was last modified on: " + document.lastModified +"");
-</SCRIPT>
-<hr>
-<center>&copy; Nacromath, 2022, Auburn</center>
 </body>
 </html>

@@ -1,44 +1,13 @@
+<!DOCTYPE html>
 <html>
 <head>
-<meta name="robots" content="noindex">
-<link rel="Stylesheet" type="text/css" href="style.css" />
-<script type="text/x-mathjax-config">
-    MathJax.Hub.Config({ TeX: {
-    extensions: [	"autobold.js",
-		"AMSmath.js",
-		"AMSsymbols.js",
-		"AMScd.js",
-		"color.js"]
-    Macros: {
-	  R: "\mathbb{R}",
-	  P: "\mathbb{P}",
-	  Norm: ["\left\|| #1 \right||",1]
-    }
-  }});
-</script>
-<script>
-MathJax = {
-  tex: {
-    inlineMath: [['$', '$'], ['\\(', '\\)']]
-  },
-  svg: {
-    fontCache: 'global'
-  }
-};
-</script>
-<script type="text/javascript" id="MathJax-script" async
-  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex&#45;svg.js">
-</script>
-    <script src="/home/lechen/.config/MathJax/es5/tex-chtml.js" id="MathJax-script" async></script>
-    <title>CommAlgHW4</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="Stylesheet" type="text/css" href="style.css">
+<title>CommAlgHW4</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-    <a href="index.html">Index</a>
-    <!-- <!&#45;&#45; |<a href="diary/diary.html">Diary</a> | Something else &#45;&#45;> -->
-    <!-- <hr> -->
-    <div class="content">
-    
+
 <p>
 This is my solution to problems 1,4,5 and 14 in Atiyah Mcdonald 
 </p>
@@ -79,12 +48,9 @@ Problem 14: Let \(M\) be an \(A\)-module and \(a\) an ideal of \(A\). Suppose th
 Solution: Since \(M_m = 0\), we can write it as \( 0 = M_m / (aM)_m \cong (M / aM)_m\) by a previous corrolary (3.4). This is then isomorphic to \( A_m \otimes_A (M / aM) \) by corrolary (3.5). If we consider the element \(\frac{x}{p} \otimes m \in A_m \otimes M/aM\), where \(p \in A \setminus m\). This element is equal to \(\frac{1}{p} \otimes xm = 0\). This means that \((A / a)_m \otimes_{A /a} M /aM = 0\). This is because we are using fewer elements in \(A/a\). (3.5) Tells us that we can write \((M/aM)_{m/a} \cong (A/a)_{m/a} \otimes _{A/a} M/aM\). It follows then that \((A / a)_m\) and \((A/a)_{m/a}\) are isomorphic since \((A/a)_m \otimes_{A/a} M/aM = 0 = (A/a)_{m/a} \otimes_{A /a} M/aM\). Since we have a correspondence between maximal ideals \(m \supseteq a\) and maximal ideals \(m' \subseteq A/a\), the localization of \(M/aM\) at a maximal ideal of \(A/a\) is then zero. Now we apply corollary (3.8) to see \(M /aM =0\). Hence, \(M = aM\)
 </p>
 
-    </div>
-<hr>
-<script language="Javascript">
-document.write("This page was powered by Vimwiki and was last modified on: " + document.lastModified +"");
-</SCRIPT>
-<hr>
-<center>&copy; Nacromath, 2022, Auburn</center>
+<p>
+Testing words here 
+</p>
+
 </body>
 </html>
