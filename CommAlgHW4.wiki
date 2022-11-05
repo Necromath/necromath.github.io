@@ -18,5 +18,7 @@ Problem 14: Let $M$ be an $A$-module and $a$ an ideal of $A$. Suppose that $M_m 
 
 Solution: Since $M_m = 0$, we can write it as $ 0 = M_m / (aM)_m \cong (M / aM)_m$ by a previous corrolary (3.4). This is then isomorphic to $ A_m \otimes_A (M / aM) $ by corrolary (3.5). If we consider the element $\frac{x}{p} \otimes m \in A_m \otimes M/aM$, where $p \in A \setminus m$. This element is equal to $\frac{1}{p} \otimes xm = 0$. This means that $(A / a)_m \otimes_{A /a} M /aM = 0$. This is because we are using fewer elements in $A/a$. (3.5) Tells us that we can write $(M/aM)_{m/a} \cong (A/a)_{m/a} \otimes _{A/a} M/aM$. It follows then that $(A / a)_m$ and $(A/a)_{m/a}$ are isomorphic since $(A/a)_m \otimes_{A/a} M/aM = 0 = (A/a)_{m/a} \otimes_{A /a} M/aM$. Since we have a correspondence between maximal ideals $m \supseteq a$ and maximal ideals $m' \subseteq A/a$, the localization of $M/aM$ at a maximal ideal of $A/a$ is then zero. Now we apply corollary (3.8) to see $M /aM =0$. Hence, $M = aM$
 
+Testing words here 
+
 
 
