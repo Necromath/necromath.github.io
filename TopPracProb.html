@@ -1,13 +1,42 @@
-<!DOCTYPE html>
 <html>
 <head>
-<link rel="Stylesheet" type="text/css" href="style.css">
-<title>TopPracProb</title>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="Stylesheet" type="text/css" href="style.css" />
+    
+<script type ="text/javascript"
+        src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-HTMLorMML">
+</script>
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({ TeX: {
+  extensions: [	"autobold.js",
+  		"AMSmath.js",
+		"AMSsymbols.js",
+		"AMScd.js",
+		"color.js"]
+    Macros: {
+	  R: "\mathbb{R}",
+	  P: "\mathbb{P}",
+	  Norm: ["\left\|| #1 \right||",1]
+    }
+  }});
+</script>
+<script>
+MathJax = {
+  tex: {
+    inlineMath: [['$', '$'], ['\\(', '\\)']]
+  },
+  svg: {
+    fontCache: 'global'
+  }
+};
+</script>
+    <script src="MathJax/es5/tex-chtml.js" id="MathJax-script" async></script>
+    <title>TopPracProb</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 </head>
 <body>
-
+    <div class="content">
+    
 <p>
 Here are some topology exercises that I have done:
 </p>
@@ -15,16 +44,16 @@ Here are some topology exercises that I have done:
 <ol>
 <li>
 Define the cofinite topology \(\tau _{cof}\) on a set to be the collection of all sets \(U\) such that \(X \setminus U\) is finite, plus the empty set. Show this is a topology.
-	Pf. First we observe that \(X\) is in our topology by remarking that \(X \setminus X = \varnothing\), the empty set is contained trivially in \(\tau\). So we just need to check that artbitary unions and finite intersections are in the topology.Observe that if \(U,V \in \tau\), then \( (X \setminus (U \cup V) \subseteq (X \subseteq U)\) is also finite. Induct on the number of sets. For finite intersections, if \(U \cap V = Z\), then \(X \setminus Z = (X \setminus U) \cup (X \setminnus V)\) which is still finite. Induct on your number of sets and you're done.
+<br />	Pf. First we observe that \(X\) is in our topology by remarking that \(X \setminus X = \varnothing\), the empty set is contained trivially in \(\tau\). So we just need to check that artbitary unions and finite intersections are in the topology.Observe that if \(U,V \in \tau\), then \( (X \setminus (U \cup V) \subseteq (X \subseteq U)\) is also finite. Induct on the number of sets. For finite intersections, if \(U \cap V = Z\), then \(X \setminus Z = (X \setminus U) \cup (X \setminnus V)\) which is still finite. Induct on your number of sets and you're done.
 
 </ol>
 
 <ol>
 <li>
 Let \((X,\tau)\) be a toplogical space, and let \(Y \subseteq X\). Then the following are equivalent: 
-   (1) \(Y\) is closed.
-   (2) \(Y\) contains all of its limit points
-   (3) \(Y\) contains all of its boundary points. 
+<br />   (1) \(Y\) is closed.
+<br />   (2) \(Y\) contains all of its limit points
+<br />   (3) \(Y\) contains all of its boundary points. 
 
 </ol>
 <blockquote>
@@ -35,5 +64,19 @@ Pf. Assuming \(Y\) contains all its boundary points, then we see that that every
 <span class="todo">TODO</span>: Write down some of the more interesting (to me) problems.
 </p>
 
+    </div>
+<hr>
+<script language="Javascript">
+  document.write("<center>This page was created via Vimwiki and was last modified on: " + document.lastModified +"</center>");
+</SCRIPT>
+<hr>
+<center>&copy; Mauricio Montes, 2022, Auburn</center>
+<!-- Default Statcounter code for Le Chen at Auburn
+http://webhome.auburn.edu/~lzc0090/ -->
+<script type="text/javascript">
+var sc_project=12590987;
+var sc_invisible=1;
+var sc_security="86dd5de8";
+</script>
 </body>
 </html>

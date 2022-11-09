@@ -26,4 +26,5 @@ Hello Dr. Chen!!
 Note to self: git push and then inserting the proper credentials allowed us to use lazygit push without having to use authorization. But then the program reverted back to asking for credentials again.
 
 Example case part 2
-Howdy! Again testing for something here!
+Howdy! Again testing for something here!Blah Blah
+
