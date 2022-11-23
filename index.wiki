@@ -25,8 +25,6 @@ Hello Dr. Chen!!
 
 Note to self: git push and then inserting the proper credentials allowed us to use lazygit push without having to use authorization. But then the program reverted back to asking for credentials again.
 
-Example case part 2
-Howdy! Again testing for something here!Blah Blah
-i will
-
 $\int_0^1 x^2 dx $
+
+This is a new note to show off to my friends and family during thanksgiving!
