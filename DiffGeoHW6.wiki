@@ -1,0 +1,13 @@
+This is for HW 6, Eerily Hot.
+
+Question 1: Jacobi's Formula [Done need to type up]
+
+Question 2: Hopf Fibrations [Done need to type up]
+
+Question 3: Quaternionic Sphere [Done need to type up]
+
+Question 4: Abelian Exponentials
+
+Question 5: Lee 20-6
+
+Question 6: Commuting Exponentials 

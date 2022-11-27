@@ -1,0 +1,11 @@
+This is for HW 7, oh comedy hologram
+
+Question 1: Line integrals of vector fields
+
+Question 2: First cohomology of the torus
+
+Question 3: Cup Products
+
+Question 4: More punctures
+
+Question 5: Poincare Duality Part 1

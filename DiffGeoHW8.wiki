@@ -1,0 +1,14 @@
+This is for HW 8, my main regeneration
+
+Question 1: Round Metric
+
+Question 2: Euclidean geodesics
+
+Question 3: Complete metrics on $\mathbb{R}$
+
+Question 4: Symmetric connections
+
+Question 5: Space connections
+
+
+
