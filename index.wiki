@@ -36,4 +36,3 @@ Here is a neat equation:
 
 $\int_{-\infty}^{\infty} \frac{cos(x)}{1+x^2} = \frac{\pi}{e}$
 
-testing out editing capabilities of the desktop, test 2 please work
