@@ -2,7 +2,23 @@ This is for HW 6, Eerily Hot.
 
 Question 1: Jacobi's Formula [Done need to type up]
 
-Question 2: Hopf Fibrations [Done need to type up]
+Answer:
+Part A: First observe 
+$ \textrm{det}(I_N +tA) = 1 +t \textrm{tr}(A) + \textrm{(Higher order t terms}$
+
+Then differentiating with respect to $t$ at $t=0$
+
+$ \frac{d}{dt}|_{t=0} \textrm{det}(I_N +tA) = 0 +\textrm{tr}(A) + \frac{d}{dt}|_{t=0}\textrm{(Higher order terms}$
+
+The higher order $t$ terms vanish here since we are evaluating at $t=0$. Leaving us with 
+
+$\frac{d}{dt}|_{t=0}\textrm{det}(I_n+tA) = \textrm{tr}(A)$
+
+Part B: Observe that 
+
+  a) $\frac{d}{dt}|_{t=0} [\textrm{det}(X+tB)] = \frac{d}{dt}|_{t=1}[\textrm{det}(X)\textrm{det}(I_n +t X^{0}B)] $
+
+Question 2: Hopf Fibrations [Done need to type up] 
 
 Question 3: Quaternionic Sphere [Done need to type up]
 
