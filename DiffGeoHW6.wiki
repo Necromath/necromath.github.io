@@ -4,11 +4,11 @@ Question 1: Jacobi's Formula [Done need to type up]
 
 Answer:
 Part A: First observe 
-$ \textrm{det}(I_N +tA) = 1 +t \textrm{tr}(A) + \textrm{(Higher order t terms}$
+$ \textrm{det}(I_N +tA) = 1 +t \textrm{tr}(A) + \textrm{(Higher order t terms)}$
 
 Then differentiating with respect to $t$ at $t=0$
 
-$ \frac{d}{dt}|_{t=0} \textrm{det}(I_N +tA) = 0 +\textrm{tr}(A) + \frac{d}{dt}|_{t=0}\textrm{(Higher order terms}$
+$ \frac{d}{dt}|_{t=0} \textrm{det}(I_N +tA) = 0 +\textrm{tr}(A) + \frac{d}{dt}|_{t=0}\textrm{(Higherorder t terms)}$
 
 The higher order $t$ terms vanish here since we are evaluating at $t=0$. Leaving us with 
 
@@ -16,14 +16,78 @@ $\frac{d}{dt}|_{t=0}\textrm{det}(I_n+tA) = \textrm{tr}(A)$
 
 Part B: Observe that 
 
-  a) $\frac{d}{dt}|_{t=0} [\textrm{det}(X+tB)] = \frac{d}{dt}|_{t=1}[\textrm{det}(X)\textrm{det}(I_n +t X^{0}B)] $
+$\begin{split} \frac{d}{dt}|_{t=0}[\textrm{det}(X+tB)]&=\frac{d}{dt}|_{t=1}[\textrm{det}(X)\textrm{det}(I_n+tX^{-1}B)]\\ & =\frac{d}{dt}|_{t=0}\textrm{det}(I_n+tX^{-1}B) \times \textrm{det}(X) + 0 \\ &= \textrm{tr}(X^{-1}B)\times \textrm{det}(X) \end{split} $
 
-Question 2: Hopf Fibrations [Done need to type up] 
+Question 2: Hopf Fibrations
 
-Question 3: Quaternionic Sphere [Done need to type up]
+Answer: We first show smoothness, which is equivalent to showing that the circle is bijective.
+
+Observe that the group action $\Theta: S^1 \times S^{2n-1} \rightarrow S^{2n-1}$ is given by
+$\Theta_z(w) = zw$, so $\Theta_{z^{-1}}(zw) = z^{-1}zw= (z^{-1}zw^i) = w$
+
+Where this multiplication is smooth on each coordinate $w^i$
+
+For $w \in S^{2n-1}$, the orbit $S^1 \cdot w = \{z\cdot w | z\in S^1\}$ should rotate each coordinate by a whole circle
+
+If we then look at the $(2n+1)$ sphere as a subset of $\mathbb{C}^{n+1}$, we see that the map 
+
+$F:S^1 (\subset \mathbb{C}) \rightarrow \mathbb{C}^{n+1} $ by $F(z) = (zw^1, \ldots, zw^{n+1})$
+
+This is a linear map and is injective, so then the image is exactly a circle. 
+
+Injectivity then tells us that this map partitions the sphere into disjoint circles, so then the
+union of all of these circles should be $S^{2n+1}$
+
+Question 3: Quaternionic Sphere 
+
+Answer:
+
+Part A: Observe that $p*p = (\bar{a},-b)(a,b) = (\bar{a}a +b\bar{b}, ab-ab) = (|a|^2 +|b|^2, 0)$
+
+So $S \subset \mathbb{H}*$, where $S = \{ p \in \mathbb{H} | |p| =1 \}$
+
+So $S$ is a subgroup of $\mathbb{H}*$ since for any $p,q \in S$, we get that $|pq| = |p||q| =1$
+
+The fact that $S$ has manifold structure follows from Lee 20.12
+
+Now we want to show that $S \cong SU(2)$
+
+The isomorphism from $SU(2)$ to $S$ follows from the determinant map. Where $det(A) = |p|^2 + |q|^2= aa*$
+
+Where $a=(p,q) \in \mathbb{H}*$
+
+Part B: Let $q=(a,b)\in S$, then $qi = (ai,bi), qj=(-\bar{b},\bar{a}) , qk =(\bar{b}i,-\bar{a}i)$.
+
+Taking the dot product with each other gives 0, hence this is linearly independent and all
+three together form a frame for $S$. Left invariance follows from the fact that adding a left shift
+corresponds to a left shift in each coordinate in the frame. i.e. $L_x(qi) = (q+x)i = qi +xi $ which
+is a frame for $q+x$
+
 
 Question 4: Abelian Exponentials [Done need to type up]
 
 Question 5: Lee 20-6
 
+Part A:Since $A= e^B$, we can set $C = e^\frac{B}{2}$. Then $C^2 = e^B = A$
+
+Part B: Recall that $A= \begin{pmatrix} \frac{-1}{2} & 0 \\ 0 & -2 \end{pmatrix}$ 
+
+If $A \in Gl(n,\mathbb{R})$ was in the image, then there would exist a $C$ such that when squared, is 
+
+$\begin{pmatrix} a & b \\ c & d \end{pmatrix} ^2 = \begin{pmatrix} a^2+bc & b(a+d) \\ c(a+d) & bc+d^2 \end{pmatrix} $
+
+But this then forces either $b$ or $c$ is 0 which is a contradiction, or $a =-d$ which is a
+contradiction too.
+
 Question 6: Commuting Exponentials 
+Answer:
+
+Part A: If $[X,Y] =0$, then as vector fields, $X$ and $Y$ commute with their flows.
+
+Part B: If $G$ is Abelian, then the previous proposition immediately implies that $\frak{g}$ is
+Abelian too. Since $exp(tX)exp(sY) \in G$
+
+If $\frak{g}$ commutes, then at any point $p \in G$, if it were to be acted upon by the flow
+corresponding to a left shift, $L_q, q\in G$, this corresponds to $p+q$, but by commutivity of the
+flows, if we had $q$ acted upon by the left shift $L_p$, we get $q+p$. So then since $[L_q,L_p]=0$
+moving by q at p is the same as moving by p at q. Hence, these elements commute.
