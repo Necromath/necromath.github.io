@@ -64,7 +64,21 @@ corresponds to a left shift in each coordinate in the frame. i.e. $L_x(qi) = (q+
 is a frame for $q+x$
 
 
-Question 4: Abelian Exponentials [Done need to type up]
+Question 4: Abelian Exponentials
+
+Answer: Here I am referring to Lee 8.40
+
+We have that the Lie Algebra for $\mathbb{R}^n$ is itself and for the torus it is also
+$\mathbb{R}^n$. The exponential map $exp: \mathbb{R}^n \rightarrow \mathbb{R}^n$ is the integral
+curve of a constant vector field pointing in the direction of a point $x\in \mathbb{R}^n$
+
+In the case of the Torus, we can think of it as $\mathbb{R}^n$quotiented by the basis vector in each
+direction 
+with appropriate gluings. So we can then just interpret the exponential map of the torus as the 
+quotient of $\mathbb{R}^n$ to the torus after applying the exponential map at the origin in $\mathbb{R}^n$. 
+In other words, I apply Proposition 20.8 (g) with the observation that $\Phi$ is the quotient map.
+So then the $exp$ map of $T^n$ is really just quotienting after applying the exponential map
+
 
 Question 5: Lee 20-6
 
@@ -90,4 +104,5 @@ Abelian too. Since $exp(tX)exp(sY) \in G$
 If $\frak{g}$ commutes, then at any point $p \in G$, if it were to be acted upon by the flow
 corresponding to a left shift, $L_q, q\in G$, this corresponds to $p+q$, but by commutivity of the
 flows, if we had $q$ acted upon by the left shift $L_p$, we get $q+p$. So then since $[L_q,L_p]=0$
-moving by q at p is the same as moving by p at q. Hence, these elements commute.
+moving by q at p is the same as moving by p at q. Hence, these elements commute.(This is how I am
+thinking about the problem, not very formal. I'm trying to find the math to put to the words)

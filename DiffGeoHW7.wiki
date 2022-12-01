@@ -81,4 +81,15 @@ where to start calculating this, feels like its on the tip of my tongue.
 
 Question 5: Poincare Duality Part 1
 
-Answer:
+Answer: See the attached image I'll send with this homework. To be honest, I'm pretty lost on how to
+show the this map descends into a linear map between cohomologies. I feel like with the picture I
+have attached, it should be something akin to diagram chasing. But then I just can't write the map
+down. The current PD map is solid since it knows how to map the $p$ forms. What I want to do here in
+the cohomology case is to pick representatives from the class and integrate them. ie.
+$\int_M w \wedge \eta$
+Where $w \in [w] \in H^p_{dR}(M)$ and $\eta \in [\eta] \in H^{n-p}_{dR}(M)$
+
+What if the map for $w \in \Omega^p(M)$ went $\ast(w)$ (the Hodge star), followed by quotienting by our exact forms
+to land us in the cohomology, then finally dualize that. To then define the map between the
+$pth$ cohomology and the dual $n-p$ cohomology, just keep track of the exact forms in $\Omega^p(M)$
+as you move them through the various maps.
