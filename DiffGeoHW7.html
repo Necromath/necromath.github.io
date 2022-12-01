@@ -73,16 +73,20 @@ Question 2: First cohomology of the torus
 </p>
 
 <p>
-Answer: If \(w\) is exact, then there is some \(\eta\) such that \(w = d \eta\). But 
-then 
+Answer:
 </p>
 
 <p>
-\(\int_{\gamma_j} (d \eta)  = \int_a ^b d(d \eta) = 0 \)
+If \(w\) is exact then the associated vector field to \(w\), call it \(X\), is conservative. From the
+previous exercise, we know that this means integrating it over any pw smooth closed curve \(\gamma\)
+will return 0. 
+Conversely, if \(\int_{\gamma_j} w = 0\) then we can interpret our 1-form as a vector field. It is
+conservative along any \(\gamma_j\), hence this is the gradient of a function, thus making \(w\) exact.
 </p>
 
 <p>
-Conversely, if \(\int_{\gamma_j} w = 0\)m then 
+I don't see how the hint is really helpful for me. The more obvious thing to do for myself was just
+work with the definition of exactness of \(w\).
 </p>
 
 <p>
@@ -90,16 +94,81 @@ Question 3: Cup Products
 </p>
 
 <p>
-Answer: This amounts to showing that the wedge of exact and closed is exact, wedge of closed and closed is
-closed 
+Answer: Given \(w \in \Omega^p(M)\) and \(\eta \in \Omega^q(M)\) closed forms. We will show that 
+\(w \wedge \eta \in \Omega^{p+q}(M)\) is closed. Observe that
 </p>
+
+<p>
+\(d(w \wedge \eta) = dw \wedge \eta + (-1)^p w \wedge d \eta = 0 \)
+</p>
+
+<p>
+So closed forms get wedged and are also closed forms. Wedging a closed form with an exact form is also a closed
+form. So then if we picked representatives from the cohomology classes of \([w]\) and \([\eta]\), since
+these classes were exact, the elements of the wedge of their class are too. Hence wedging these elements also
+returns another closed element. Thus, the cohomology class of \(w \wedge \eta\) depends solely on what
+the cohomology class of \(w\) and \(\eta\) were. Because of this, we can define our cup product to be
+the function which takes pairs of classes in the different degree cohomologies of M and returns the
+class of the wedge of the representatives of the original classes. Meaning:
+</p>
+
+<p>
+\(\cup: H^p _{dR} (M) \times H^q _{dR} (M) \rightarrow H^{p+q}_{dR}(M)\) 
+</p>
+
+<p>
+given by \([w] \cup [\eta] = [w \wedge \eta]\)
+</p>
+
+<p>
+Checking billinearity:
+\(\begin{split} [\alpha w + \beta m] \cup [\eta] &amp;= [(\alpha w + \beta m) \wedge \eta] \\ &amp;= [(\alpha w \wedge \eta) + (\beta m \wedge \eta)] \\ &amp;= [\alpha w \wedge \eta] + [\beta m \wedge\eta] \end{split}\)
+</p>
+
+<p>
+This makes sense since \(\alpha w \wedge \eta\) and \(\beta m \wedge \eta\) are both \(p+q\) forms. So
+when we add them together, it amounts to simply adding together the obvious representatives from
+their cohomology classes. Hence the map is billinear. The other side of billinearity is similar.
+</p>
+
 
 <p>
 Question 4: More punctures
 </p>
 
 <p>
-Answer: Puncture and retract.
+Answer: Puncturing \(\mathbb{R}\) twice yields 3 copies of \(\mathbb{R}\), thus \(H_{dR}^0(\mathbb{R}) \setminus \{e_0,e_1\} \cong \mathbb{R}^3\)
+</p>
+
+<p>
+If we puncture \(\mathbb{R}^2\) twice, this can be retracted to a wedge of two circles. Which has
+cohomology group isomorphic to \(\mathbb{R}\) So then
+\(H_{dR}^1 \mathbb{R}^2 \setminus \{e_1,e_2 \} \cong H_{dR}^1 (S^1 \wedge S^1) \cong H_{dR}^1 (S^1) \times H_{dR}^1 (S^1) \cong \mathbb{R}^2\)
+</p>
+
+<p>
+This is also true for the 0th cohomology group. But any other cohomology group is zero for this.
+</p>
+
+<p>
+Lastly, since we can describe the \(n\)-sphere as a punctured \(n+1\)-space. We can see that twice
+punctured \(n+1\) space will have cohomology isomorphic to the wedge of two \(n-1\) spheres. Which has
+cohomology \(H_{dR}^k(S^n) \cong \mathbb{R}\) if \(k=0\) or \(k=n\).
+</p>
+
+<p>
+So then \(H_{dR}^k(\mathbb{R}^n \setminus \{e_1,e_2\}) \cong H_{dR}^k(S^{n-1}) \times H_{dR}^k(S^{n-1}) \cong \mathbb{R}^2\)
+</p>
+
+<p>
+Whenever \(k=0\) or \(k=n\).
+</p>
+
+<p>
+The differential forms that give a basis from their cohomology classes are exactly those that would
+correspond to the notion of "going around". So in the case of the plane, we would need two
+differential forms which correspond to the equation of going around the points removed. Not sure
+where to start calculating this, feels like its on the tip of my tongue.
 </p>
 
 <p>
