@@ -1,0 +1,94 @@
+<html>
+<head>
+<meta name="robots" content="noindex">
+<link rel="Stylesheet" type="text/css" href="style.css" />
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({ TeX: {
+    extensions: [	"autobold.js",
+		"AMSmath.js",
+		"AMSsymbols.js",
+		"AMScd.js",
+		"color.js"]
+    Macros: {
+	  R: "\mathbb{R}",
+	  P: "\mathbb{P}",
+	  Norm: ["\left\|| #1 \right||",1]
+    }
+  }});
+</script>
+<script>
+MathJax = {
+  tex: {
+    inlineMath: [['$', '$'], ['\\(', '\\)']]
+  },
+  svg: {
+    fontCache: 'global'
+  }
+};
+</script>
+<script type="text/javascript" id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex&#45;svg.js">
+</script>
+    <title>ProbabilityHW4</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head>
+<body>
+    <a href="index.html">Index</a>
+    <div class="content">
+    
+<p>
+7.1: 
+</p>
+
+<p>
+Gambler with initial capital \(a\) plays until his fortune increases \(b\) units or he is ruined. Recall
+that \(\rho = \frac{q}{p} &gt; 1\), where \(p\) is the probability of success and \(q\) is the probability of
+failure. Suppose that the chance of success is multiplied by \(1+\theta\) if his initial capital is
+infinite instead of \(a\). Show that \(0 &lt; \theta &lt; (\rho ^{a} -1)^{-1} &lt; (a(\rho -1))^{-1}\)
+</p>
+
+<p>
+Solution: Recall that the probability of of success with initial capital is given by 
+\(S= \frac{\rho^a -1}{\rho^{a+b}-1} \leq\ rho^{-b}\) where the inequality follows from the probability of success
+with infinite capital. Then, adapting what we have from the problem itself:
+</p>
+
+<p>
+\(S= \frac{\rho^a -1}{\rho^{a+b}-1} \leq\ rho^{-b} (1+ \theta) = \rho^{-b}\), then solve for \(\theta\)
+</p>
+
+<p>
+7.2:
+</p>
+
+<p>
+Gamblers Ruin/Fortune deduced from SLoLN: \(P( lim \frac{1}{n} \Sum_{i=1}^{n} x_i = p-q) =1\), where
+\(p-q \neq 0\). Try bounding things. Look at your phone pictures.
+</p>
+
+<p>
+8.2:
+</p>
+
+<p>
+Dr. Chen this was a good problem (cough) 
+</p>
+
+<p>
+8.3:
+</p>
+
+<p>
+Take a random walk and send to {-1,0,1} determined if the value at the walk was positive, negative,
+or 0
+</p>
+
+    </div>
+<hr>
+<script language="Javascript">
+document.write("This page was powered by Vimwiki and was last modified on: " + document.lastModified +"");
+</SCRIPT>
+<hr>
+<center>&copy; Mauricio Montes, 2022, myfirstname.mylast@auburn.edu </center>
+</body>
+</html>
