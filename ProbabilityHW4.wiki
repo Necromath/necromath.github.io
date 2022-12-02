@@ -24,3 +24,7 @@ Dr. Chen this was a good problem (cough)
 
 Take a random walk and send to {-1,0,1} determined if the value at the walk was positive, negative,
 or 0
+
+8.15:
+
+Good problem according to Le
