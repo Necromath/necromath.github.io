@@ -2,11 +2,23 @@ This is for HW 8, my main regeneration
 
 Question 1: Round Metric
 
+This was shown in Lee's Riemannian Manifolds: An Introduction to Curvature. Lemma 3.4
+
 Question 2: Euclidean geodesics
+
+
 
 Question 3: Complete metrics on $\mathbb{R}$
 
+We show the following for the positive case, the negative integral case is very similar. If this space is complete, then every cauchy sequence converges. Then, consider the Cauchy sequence
+$t_1,t_2,\ldots$ so that then $\int_0 ^\infty \sqrt{f(t)}dt = \sum_i=0 ^{\infty}\int_{t_i}^{t_{i+1}}$
+
+Since the sequence is Cauchy, it converges to a limit that exists, say $\bar{x}$. Then 
+
 Question 4: Symmetric connections
+
+Here we chase down some definitions. Let $X = X^i \partial_i$, and $Y = Y^j \partial^j$. So then we
+see that $\nabla_X Y - \nabla_Y X - [X,Y] = X^i(Y^j \Gamma_{ij}^k \partial_k + Y_i ^j + \partial_j)- Y^j(X^i \Gamma_{ji}^k \partial_k + X^{i}_{j} \partial_i) - (X^i Y^j_i -Y^i X^j_i)\partial_J$
 
 Question 5: Space connections
 
