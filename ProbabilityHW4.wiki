@@ -6,19 +6,19 @@ failure. Suppose that the chance of success is multiplied by $1+\theta$ if his i
 infinite instead of $a$. Show that $0 < \theta < (\rho ^{a} -1)^{-1} < (a(\rho -1))^{-1}$
 
 Solution: Recall that the probability of of success with initial capital is given by 
-$S= \frac{\rho^a -1}{\rho^{a+b}-1} \leq\ rho^{-b}$ where the inequality follows from the probability of success
+$S= \frac{\rho^a -1}{\rho^{a+b}-1} \leq\ \rho^{-b}$ where the inequality follows from the probability of success
 with infinite capital. Then, adapting what we have from the problem itself:
 
-$S= \frac{\rho^a -1}{\rho^{a+b}-1} \leq\ rho^{-b} (1+ \theta) = \rho^{-b}$, then solve for $\theta$
+$S= \frac{\rho^a -1}{\rho^{a+b}-1} \leq\ \rho^{-b} (1+ \theta) = \rho^{-b}$, then solve for $\theta$
 
 7.2:
 
-Gamblers Ruin/Fortune deduced from SLoLN: $P( lim \frac{1}{n} \Sum_{i=1}^{n} x_i = p-q) =1$, where
+Gamblers Ruin/Fortune deduced from SLoLN: $\begin{equation} P( \lim_{n \rightarrow \infty} \frac{1}{n} \sum_{i=1}^{n} x_i = p-q) = 1\end{equation}$, where
 $p-q \neq 0$. Try bounding things. Look at your phone pictures.
 
 8.2:
 
-Dr. Chen this was a good problem (cough) 
+Dr. Chen thought this was a good problem (cough) 
 
 8.3:
 
