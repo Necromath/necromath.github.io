@@ -98,16 +98,54 @@ Borel Cantelli Lemma, this will tell us that the probability of getting \(c\) su
 </p>
 
 <p>
-Dr. Chen thought this was a good problem (cough) 
+Suppose we had the sequence of events \(\{ X_0 =0 , \ldots , X_n=0\} = \{Y_0 = \ldots = Y_{n+1}=0 \} \cup \{Y_0 = \ldots = Y_{n+1} = 1 \} \)
 </p>
+
+<p>
+Where the equality follows from the fact that either all of the \(Y\)'s are 0 or they are all 1 to
+achieve equality. Since \(X_n = 0 \implies Y_n = Y_{n+1}\)
+</p>
+
+<p>
+So then \(P(X_0 = 0, X_1 = 0, \ldots, X_n = 0) = P(Y_0 = 0, \ldots Y_{n+1} = 0 \} + P(Y_0 = 1, \ldots, Y_{n+1} = 1 \} = p^{n+2} + q^{n+2} \)
+</p>
+
+<p>
+So the probability that the next \(X\) is also 0 would be:
+\(P(X_{n+1} = 0 | X_1 = 0, ldots ,X_n = 0) = \frac{p^{n+2} +q^{n+2}}{p^{n+1} +q^{n=1}}\)
+</p>
+
+<p>
+Which is different from \(P(X_{n+1} = 0 | X_n =0) = \frac{P(X_{n+1} = 0, X_n = 0)}{P(X_n =0)} = \frac{p^3 +q^3}{p^2+q^2} \)
+</p>
+
+<p>
+Hence, the \(X\)'s do not form a Markov Chain.
+</p>
+
+<p>
+However, we do have that \(X_{n-1} = Y_{n-1} + Y_n\) and \(X_{n+1} = Y_{n+1} + Y_{n+2}\)
+So we do have that \(X_{n-1}\) and \(X_{n+1}\) being independent. So the given relationship does hold.
+</p>
+
+<p>
+However, the last relation might not hold. Consider the markov chain given in the book in 8.13. If
+there was an unsuccessful attempt on the \(n-1\)st try. Then the probability of success on the \(n+1\)st
+try given that is not independent. 
+</p>
+
 
 <p>
 8.3:
 </p>
 
 <p>
-Take a random walk and send to {-1,0,1} determined if the value at the walk was positive, negative,
-or 0
+Take a random walk and send to {-1,0,1} determined if the value at the walk was positive, negative,or 0
+</p>
+
+<p>
+Alternatively, take a markov chain in 3 states. If we pass it to a function where two events are
+guaranteed and one is isolated, this is not a Markov Chain. 
 </p>
 
 <p>

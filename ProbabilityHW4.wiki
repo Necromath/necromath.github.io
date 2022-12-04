@@ -35,13 +35,38 @@ Borel Cantelli Lemma, this will tell us that the probability of getting $c$ succ
 
 8.2:
 
-Dr. Chen thought this was a good problem (cough) 
+Suppose we had the sequence of events $\{ X_0 =0 , \ldots , X_n=0\} = \{Y_0 = \ldots = Y_{n+1}=0 \} \cup \{Y_0 = \ldots = Y_{n+1} = 1 \} $
+
+Where the equality follows from the fact that either all of the $Y$'s are 0 or they are all 1 to
+achieve equality. Since $X_n = 0 \implies Y_n = Y_{n+1}$
+
+So then $P(X_0 = 0, X_1 = 0, \ldots, X_n = 0) = P(Y_0 = 0, \ldots Y_{n+1} = 0 \} + P(Y_0 = 1, \ldots, Y_{n+1} = 1 \} = p^{n+2} + q^{n+2} $
+
+So the probability that the next $X$ is also 0 would be:
+$P(X_{n+1} = 0 | X_1 = 0, ldots ,X_n = 0) = \frac{p^{n+2} +q^{n+2}}{p^{n+1} +q^{n=1}}$
+
+Which is different from $P(X_{n+1} = 0 | X_n =0) = \frac{P(X_{n+1} = 0, X_n = 0)}{P(X_n =0)} = \frac{p^3 +q^3}{p^2+q^2} $
+
+Hence, the $X$'s do not form a Markov Chain.
+
+However, we do have that $X_{n-1} = Y_{n-1} + Y_n$ and $X_{n+1} = Y_{n+1} + Y_{n+2}$
+So we do have that $X_{n-1}$ and $X_{n+1}$ being independent. So the given relationship does hold.
+
+However, the last relation might not hold. Consider the markov chain given in the book in 8.13. If
+there was an unsuccessful attempt on the $n-1$st try. Then the probability of success on the $n+1$st
+try given that is not independent. 
+
 
 8.3:
 
-Take a random walk and send to {-1,0,1} determined if the value at the walk was positive, negative,
-or 0
+Take a random walk and send to {-1,0,1} determined if the value at the walk was positive, negative,or 0
+
+Alternatively, take a markov chain in 3 states. If it is set up where two events are switching and
+the last state stays where it is.
+We can define a function $f$ that sends the 3 state system to a 2 state system sending the two switching events to the same point and the last event
+to the other one.
+
+See the picture I will attach later.
 
 8.15:
 
-Good problem according to Le
