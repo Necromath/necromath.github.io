@@ -9,7 +9,17 @@ Solution: Recall that the probability of of success with initial capital is give
 $S= \frac{\rho^a -1}{\rho^{a+b}-1} \leq\ \rho^{-b}$ where the inequality follows from the probability of success
 with infinite capital. Then, adapting what we have from the problem itself:
 
-$S= \frac{\rho^a -1}{\rho^{a+b}-1} \leq\ \rho^{-b} (1+ \theta) = \rho^{-b}$, then solve for $\theta$
+$S= \frac{\rho^a -1}{\rho^{a+b}-1} (1+\theta)=  \rho^{-b}$, then solve for $\theta$
+
+This yields that $\theta = \frac{1-\rho^{-b}}{\rho^{a}-1} < \frac{1}{\rho^a -1}$
+
+Note that since $\rho >1$, we have that $a(\rho -1) < \rho^a -1$ and thus
+$\frac{1}{\rho^a -1} < \frac{1}{a(\rho -1)}$
+Hence, $\theta < \frac{1}{a(\rho -1)}$
+
+
+
+
 
 7.2:
 
