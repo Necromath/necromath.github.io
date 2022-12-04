@@ -22,8 +22,16 @@ Hence, $\theta < \frac{1}{a(\rho -1)}$
 Gamblers Ruin/Fortune deduced from SLoLN: $\begin{equation} P( \lim_{n \rightarrow \infty} \frac{1}{n} \sum_{i=1}^{n} x_i = p-q) = 1\end{equation}$, where
 $p-q \neq 0$.
 
-As Peng showed in class: $\begin{equation} P(\lim_{n \rightarrow \infty} \frac{\sum X_i}{n}=0) \end{equation}$
+As Peng showed in class:
 
+$\begin{equation} P(\lim_{n \rightarrow \infty} \frac{\sum X_i}{n}=0)>P(\frac{-a}{n} < \frac{\sum X_i}{n} < \frac{b}{n})=0 \end{equation}$
+
+So the strong law of large numbers imples here that right hand side will go to zero. I.E. That there
+will never be continuous play. If play never terminates, observe that $S_c(a) <1$, the probability
+that fortune $c$ will be achieved from initial $a$. So then the probability of $c$ succesive wins is
+bounded by $\rho ^{-b}$, the probability of achieving $c$ with unlimited fortune. So then from the
+Borel Cantelli Lemma, this will tell us that the probability of getting $c$ succesive wins goes to
+0.
 
 8.2:
 
