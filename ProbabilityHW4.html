@@ -112,7 +112,7 @@ So then \(P(X_0 = 0, X_1 = 0, \ldots, X_n = 0) = P(Y_0 = 0, \ldots Y_{n+1} = 0 \
 
 <p>
 So the probability that the next \(X\) is also 0 would be:
-\(P(X_{n+1} = 0 | X_1 = 0, ldots ,X_n = 0) = \frac{p^{n+2} +q^{n+2}}{p^{n+1} +q^{n=1}}\)
+\(P(X_{n+1} = 0 | X_1 = 0, \ldots ,X_n = 0) = \frac{p^{n+2} +q^{n+2}}{p^{n+1} +q^{n=1}}\)
 </p>
 
 <p>
@@ -144,16 +144,18 @@ Take a random walk and send to {-1,0,1} determined if the value at the walk was 
 </p>
 
 <p>
-Alternatively, take a markov chain in 3 states. If we pass it to a function where two events are
-guaranteed and one is isolated, this is not a Markov Chain. 
+Alternatively, take a markov chain in 3 states. If it is set up where two events are switching and
+the last state stays where it is.
+We can define a function \(f\) that sends the 3 state system to a 2 state system sending the two switching events to the same point and the last event
+to the other one.
+</p>
+
+<p>
+See the picture I will attach later.
 </p>
 
 <p>
 8.15:
-</p>
-
-<p>
-Good problem according to Le
 </p>
 
     </div>

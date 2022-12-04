@@ -43,7 +43,7 @@ achieve equality. Since $X_n = 0 \implies Y_n = Y_{n+1}$
 So then $P(X_0 = 0, X_1 = 0, \ldots, X_n = 0) = P(Y_0 = 0, \ldots Y_{n+1} = 0 \} + P(Y_0 = 1, \ldots, Y_{n+1} = 1 \} = p^{n+2} + q^{n+2} $
 
 So the probability that the next $X$ is also 0 would be:
-$P(X_{n+1} = 0 | X_1 = 0, ldots ,X_n = 0) = \frac{p^{n+2} +q^{n+2}}{p^{n+1} +q^{n=1}}$
+$P(X_{n+1} = 0 | X_1 = 0, \ldots ,X_n = 0) = \frac{p^{n+2} +q^{n+2}}{p^{n+1} +q^{n=1}}$
 
 Which is different from $P(X_{n+1} = 0 | X_n =0) = \frac{P(X_{n+1} = 0, X_n = 0)}{P(X_n =0)} = \frac{p^3 +q^3}{p^2+q^2} $
 
