@@ -17,14 +17,13 @@ Note that since $\rho >1$, we have that $a(\rho -1) < \rho^a -1$ and thus
 $\frac{1}{\rho^a -1} < \frac{1}{a(\rho -1)}$
 Hence, $\theta < \frac{1}{a(\rho -1)}$
 
-
-
-
-
 7.2:
 
 Gamblers Ruin/Fortune deduced from SLoLN: $\begin{equation} P( \lim_{n \rightarrow \infty} \frac{1}{n} \sum_{i=1}^{n} x_i = p-q) = 1\end{equation}$, where
-$p-q \neq 0$. Try bounding things. Look at your phone pictures.
+$p-q \neq 0$.
+
+As Peng showed in class: $\begin{equation} P(\lim_{n \rightarrow \infty} \frac{\sum X_i}{n}=0) \end{equation}$
+
 
 8.2:
 
