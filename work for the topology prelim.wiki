@@ -1,13 +1,70 @@
-Here is where I would put my work for topology...
+This is for HW 8, my main regeneration
 
-If I had any!! (Dinkleberg to blame)
+Question 1: Round Metric
 
-Here are definitions to know: [[DefinTop]]
+This was shown in Lee's Riemannian Manifolds: An Introduction to Curvature. Lemma 3.4
 
-Here are some problems I have practiced: [[TopPracProb]]
+Question 2: Euclidean geodesics
 
-Here are some very important theorems to know the proof of: [[ImpTopThm]]
+We compute $\frac{d}{ds} L_{\bar{g}}(\gamma_s) = \frac{d}{ds} (\int_{0}^{1} |\gamma_{s}'(t)|_{\bar{g}} dt)$
 
-Some thoughts: A lot of the questions in old prelims see to cover a couple of themes from point set topology. Connectedness, Compactness, Hausdorff, Normal, Metric, Products of spaces, continuous functions. 
+Expanding this yields:
 
-From algebraic topology: Universal covering space, retraction, homomorphism of fundamental groups.
+$\begin{align} \frac{d}{ds}(\int_{0}^{1}|\gamma'(t) +s\tilde{\gamma}'(t) -s\gamma'(t)|_{\bar{g}}) &= \frac{d}{ds}(\int_{0}^{1}|(1-s)(y-x) + s\tilde{\gamma}'(t)|_{\bar{g}} dt) \\ &= \int_{0} ^{1} |(x-y) + \tilde{\gamma}'(t)|_{bar{g}} dt \\ &= \int_{0}^{1} \sqrt{((y-x)+\tilde{\gamma}'(t))^2} dt \\ &= t(y-x) + \tilde{gamma}(t) |_{0}^{1} \end{align} $
+
+
+
+Question 3: Complete metrics on $\mathbb{R}$
+
+Assume that the integrals converge (say to some point $p\in \mathbb{R}$). We show the following for the positive case, the negative integral case is very similar. If this space is complete, then every cauchy sequence converges. Then, consider the sequence
+$0 \rightarrow t_1 \rightarrow t_2 \rightarrow \ldots \rightarrow \infty$ so that then $\int_{0} ^{\infty} \sqrt{f(t)}dt = \sum_{i=0} ^{\infty}\int_{t_i}^{t_{i+1}}$
+
+We then consider a cauchy subsequence, $\{k_j}\}$ that approaches point $p$
+Then we see that we can approximate the $k_j$ by a sequence of sums of integrals with bounds $\{t_{n_i}, t_{n_i +1}$. Thus we have a Cauchy sequence of sums of integrals that approach the bound. 
+
+I didn't really understand how our conversation led to showing that this sequence contradicted the Cauchy property of the sequence. I guess the point is that then if you take some open set around $p$ and then compute the distance between $p$ and a point to the right of it. The triangle inequality just blows up in your face since then $d_g(0, p) \geq d_g(0, \infty) + d_g(p,q)$
+
+I don't know anymore, my head spins.
+
+
+Question 4: Symmetric connections
+
+Part A: We want to show that $\tau (fX_1 +gX_2, Y) = f \tau(X_1,Y) + g\tau(X_2,Y)$ where $f,g \in C^{\infty}(M)$
+
+Observe that the left hand side is:
+
+$\nabla_{fX_1 +gX_2} Y - \nabla_{Y}(fX_1 +gX_2) - [fX_1 +gX_2, Y] $
+
+$= f \nabla_{X_1}Y +g \nabla_{X_2}Y - (f \nabla_{Y}X_1 + g\nabla_{Y}X_2 + (Yf)X_1 + (Yg)X_2 - ( (fX_1 +gX_2)Y^j -Y(fX_1 +gX_2)^j) \frac{\partial}{\partial x^j} $
+
+$= (f \nabla_{X_1}Y - f\nabla_{Y}X_1 -(Yf)X - (fX_1 Y^j - Y(fX_1)^j)\frac{\partial}{\partial x^j} + (g \nabla_{X_2}Y - g\nabla_{Y}X_2 -(Yg)X_2 - (gX_2 Y^j - Y(gX_2)^j)\frac{\partial}{\partial x^j} $
+
+$= f \tau(X_1,Y) +g\tau(X_2,Y)$
+
+
+Part B: Here we chase down some definitions. Let $X = X^i \partial_i$, and $Y = Y^j \partial^j$. So then we
+see that $\nabla_X Y - \nabla_Y X - [X,Y] = X^i(Y^j \Gamma_{ij}^k \partial_k + Y_i ^j + \partial_j)- Y^j(X^i \Gamma_{ji}^k \partial_k + X^{i}_{j} \partial_i) - (X^i Y^j_i -Y^i X^j_i)\partial_J$
+
+Question 5: Space connections
+
+We want to show that the difference tensor field $A: \frak{X} (M) \times \frak{X}(M) \rightarrow \frak{X}(M)$ defined by the map 
+
+$\begin{equation} A(X,Y) = \nabla_X ^{1}Y - \nabla_X ^{0} Y \end{equation}$
+
+has all the nice properties of a connection. So we'll show that now.
+
+Linear Product Rule: We want to show that $A(fX_1+gX_2,Y) = fA(X_1,Y)+gA(X_2,Y)$
+Observe that the left hand side is exactly $\begin{split} \nabla_{fX_1+gX_2} ^{1} Y - \nabla_{fX_1+gX_2}^0 Y &= (f \nabla_{X_1}^1 Y + g\nabla_{X_2^{1}}Y) - (f \nabla_{X_1}^{0}Y + g\nabla_{X_2}^{0}Y) \\ &= f(\nabla_{X_1}^{1} Y - \nabla_{X_1}^{0}Y ) + g(\nabla_{X_2}^{0} Y - \nabla_{X_2}^{0}Y) \\ &= f(A(X_1,Y)) +g(A(X_2,Y)) \end{split}$
+
+Next, if $a,b \in \mathbb{R}$, we wish to that $A(X, aY_1 +bY_2) = a(A(X,Y_1)) + b(A(X,Y_2))$
+
+Manipulating the left hand side, we see that:
+
+$\begin{align} \nabla_{X}^{1}(aY_1+bY_2) - \nabla_{X}^{0}(aY_1 +bY_2) &= a \nabla_{X}^{1}Y_{1} + b \nabla_{X}^{1}Y_{2} - a\nabla_{X}^{0}Y_{1} - b\nabla_{X}^{0}Y_{2} \\ &= a(\nabla_{X}^{1}Y_{1} - \nabla_{X}^{0}Y_{1}) + b(\nabla_{X}^{1}Y_{2} - \nabla_{X}^{0}Y_{2}) \\ &= a(A(X,Y_1)) + b(A(X,Y_2)) \end{align}$
+
+Finally we show that if $f \in C^{\infty}(M)$ then $A(X,fY) = f(A(X,Y))$
+
+The left hand side is equal to:
+
+$\begin{align} \nabla_{X}^{1}(fY) - \nabla_{X}^{0}(fY) &= f \nabla_{X}^{1}(Y) + (Xf)Y - f \nabla_{X}^{0}Y - (Xf)Y \\ &= f A(X,Y) \end{align}$ 
+
