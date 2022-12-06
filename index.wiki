@@ -25,16 +25,5 @@ Hello Dr. Chen!!
 
 Note to self: git push and then inserting the proper credentials allowed us to use lazygit push without having to use authorization. But then the program reverted back to asking for credentials again.
 
-$\int_0^1 x^2 dx $
-
-This is a new note to show off to my friends and family during thanksgiving!
-
-
-Inserting here some new words to show off to my dad.
-
-Here is a neat equation:
-
 $\int_{-\infty}^{\infty} \frac{cos(x)}{1+x^2} = \frac{\pi}{e}$
 
-
-More testing, might need to fix what is bound to what
