@@ -27,3 +27,5 @@ Note to self: git push and then inserting the proper credentials allowed us to u
 
 $\int_{-\infty}^{\infty} \frac{cos(x)}{1+x^2} = \frac{\pi}{e}$
 
+
+Hi fernando!
