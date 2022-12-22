@@ -32,3 +32,5 @@ Hi fernando!
 
 ToDo: create separate identity and ssh for this new ubuntu set up. look into configuring the whole
 shtick or whatever. ssh and binding 
+
+Did it work?
