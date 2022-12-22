@@ -7,6 +7,16 @@ Here, I have written up some of my work (incorrect in some parts) for others to 
 
 This is an [[art gallery]]
 
+This is a [[list of my publications]]
+
+This is a [[list of my presentations]]
+
+This is a [[list of my talks]]
+
+This is a [[list of my projects]]
+
+This is a [[list of my hobbies]]
+
 And this is not a pipe
 
 {{https://upload.wikimedia.org/wikipedia/en/b/b9/MagrittePipe.jpg}}
