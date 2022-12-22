@@ -21,16 +21,10 @@ My solutions to questions in my [[probability]] class following Billingsley
 
 Some personal [[Miscellaneous Work]]
 
-Hello Dr. Chen!!
 
 Note to self: git push and then inserting the proper credentials allowed us to use lazygit push without having to use authorization. But then the program reverted back to asking for credentials again.
 
 $\int_{-\infty}^{\infty} \frac{cos(x)}{1+x^2} = \frac{\pi}{e}$
 
 
-Hi fernando!
 
-ToDo: create separate identity and ssh for this new ubuntu set up. look into configuring the whole
-shtick or whatever. ssh and binding 
-
-Did it work?
