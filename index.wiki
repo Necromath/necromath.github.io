@@ -29,3 +29,6 @@ $\int_{-\infty}^{\infty} \frac{cos(x)}{1+x^2} = \frac{\pi}{e}$
 
 
 Hi fernando!
+
+ToDo: create separate identity and ssh for this new ubuntu set up. look into configuring the whole
+shtick or whatever. ssh and binding 
