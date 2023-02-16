@@ -26,3 +26,25 @@ Then $\mathbb{P}[Y=a]=1$ for some $a$.
 = 22.2 =
 
 Assume $\{X_n}$ independent and define $X_{n}^{(c)}$ as in Theorem 22.8. Prove that for $\sum |X_n|$ to converge with probability 1 it is necessary that $\sum \mathbb{P}[|X_n| >c]$ and $\sum \mathbb{E}[|X_{n}^{(c)}$ converge for all positive $c$ and sufficient that they converge for some positive $c$. If the three series $(22.13)$ converge but $\sum \mathbb{E}[|X_{n}^{(c)}] = \infty$, then there is probability 1 that $\sum X_n$ converges conditionally but not absolutely.
+
+= Proof: =
+
+In the forwards direction, assume that $\sum |X_n|$ converges with probability 1. Since absolute convergence of a series implies ordinary convergence. Then, for all $c>0$ we have $\begin{equation}\sum \mathbb{P}[X_n > c] \leq \sum \mathbb{E}[|X_{n}^{(c)}] \leq \sum \mathbb{E}[|X_n|] < \infty \end{equation}$.
+
+In the backwards direction, assume that $\sum \mathbb{P}[|X_n| >c]$ and $\sum \mathbb{E}[|X_{n}^{(c)}$ converge for some positive $c$. Theorem 22.6 yields that for $\sum |X_{n}^{(c)}| - E[|X_{n}^{(c)}|]$, this converges almost surely. Since $\sum E[|X_{n}^{(c)}|]$ converges for $c$, then so must $\sum |X_{n}^{(c)}|$. Then by the first Borel Cantelli lemma, $\mathbb{P}[X_n \neq X_{n}^{(c)} i.o.] = 0$. Thus implying that $\sum |X_n|$ converges with probability 1.
+
+This implies that $\sum |X_n|$ converges with probability 1.
+
+If the three series converge of (Eq. 22.13) converge but $\sum \mathbb{E}[|X_{n}^{(c)}] = \infty$, then there is probability 1 that $\sum X_n$ converges conditionally but not absolutely. It is given that $\sum X_n$ converges with probability 1 by hypothesis. However, $\sum \mathbb{E}[|X_{n}^{(c)}] = \infty$ does not satisfy the conditions for what we just proved above in our if and only if. Hence, the series diverges absolutely with probability 1.
+
+= 22.3 =
+
+Generalizing the Borel-Cantelli Lemmas
+
+a) Suppose that $X_n$ are nonnegative. If $\sum \mathbb{E}[X_n] < \infty$, then $\sum X_n$ converges with probability 1. If the $X_n$ are independent and uniformly bounded, and if $\sum \mathbb{E}[X_n] = \infty$, then $\sum X_n$ diverges with probability 1. 
+
+b) Construct independent nonnegative $X_n$ such that $\sum X_n$ converges with probability 1 but $\sum \mathbb{E}[X_n]$ diverges. For an extreme example, arrange that $\mathbb{P}[X_n > 0 i.o] =0$ but $\mathbb{E}[X_n] \cong \infty$
+
+= Proof: =
+
+
