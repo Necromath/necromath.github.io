@@ -1,0 +1,98 @@
+<html>
+<head>
+<meta name="robots" content="noindex">
+<link rel="Stylesheet" type="text/css" href="style.css" />
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({ TeX: {
+    extensions: [	"autobold.js",
+		"AMSmath.js",
+		"AMSsymbols.js",
+		"AMScd.js",
+		"color.js"]
+    Macros: {
+	  R: "\mathbb{R}",
+	  P: "\mathbb{P}",
+	  Norm: ["\left\|| #1 \right||",1]
+    }
+  }});
+</script>
+<script>
+MathJax = {
+  tex: {
+    inlineMath: [['$', '$'], ['\\(', '\\)']]
+  },
+  svg: {
+    fontCache: 'global'
+  }
+};
+</script>
+<script type="text/javascript" id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex&#45;svg.js">
+</script>
+    <title>BillingsleySection22</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head>
+<body>
+    <a href="index.html">Index</a>
+    <div class="content">
+    
+<p>
+Lorem ipsum
+</p>
+
+<div id="22.1"><h1 id="22.1" class="header"><a href="#22.1">22.1</a></h1></div>
+
+<p>
+Let \(X_1,X_2, \ldots\) be a sequence of independent random variables and \(Y\) is measurable in \(\sigma(X_1,X_2,\ldots)\) for each \(n\). Show that there exists a constant \(a\) such that \(\mathbb{P}[Y=a]=1\)
+</p>
+
+<div id="Proof:"><h1 id="Proof:" class="header"><a href="#Proof:">Proof:</a></h1></div>
+
+<p>
+Let \(X_1,X_2, \ldots\) be a sequence of independent random variables and \(Y\) be measurable in \(\sigma(X_1,X_2,\ldots)\) as stated. 
+</p>
+
+<p>
+Recall a property definition of \(\mathbb{P}[Y=a]\):
+</p>
+
+<p>
+\(\begin{equation}\mahbb{P}[Y=a]= \mathbb{P}[Y \leq a] - \mathbb{P}[Y&lt;a] \end{equation}\)
+</p>
+
+<p>
+Which is equivalent to:
+</p>
+
+<p>
+\(\begin{equation} F(a) - F(a^-) = \mathbb{P}[Y=a] \end{equation}\)
+</p>
+
+<p>
+Where \(F\) is the cumulative distribution function of \(Y\) and \(a^-\) is the limit approaching from the left to \(a\). A defining property of \(F\) was that \(\lim_{x \to infty} F(x) \to \1\)
+</p>
+
+<p>
+So let \(a\) be the smallest positive real number such that \(F(x) \to = 1\).
+</p>
+
+<p>
+Then \(\mathbb{P}[Y=a]=1\) for some \(a\).
+</p>
+
+
+<div id="22.2"><h1 id="22.2" class="header"><a href="#22.2">22.2</a></h1></div>
+
+<p>
+Assume \(\{X_n}\) independent and define \(X_{n}^{(c)}\) as in Theorem 22.8. Prove that for \(\sum |X_n|\) to converge with probability 1 it is necessary that \(\sum \mathbb{P}[|X_n| &gt;c]\) and \(\sum \mathbb{E}[|X_{n}^{(c)}\) converge for all positive \(c\) and sufficient that they converge for some positive \(c\). If the three series \((22.13)\) converge but \(\sum \mathbb{E}[|X_{n}^{(c)}] = \infty\), then there is probability 1 that \(\sum X_n\) converges conditionally but not absolutely.
+</p>
+
+    </div>
+<hr>
+<script language="Javascript">
+document.write("This page was powered by Vimwiki and was last modified on: " + document.lastModified +"");
+</SCRIPT>
+<hr>
+<center>&copy; Mauricio Montes, 2022, myfirstname.mylast@auburn.edu </center>
+</body>
+</html>

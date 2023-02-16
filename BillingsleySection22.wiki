@@ -1,0 +1,28 @@
+Lorem ipsum
+
+= 22.1 =
+
+Let $X_1,X_2, \ldots$ be a sequence of independent random variables and $Y$ is measurable in $\sigma(X_1,X_2,\ldots)$ for each $n$. Show that there exists a constant $a$ such that $\mathbb{P}[Y=a]=1$
+
+= Proof: =
+
+Let $X_1,X_2, \ldots$ be a sequence of independent random variables and $Y$ be measurable in $\sigma(X_1,X_2,\ldots)$ as stated. 
+
+Recall a property definition of $\mathbb{P}[Y=a]$:
+
+$\begin{equation}\mahbb{P}[Y=a]= \mathbb{P}[Y \leq a] - \mathbb{P}[Y<a] \end{equation}$
+
+Which is equivalent to:
+
+$\begin{equation} F(a) - F(a^-) = \mathbb{P}[Y=a] \end{equation}$
+
+Where $F$ is the cumulative distribution function of $Y$ and $a^-$ is the limit approaching from the left to $a$. A defining property of $F$ was that $\lim_{x \to infty} F(x) \to \1$
+
+So let $a$ be the smallest positive real number such that $F(x) \to = 1$.
+
+Then $\mathbb{P}[Y=a]=1$ for some $a$.
+
+
+= 22.2 =
+
+Assume $\{X_n}$ independent and define $X_{n}^{(c)}$ as in Theorem 22.8. Prove that for $\sum |X_n|$ to converge with probability 1 it is necessary that $\sum \mathbb{P}[|X_n| >c]$ and $\sum \mathbb{E}[|X_{n}^{(c)}$ converge for all positive $c$ and sufficient that they converge for some positive $c$. If the three series $(22.13)$ converge but $\sum \mathbb{E}[|X_{n}^{(c)}] = \infty$, then there is probability 1 that $\sum X_n$ converges conditionally but not absolutely.
