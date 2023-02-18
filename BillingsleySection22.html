@@ -125,11 +125,13 @@ Construct independent nonnegative \(X_n\) such that \(\sum X_n\) converges with 
 
 <div id="Proof:"><h1 id="Proof:" class="header"><a href="#Proof:">Proof:</a></h1></div>
 
-<ol>
-<li>
-Let \(X_n\) be nonnegative. Where \(\sum \mathbb{E}[X_n] &lt; \infty\). Let \(S_n = \sum_{i=1}^{n} X_i\). We need to show that \(P[\lim_{n}\sup{j\geq 1} |S_{n+j} - S_{n}| \geq \epsilon ] = 0\) 
+<p>
+For part a:
+</p>
 
-</ol>
+<p>
+Let \(X_n\) be nonnegative. Where \(\sum \mathbb{E}[X_n] &lt; \infty\). Let \(S_n = \sum_{i=1}^{n} X_i\). We need to show that \(P[\lim_{n}\sup{j\geq 1} |S_{n+j} - S_{n}| \geq \epsilon ] = 0\) 
+</p>
 
 
 <p>
@@ -145,11 +147,15 @@ Observe that \(P [\limsup |S_{n+j} - S_n| \geq \epsilon] = P[\limsup \sum_{k=n+1
 The last inequality goes to 0 since the series is convergent by hypothesis. Hence, \(S_n\) converges with probability 1.
 </p>
    
-<ol>
-<li>
-Let \(X_1\) be a random variable that follows a Cauchy distribution and \(X_n, n&gt;1\) be random variables such that \(P[X_n \in A] = \frac{1}{n^2}\) for any \(A\). Clearly the expectation diverges since Cauchy distributions have infinite mean. But the sum of the \(X_n\) since this converges almost surely to \(X = 0\). 
 
-</ol>
+
+<p>
+For part b:
+</p>
+
+<p>
+Let \(X_1\) be a random variable that follows a Cauchy distribution and \(X_n, n&gt;1\) be random variables such that \(P[X_n \in A] = \frac{1}{n^2}\) for any \(A\). Clearly the expectation diverges since Cauchy distributions have infinite mean. But the sum of the \(X_n\) since this converges almost surely to \(X = 0\). 
+</p>
    
    
 <div id="22.5"><h1 id="22.5" class="header"><a href="#22.5">22.5</a></h1></div>
@@ -172,20 +178,17 @@ Show that \(P[n^{-1} \textrm{max}_{k \leq n} X_k \leq x] \to e^{\frac{-u}{\pi x}
 
 <div id="Proof:"><h1 id="Proof:" class="header"><a href="#Proof:">Proof:</a></h1></div>
 
-<ol>
-<li>
-This follows from the corollary to theorem 22.1, since the \(X_i\) are i.i.d, and \(E[X_1]=0\). Truncate \(X_n\) by only being interested in values of \(X_n\) less than \(u\). Then \(n^{-1} \sum_{k=1}^{n} X_k \geq n^{-1} \sum_{k=1}^{n} X_{k}^{(u)} \to E[X_{1}^{(u)}]\)
-
-</ol>
-
-
-<ol>
-<li>
-Notice that \(P[n^{-1} \textrm{max}_{k \leq n} X_k \leq x] = P[\textrm{max}_{k \leq n} X_k^{(u)} \leq nx]\). Then
-
-</ol>
 <p>
-\(\begin{equation} P[\textrm{max}_{k \leq n} X_k^{(u)} \leq nx] = P[X_1 \leq xn]^n = \left( \int_{0}^{nx} \frac{1}{\pi} \frac{u}{u^2 + x^2} dx \right) \to e ^{\frac{-u}{\pi x} \end{equation}\)
+This follows from the corollary to theorem 22.1, since the \(X_i\) are i.i.d, and \(E[X_1]=0\). Truncate \(X_n\) by only being interested in values of \(X_n\) less than \(u\). Then \(n^{-1} \sum_{k=1}^{n} X_k \geq n^{-1} \sum_{k=1}^{n} X_{k}^{(u)} \to E[X_{1}^{(u)}]\)
+</p>
+
+
+<p>
+Notice that \(P[n^{-1} \textrm{max}_{k \leq n} X_k \leq x] = P[\textrm{max}_{k \leq n} X_k^{(u)} \leq nx]\). Then 
+</p>
+
+<p>
+\( \begin{equation} P[\textrm{max}_{k \leq n} X_k^{(u)} \leq nx] = P[X_1 \leq xn]^n  = \int_{0}^{nx} \frac{1}{\pi} \frac{u}{u^2 + x^2} dx  \to e ^{\frac{-u}{\pi x} } \end{equation}\)
 </p>
 
 <div id="22.15"><h1 id="22.15" class="header"><a href="#22.15">22.15</a></h1></div>
@@ -223,7 +226,7 @@ Show \(M(2\alpha) \leq B_O(\alpha) = 1 \wedge \frac{T(\alpha}{1- R(\alpha)}\).
 
 <ol>
 <li>
-Prove \(B_{E}(\alpha) \leq 3B_O(\frac{\alpha}{2}), B_{O}(\alpha} \leq 3B_{E}(\frac{\alpha}{6}\)
+Prove \(B_{E}(\alpha) \leq 3B_O(\frac{\alpha}{2}), B_{O}(\alpha) \leq 3B_{E}(\frac{\alpha}{6})\)
 
 </ol>
 
@@ -235,7 +238,21 @@ For the first part,
 </p>
 
 <p>
-Observe that \(M(s+t) = P[\textrm{max}_{k \leq n} |S_k| &gt; s+t]  \leq P[|S_n| \geq s+t] + \sum_{k=1}^{n-1} P[B_k \cap [|S_n - S_k| &gt; 2(s+t)]] \leq P[|S_n| \geq (s+t)] + \textrm{max}_{1\leq k \leq n} P[|S_n -S_k| \geq 2(s+t)] \leq T(t) + M(s+t)R(s)\)
+Observe that \(M(s+t) = P[\textrm{max}_{k \leq n} |S_k| &gt; s+t]\)
+</p>
+
+
+
+
+<p>
+\(\leq P[|S_n| \geq s+t] + \sum_{k=1}^{n-1} P[B_k \cap [|S_n - S_k| &gt; 2(s+t)]] \)
+</p>
+
+
+
+
+<p>
+\(\leq P[|S_n| \geq (s+t)] + \textrm{max}_{1\leq k \leq n} P[|S_n -S_k| \geq 2(s+t)] \leq T(t) + M(s+t)R(s)\)
 </p>
 
 <p>
@@ -251,7 +268,7 @@ For the third part,
 </p>
 
 <p>
-\(M(2\alpha)( 1- R(\alpha)) \leq T(\alpha)\), after dividing, we see that \(M(2\alpha) \leq 1 \wedge \frac{T(\alpha)}{1 - R(\alpha)\)
+\(M(2\alpha)( 1- R(\alpha)) \leq T(\alpha)\), after dividing, we see that \(M(2\alpha) \leq 1 \wedge \frac{T(\alpha)}{1 - R(\alpha)}\)
 </p>
 
 <p>
@@ -267,7 +284,11 @@ Then, since \(T(s)\) is nondecreasing, and \(R(2s) \leq 2L(s)\), and \(T(s) \leq
 </p>
 
 <p>
-\(B_{O}(6s) \leq \frac{T(6s}{1 - R(6s)} \leq \frac{T(3s)}{1 - 2L(3s)} \leq \frac{M(3s)}{1 - 2M(3s)} \leq \frac{B_E(s)}{1-2B_{E}(s)} \leq 3B_{E}(s)\)
+\(B_{O}(6s) \leq \frac{T(6s}{1 - R(6s)} \leq \frac{T(3s)}{1 - 2L(3s)} \leq \frac{M(3s)}{1 - 2M(3s)} \)
+</p>
+
+<p>
+\(\leq \frac{B_E(s)}{1-2B_{E}(s)} \leq 3B_{E}(s)\)
 </p>
 
     </div>
