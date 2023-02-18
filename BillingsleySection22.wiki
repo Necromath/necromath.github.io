@@ -10,22 +10,22 @@ Let $X_1,X_2, \ldots$ be a sequence of independent random variables and $Y$ be m
 
 Recall a property definition of $\mathbb{P}[Y=a]$:
 
-$\begin{equation}\mahbb{P}[Y=a]= \mathbb{P}[Y \leq a] - \mathbb{P}[Y<a] \end{equation}$
+$\begin{equation}\mathbb{P}[Y=a]= \mathbb{P}[Y \leq a] - \mathbb{P}[Y<a] \end{equation}$
 
 Which is equivalent to:
 
 $\begin{equation} F(a) - F(a^-) = \mathbb{P}[Y=a] \end{equation}$
 
-Where $F$ is the cumulative distribution function of $Y$ and $a^-$ is the limit approaching from the left to $a$. A defining property of $F$ was that $\lim_{x \to infty} F(x) \to \1$
+Where $F$ is the cumulative distribution function of $Y$ and $a^-$ is the limit approaching from the left to $a$. A defining property of $F$ was that $\lim_{x \to \infty} F(x) \to 1$
 
-So let $a$ be the smallest positive real number such that $F(x) \to = 1$.
+So let $a$ be the smallest positive real number such that $F(x) = 1$.
 
 Then $\mathbb{P}[Y=a]=1$ for some $a$.
 
 
 = 22.2 =
 
-Assume $\{X_n}$ independent and define $X_{n}^{(c)}$ as in Theorem 22.8. Prove that for $\sum |X_n|$ to converge with probability 1 it is necessary that $\sum \mathbb{P}[|X_n| >c]$ and $\sum \mathbb{E}[|X_{n}^{(c)}$ converge for all positive $c$ and sufficient that they converge for some positive $c$. If the three series $(22.13)$ converge but $\sum \mathbb{E}[|X_{n}^{(c)}] = \infty$, then there is probability 1 that $\sum X_n$ converges conditionally but not absolutely.
+Assume $\{X_n \}$ independent and define $X_{n}^{(c)}$ as in Theorem 22.8. Prove that for $\sum |X_n|$ to converge with probability 1 it is necessary that $\sum \mathbb{P}[|X_n| >c]$ and $\sum \mathbb{E}[|X_{n}^{(c)}|]$ converge for all positive $c$ and sufficient that they converge for some positive $c$. If the three series $(22.13)$ converge but $\sum \mathbb{E}[|X_{n}^{(c)}|] = \infty$, then there is probability 1 that $\sum X_n$ converges conditionally but not absolutely.
 
 = Proof: =
 
@@ -47,7 +47,7 @@ b) Construct independent nonnegative $X_n$ such that $\sum X_n$ converges with p
 
 = Proof: =
 
-a) Let $X_n$ be nonnegative. Where $\sum \mathbb{E}[X_n] < \infty$. Let $S_n = \sum_{i=1}^{n} X_i$. We need to show that $P[\lim\limits_{n}sup\limits{j\geq 1} |S_{n+j} - S_n}| \geq \epsilon ] = 0$ 
+a) Let $X_n$ be nonnegative. Where $\sum \mathbb{E}[X_n] < \infty$. Let $S_n = \sum_{i=1}^{n} X_i$. We need to show that $P[\lim_{n}\sup{j\geq 1} |S_{n+j} - S_n}| \geq \epsilon ] = 0$ 
 
 
 Observe that $P [\limsup |S_{n+j} - S_n| \geq \epsilon] = P[\limsup \sum_{k=n+1}^{j} X_k \geq \epsilon ] = \lim_{n} P[\sup_{j /geq 1} \sum_{k=n+1} ^{j} X_k \geq \epsilon ] \leq \frac{1}{\epsilon} \limsup \sum E[X_k] = \frac{1}{\epsilon} \lim_{n} \sum_{k =n+1} ^\infty E[X_k]$.

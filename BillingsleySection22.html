@@ -57,7 +57,7 @@ Recall a property definition of \(\mathbb{P}[Y=a]\):
 </p>
 
 <p>
-\(\begin{equation}\mahbb{P}[Y=a]= \mathbb{P}[Y \leq a] - \mathbb{P}[Y&lt;a] \end{equation}\)
+\(\begin{equation}\mathbb{P}[Y=a]= \mathbb{P}[Y \leq a] - \mathbb{P}[Y&lt;a] \end{equation}\)
 </p>
 
 <p>
@@ -69,11 +69,11 @@ Which is equivalent to:
 </p>
 
 <p>
-Where \(F\) is the cumulative distribution function of \(Y\) and \(a^-\) is the limit approaching from the left to \(a\). A defining property of \(F\) was that \(\lim_{x \to infty} F(x) \to \1\)
+Where \(F\) is the cumulative distribution function of \(Y\) and \(a^-\) is the limit approaching from the left to \(a\). A defining property of \(F\) was that \(\lim_{x \to \infty} F(x) \to 1\)
 </p>
 
 <p>
-So let \(a\) be the smallest positive real number such that \(F(x) \to = 1\).
+So let \(a\) be the smallest positive real number such that \(F(x) = 1\).
 </p>
 
 <p>
@@ -84,7 +84,7 @@ Then \(\mathbb{P}[Y=a]=1\) for some \(a\).
 <div id="22.2"><h1 id="22.2" class="header"><a href="#22.2">22.2</a></h1></div>
 
 <p>
-Assume \(\{X_n}\) independent and define \(X_{n}^{(c)}\) as in Theorem 22.8. Prove that for \(\sum |X_n|\) to converge with probability 1 it is necessary that \(\sum \mathbb{P}[|X_n| &gt;c]\) and \(\sum \mathbb{E}[|X_{n}^{(c)}\) converge for all positive \(c\) and sufficient that they converge for some positive \(c\). If the three series \((22.13)\) converge but \(\sum \mathbb{E}[|X_{n}^{(c)}] = \infty\), then there is probability 1 that \(\sum X_n\) converges conditionally but not absolutely.
+Assume \(\{X_n \}\) independent and define \(X_{n}^{(c)}\) as in Theorem 22.8. Prove that for \(\sum |X_n|\) to converge with probability 1 it is necessary that \(\sum \mathbb{P}[|X_n| &gt;c]\) and \(\sum \mathbb{E}[|X_{n}^{(c)}|]\) converge for all positive \(c\) and sufficient that they converge for some positive \(c\). If the three series \((22.13)\) converge but \(\sum \mathbb{E}[|X_{n}^{(c)}|] = \infty\), then there is probability 1 that \(\sum X_n\) converges conditionally but not absolutely.
 </p>
 
 <div id="Proof:"><h1 id="Proof:" class="header"><a href="#Proof:">Proof:</a></h1></div>
@@ -127,7 +127,7 @@ Construct independent nonnegative \(X_n\) such that \(\sum X_n\) converges with 
 
 <ol>
 <li>
-Let \(X_n\) be nonnegative. Where \(\sum \mathbb{E}[X_n] &lt; \infty\). Let \(S_n = \sum_{i=1}^{n} X_i\). We need to show that \(P[\lim\limits_{n}sup\limits{j\geq 1} |S_{n+j} - S_n}| \geq \epsilon ] = 0\) 
+Let \(X_n\) be nonnegative. Where \(\sum \mathbb{E}[X_n] &lt; \infty\). Let \(S_n = \sum_{i=1}^{n} X_i\). We need to show that \(P[\lim_{n}\sup{j\geq 1} |S_{n+j} - S_n}| \geq \epsilon ] = 0\) 
 
 </ol>
 
