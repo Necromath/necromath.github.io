@@ -127,7 +127,7 @@ Construct independent nonnegative \(X_n\) such that \(\sum X_n\) converges with 
 
 <ol>
 <li>
-Let \(X_n\) be nonnegative. Where \(\sum \mathbb{E}[X_n] &lt; \infty\). Let \(S_n = \sum_{i=1}^{n} X_i\). We need to show that \(P[\lim_{n}\sup{j\geq 1} |S_{n+j} - S_n}| \geq \epsilon ] = 0\) 
+Let \(X_n\) be nonnegative. Where \(\sum \mathbb{E}[X_n] &lt; \infty\). Let \(S_n = \sum_{i=1}^{n} X_i\). We need to show that \(P[\lim_{n}\sup{j\geq 1} |S_{n+j} - S_{n}| \geq \epsilon ] = 0\) 
 
 </ol>
 
@@ -138,7 +138,7 @@ Observe that \(P [\limsup |S_{n+j} - S_n| \geq \epsilon] = P[\limsup \sum_{k=n+1
 
 
 <p>
-\(\leq \frac{1}{\epsilon} \limsup \sum E[X_k] = \frac{1}{\epsilon} \lim_{n} \sum_{k =n+1} ^\infty E[X_k]\).
+\(\leq \frac{1}{\epsilon} \lim \sup \sum E[X_k] = \frac{1}{\epsilon} \lim_{n} \sum_{k =n+1} ^\infty E[X_k]\).
 </p>
 
 <p>
