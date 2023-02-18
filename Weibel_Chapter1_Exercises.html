@@ -151,6 +151,18 @@ Allowing us to conclude that \(A.\) is split exact.
 Let \(A.\) be an acyclic chain complex of finitely generated free abelian groups. 
 </p>
 
+<p>
+The complex is exact, since it is acyclic.
+</p>
+
+<p>
+Since \(A_n\) is a finitely generated free group, we can decompose it into a direct sum \(A_n = Z_n \oplus B'_n\) where \(Z_n\) is the kernel of the chain map \(d_n\) and \(B'_n = A_n \ Z_n\). Since the complex is exact, we have that \(Z_n = d(C_n) = B'_{n+1}\). So we can choose a basis in \(B'_{n+1}\) and let \(s_n:C_n \to C_{n+1}\) be s_n(e_i) = f_i where \(d(f_i) = e_i\) and \(e_i\) is an element of the basis for \(Z_n\)  since the kernel is also free. \(f_i\) is an element of the basis of \(B'_{n+1}\) and \(s_n(0) = 0\). Our choice of \(f_i\) is possible since free abelian groups are projective. We can choose a basis for \(Z_n\) and let \(s_n: A_n \to A_{n+1}\) be the map which sets \(ds= id\) on \(Z_n\) via the projectivity of \(Z_n\). So, we have a map \(s\) such that \(dsd = d\). Hence, \(A.\) splits
+</p>
+
+<p>
+Thus, \(A.\) is split exact.
+</p>
+
 
 <div id="Exercise 1.5.1"><h1 id="Exercise 1.5.1" class="header"><a href="#Exercise 1.5.1">Exercise 1.5.1</a></h1></div>
 
@@ -161,7 +173,23 @@ Let cone\((C)\) denote the mapping cone of the identity map \(id_C\) of \(C\); i
 <div id="Solution:"><h1 id="Solution:" class="header"><a href="#Solution:">Solution:</a></h1></div>
 
 <p>
-The mapping cone of the identity has \(d\) defined as \(d(a,b) = (-d(a),d(b) - a)\). 
+The mapping cone of the identity has \(d\) defined as \(d(a,b) = (-d(a),d(b) - a)\).
+</p>
+
+<p>
+We check that \(dsd=d\): 
+</p>
+
+<p>
+\( \begin{split} d(s(d(a,b))) = d(s(-d(a),d(b) - a)) &amp; = d(a-d(b), 0) \\  &amp;= d(-d(a), 0 - (a-d(b))) \\ &amp;= d(-d(a), d(b) -a) \\ &amp;= d(a,b) \end{split}\)
+</p>
+
+<p>
+Thus, \(dsd = d\) and \(cone(C)\) is split.
+</p>
+
+<p>
+To see exactness, since the identity map is a quasi-isomorphism, the mapping cone of the identity is exact, by Corrolary 1.5.4. . What would a direct proof look like?
 </p>
 
     </div>

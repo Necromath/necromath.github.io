@@ -1,7 +1,50 @@
 = Exercise 2.1.1 =
 
-Solution:
+Let $\mathcal{S}$ be the category of short exact sequences:
 
-= Exercise 2.2.1 =
+$\begin{equation} 0 \rightarrow A \rightarrow B \rightarrow C \rightarrow 0 \end{equation}$
+
+in $\mathcal{A}$. Show that $\delta_i$ is a natural transformation from the functor sending the above SES to $T_{i}(C)$ to the functor sending the SES to $T_{i-1}(A)$.
 
 = Solution: =
+
+Given a short exact sequence as above and $\delta_i$, a $\delta$-functor. Observe that from the second part of the definition of $\delta$-functors, the diagram of the identity morphism of the SES above must commute. Thus, satisfying the definition of a natural transformation from the functor sending our SES to $T_i(C)$ to the functor sending the SES to $T_{i-1}(C)$.
+
+(is this the right start to the idea?)
+
+
+= Exercise 2.2.1 =
+Show a chain complex $P$ is a projective object in $Ch$ if and only if it is a split exact complex of projectives.
+
+= Solution: =
+
+Solving the only if part first:
+
+Following the hint where we consider $\begin{equation} 0 \ldots \to P_1 \cong P_0 \to 0 \to \ldots \end{equation}$.
+
+Since $P$ is split exact, we can decompose $P_n$ into $P_n = Z_n \oplus B_n$. Where $Z_n = ker(d_n), B_n = P_n \ Z_n$ Thus, we want to decompose all of $P$ in such a way. Define a complex $H._{n}$ to be $\ldots \to 0 \to B_{n} \to Z_{n-1} \to 0 \to \ldots $ for each $P_n$. Taking a direct sum of all the $H._{n}$ recovers $P$.
+
+Now, if we had maps $f: P \to Y$ and $\pi : X \to Y$ where $\pi$ is a surjection, then the map $f$ can be reinterpreted as a decomposed map, $f= \sum f_i$ acting on each $H._{n}$. Projectivity at each $P_n$ yields that the $f_i$ must be projective on $f_i$ level, giving us maps $g_i$ such that $\pi \circ g_i = f_i$. Define $g:=\sum g_i$. We see then, that $pi \circ g= f$. Hence, $P$ is a projective object.
+
+For the forwards direction:
+
+Let $P$ be a projective object. Per the hint, we consider the surjection from $\textrm{cone}(id_p)$ to $P[-1]$. We expand this into a short exact sequence as follows:
+
+$\begin{equation} 0 \to P \to \textrm{cone}(id) \to P[-1] \to 0 \end{equation}$
+
+where the first map sends $p \in P$ to $(0,p)$ and the second map, $\pi$, sends $(b,p) \to -b$.
+
+If $P$ is projective, it is clear that $P[-1]$ is too. Thus, with the surjection from $\textrm{cone}(id) \to P[-1]$, and the identity map on $P[-1]$ to itself, we apply projectivity of $P[-1]$ and obtain a chain map $h:P[-1] \to \textrm{cone}(id)$ with $h(p) = (-p, f(p) )$ such that $id = \pi \circ h$
+
+Now, notice that $h$ being a chain map implies that $dh=hd$. Meaning,
+
+
+$\begin{align} d(h(p)) = d(-p,f(p) ) &= (-d(-p), d(f(p)) +p) \\ &= (-d(p), f(d(p)) )  \\ &= (d(p), f(-p)) \\ &= h(-p) \\ &= h(d(p))  \end{align}$
+
+Inside these equalities, we see that $d(f(p)) - p = f(d(p))$. Making $f$ a chain contraction of the identity map on $P$. Thus, $P$ is a split exact complex.
+
+To see why each $P_n$ is projective, notice that by split exactness of $P$, we get decomposition $P_n = Im(sd) \oplus coker(sd)$. Notice how $d$ kills the first set and maps the second to $P_{n-1}$. 
+
+We can then apply the projectivity of $P$ to maps $f: P \to Y$ and $\pi : X \to Y$ where $\pi$ is a surjection. Where $X$ and $Y$ are the chain complex with zeroes everywhere except for a module on the same $n$th coordinate where $coker(sd)$ lies. Projectivity of $P$ forces $P_n$ to be a projective object as well. 
+
+

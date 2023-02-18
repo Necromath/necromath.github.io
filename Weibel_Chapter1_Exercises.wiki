@@ -65,6 +65,12 @@ Allowing us to conclude that $A.$ is split exact.
 
 Let $A.$ be an acyclic chain complex of finitely generated free abelian groups. 
 
+The complex is exact, since it is acyclic.
+
+Since $A_n$ is a finitely generated free group, we can decompose it into a direct sum $A_n = Z_n \oplus B'_n$ where $Z_n$ is the kernel of the chain map $d_n$ and $B'_n = A_n \ Z_n$. Since the complex is exact, we have that $Z_n = d(C_n) = B'_{n+1}$. So we can choose a basis in $B'_{n+1}$ and let $s_n:C_n \to C_{n+1}$ be s_n(e_i) = f_i where $d(f_i) = e_i$ and $e_i$ is an element of the basis for $Z_n$  since the kernel is also free. $f_i$ is an element of the basis of $B'_{n+1}$ and $s_n(0) = 0$. Our choice of $f_i$ is possible since free abelian groups are projective. We can choose a basis for $Z_n$ and let $s_n: A_n \to A_{n+1}$ be the map which sets $ds= id$ on $Z_n$ via the projectivity of $Z_n$. So, we have a map $s$ such that $dsd = d$. Hence, $A.$ splits
+
+Thus, $A.$ is split exact.
+
 
 = Exercise 1.5.1 = 
 
@@ -72,4 +78,14 @@ Let cone$(C)$ denote the mapping cone of the identity map $id_C$ of $C$; it has 
 
 = Solution: =
 
-The mapping cone of the identity has $d$ defined as $d(a,b) = (-d(a),d(b) - a)$. 
+The mapping cone of the identity has $d$ defined as $d(a,b) = (-d(a),d(b) - a)$.
+
+We check that $dsd=d$: 
+
+$ \begin{split} d(s(d(a,b))) = d(s(-d(a),d(b) - a)) & = d(a-d(b), 0) \\  &= d(-d(a), 0 - (a-d(b))) \\ &= d(-d(a), d(b) -a) \\ &= d(a,b) \end{split}$
+
+Thus, $dsd = d$ and $cone(C)$ is split.
+
+To see exactness, since the identity map is a quasi-isomorphism, the mapping cone of the identity is exact, by Corrolary 1.5.4. . What would a direct proof look like?
+
+
