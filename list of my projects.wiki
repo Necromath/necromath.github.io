@@ -7,4 +7,6 @@ A game of Texas Hold'em poker with support for up to 9 players
 
 (Kaggle stuff links here)
 
+**Directed Reading Program**
 
+I organized a directed reading program in Auburn University 
