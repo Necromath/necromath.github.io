@@ -21,6 +21,11 @@ And this is not a pipe
 
 {{https://upload.wikimedia.org/wikipedia/en/b/b9/MagrittePipe.jpg}}
 
+Update: I found the original painting in the LACMA. In its spirit, I present "This is not a
+painting"
+
+INSERT PAINTING HERE
+
 My [[solutions to Folland]]  Real Analysis
 
 My solutions to questions in my [[Differential Geometry]] class
@@ -32,6 +37,10 @@ My solutions to questions in [[homological algebra]] class following Weibel
 My solutions to questions in my [[probability]] class following Billingsley
 
 Some personal [[Miscellaneous Work]]
+
+Some personal writings, [[Thoughts and Musings]]
+
+Hello everyone! 3.13415
 
 
 $\int_{-\infty}^{\infty} \frac{cos(x)}{1+x^2} = \frac{\pi}{e}$
