@@ -38,9 +38,4 @@ My solutions to questions in my [[probability]] class following Billingsley
 
 Some personal [[Miscellaneous Work]]
 
-Some personal writings, [[Thoughts and Musings]]
-
-Hello everyone! 3.13415
-
-
 $\int_{-\infty}^{\infty} \frac{cos(x)}{1+x^2} = \frac{\pi}{e}$
