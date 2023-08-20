@@ -4,28 +4,6 @@ My name is Mauricio Montes and this is my website!
 I am a second year graduate student in Mathematics at Auburn University
 Here, I have written up some of my work (please read it with a critical eye, not everything is a detailed proof) for others to use for reference and understanding.
 
-
-This is an [[art gallery]]
-
-This is a [[list of my publications]]
-
-This is a [[list of my presentations]]
-
-This is a [[list of my talks]]
-
-This is a [[list of my projects]]
-
-This is a [[list of my hobbies]]
-
-And this is not a pipe
-
-{{https://upload.wikimedia.org/wikipedia/en/b/b9/MagrittePipe.jpg}}
-
-Update: I found the original painting in the LACMA. In its spirit, I present "This is not a
-painting"
-
-INSERT PAINTING HERE
-
 My [[solutions to Folland]]  Real Analysis
 
 My solutions to questions in my [[Differential Geometry]] class
