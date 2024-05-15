@@ -1,0 +1,9 @@
+I am currently working on developing a theory of sheaves for chemical reaction networks,
+I would love to talk about this with anyone that is interested. Here below, I have some of my
+research projects that I have been involved in:
+
+
+Random Deposition of Tetris Pieces and their Topology:
+
+[[https://pypi.org/project/tetris-ballistic/| Tetris Random Deposition]]
+
