@@ -1,25 +1,14 @@
-=== Welcome! ===
+=== Mauricio Montes === 
 
-My name is Mauricio Montes and this is my website!
 I earned my Bachelors in Mathematics (2021) from UT Austin (Hook 'em) and am 
 a fourth year PhD student in Mathematics at Auburn University
 
-I am primarily interested in applications of algebraic topology, sheaves, and signal processing.
+I am interested in applications of algebraic topology, category theory,
+topological signal processing, and laplacians with a focus on chemical reaction networks.
 
 Some of [[Research| my work]] that I have done. 
 
-Here, I have written up some of my work (please read it with a critical eye, not everything is a detailed proof) for others to use for reference and understanding.
-I have worked out some [[random solutions to stuff | textbook solutions]]in my past and have them here. 
-
-
-
 
 {{Mau_Self.jpg|This is me|style="width:800px;height:533px;"}}
-
-
-
-
-
-
 
 $\int_{-\infty}^{\infty} \frac{cos(x)}{1+x^2} = \frac{\pi}{e}$
