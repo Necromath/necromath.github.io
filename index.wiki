@@ -1,7 +1,10 @@
 === Mauricio Montes === 
 
 I earned my Bachelors in Mathematics (2021) from UT Austin (Hook 'em) and am 
-a fourth year PhD student in Mathematics at Auburn University
+a fifth year PhD student in Mathematics at Auburn University.
+
+I am currently in Paris at The Sorbonne until May 2026 working with [[Grégoire Sergeant-Perthuis|https://www.normalesup.org/~sergeant/]] on
+a chemical network perspective on the geometry of probabilistic networks. 
 
 I am interested in applications of algebraic topology, category theory,
 topological signal processing, and laplacians with a focus on chemical reaction networks.

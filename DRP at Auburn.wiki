@@ -2,7 +2,7 @@ Are you an undergraduate student with a passion for delving into the captivating
 
  
 
-Introducing the Directed Reading Program at Auburn University
+==Introducing the Directed Reading Program at Auburn University==
 
  
 
@@ -14,7 +14,7 @@ The purpose of this program is to provide the undergraduate students at Auburn t
 
  
 
-Eligibility:
+==Eligibility:==
 
  
 
@@ -22,7 +22,7 @@ Undergraduate students that have completed their calculus sequence and/or linear
 
  
 
-Application Process:
+==Application Process:==
 
  
 
