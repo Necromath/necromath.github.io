@@ -1,14 +1,46 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
 <head>
-<link rel="Stylesheet" type="text/css" href="style.css">
-<link rel="alternate" type="application/rss+xml" title="RSS" href="rss.xml">
-<title>Research</title>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <meta charset="utf-8"/>
+  <title>Research</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({ TeX: {
+      extensions: ["autobold.js",
+        "AMSmath.js",
+        "AMSsymbols.js",
+        "AMScd.js",
+        "color.js"]
+      Macros: {
+        R: "\mathbb{R}",
+        P: "\mathbb{P}",
+        Norm: ["\left\|| #1 \right||",1]
+      }
+    }});
+  </script>
+  <script>
+  MathJax = {
+    tex: {
+      inlineMath: [['$', '$'], ['\\(', '\\)']]
+    },
+    svg: {
+      fontCache: 'global'
+    }
+  };
+  </script>
+  <script type="text/javascript" id="MathJax-script" async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex&#45;svg.js">
+  </script>
+
+
 </head>
 <body>
+  <a href="index.html">Index</a>
 
+  <div class="content">
+    
 <p>
 I am currently working on developing a theory of sheaves for chemical reaction networks,
 I would love to talk about this with anyone that is interested. Here below, I have some of my
@@ -40,5 +72,22 @@ It is known that the fluctuations in the surface growth models fall into a few u
 Where \(\eta\) is a centered Gaussian noise, which is white in both space and time. The KPZ equation is a stochastic partial differential equation (SPDE)
 </p>
 
+  </div>
+
+  <hr>
+  <script>
+    document.write(
+      "This page was powered by Vimwiki and was last modified on: " +
+      document.lastModified
+    );
+  </script>
+  <hr>
+  <center>&copy; Mauricio Montes, <span id="copy-year"></span>,
+    myfirstname.mylast@auburn.edu
+  </center>
+  <script>
+    document.getElementById('copy-year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
+

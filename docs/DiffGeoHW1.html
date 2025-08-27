@@ -1,14 +1,46 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
 <head>
-<link rel="Stylesheet" type="text/css" href="style.css">
-<link rel="alternate" type="application/rss+xml" title="RSS" href="rss.xml">
-<title>DiffGeoHW1</title>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <meta charset="utf-8"/>
+  <title>DiffGeoHW1</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({ TeX: {
+      extensions: ["autobold.js",
+        "AMSmath.js",
+        "AMSsymbols.js",
+        "AMScd.js",
+        "color.js"]
+      Macros: {
+        R: "\mathbb{R}",
+        P: "\mathbb{P}",
+        Norm: ["\left\|| #1 \right||",1]
+      }
+    }});
+  </script>
+  <script>
+  MathJax = {
+    tex: {
+      inlineMath: [['$', '$'], ['\\(', '\\)']]
+    },
+    svg: {
+      fontCache: 'global'
+    }
+  };
+  </script>
+  <script type="text/javascript" id="MathJax-script" async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex&#45;svg.js">
+  </script>
+
+
 </head>
 <body>
+  <a href="index.html">Index</a>
 
+  <div class="content">
+    
 <p>
 Homework 1:
 </p>
@@ -116,5 +148,22 @@ Problem 5: Let \(M\) be a manifold with boundary. Let \(x \in M\) be a point and
 Solution: Since \(U_1 \cap U_2 \neq \emptyset\). The transition function \(\varphi_2 \circ \varphi^{-1}_1: \varphi_1(U_1 \cap U_2) \rightarrow \varphi_2(U_1 \cap U_2)\) is a homeomorphism. \(\varphi_1(x) \in \mathbb{H}^n\) guarantees our homeomorphism \(\varphi_2(x) \in \partial \mathbb{H}^n\), any open set \(V \cap \mathbb{H}^n\) containing \(\varphi_(x)\) would be mapped to another open \(W \cap \mathbb{H}^n\).
 </p>
 
+  </div>
+
+  <hr>
+  <script>
+    document.write(
+      "This page was powered by Vimwiki and was last modified on: " +
+      document.lastModified
+    );
+  </script>
+  <hr>
+  <center>&copy; Mauricio Montes, <span id="copy-year"></span>,
+    myfirstname.mylast@auburn.edu
+  </center>
+  <script>
+    document.getElementById('copy-year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
+

@@ -1,14 +1,46 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
 <head>
-<link rel="Stylesheet" type="text/css" href="style.css">
-<link rel="alternate" type="application/rss+xml" title="RSS" href="rss.xml">
-<title>art gallery</title>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <meta charset="utf-8"/>
+  <title>art gallery</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({ TeX: {
+      extensions: ["autobold.js",
+        "AMSmath.js",
+        "AMSsymbols.js",
+        "AMScd.js",
+        "color.js"]
+      Macros: {
+        R: "\mathbb{R}",
+        P: "\mathbb{P}",
+        Norm: ["\left\|| #1 \right||",1]
+      }
+    }});
+  </script>
+  <script>
+  MathJax = {
+    tex: {
+      inlineMath: [['$', '$'], ['\\(', '\\)']]
+    },
+    svg: {
+      fontCache: 'global'
+    }
+  };
+  </script>
+  <script type="text/javascript" id="MathJax-script" async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex&#45;svg.js">
+  </script>
+
+
 </head>
 <body>
+  <a href="index.html">Index</a>
 
+  <div class="content">
+    
 <div id="Welcome!"><h2 id="Welcome!" class="header"><a href="#Welcome!">Welcome!</a></h2></div>
 
 <p>
@@ -31,5 +63,22 @@ If Vaporwave could be characterized by lofi downtempo beats, Future Funk was the
 The genre was really based off of City pop. Describing the musical pop explosion that happened in Japan during the 80s as synths really started to get popular. During this time, Japan was experiencing its economic boom. With prosperity surrounding the country, the music really reflected that attitude. Songs like Shyness Boy and Windy by Anri capture this upbeat feeling. Other artists like Tatusro Yamashida would croon to us with songs like Love Spacey while Miki Matsubara delivers her heartfelt pleas in Stay With Me. 
 </p>
 
+  </div>
+
+  <hr>
+  <script>
+    document.write(
+      "This page was powered by Vimwiki and was last modified on: " +
+      document.lastModified
+    );
+  </script>
+  <hr>
+  <center>&copy; Mauricio Montes, <span id="copy-year"></span>,
+    myfirstname.mylast@auburn.edu
+  </center>
+  <script>
+    document.getElementById('copy-year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
+
