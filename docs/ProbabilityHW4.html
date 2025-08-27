@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="Stylesheet" type="text/css" href="style.css">
+<link rel="alternate" type="application/rss+xml" title="RSS" href="rss.xml">
+<title>ProbabilityHW4</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+<p>
+7.1: 
+</p>
+
+<p>
+Gambler with initial capital \(a\) plays until his fortune increases \(b\) units or he is ruined. Recall
+that \(\rho = \frac{q}{p} &gt; 1\), where \(p\) is the probability of success and \(q\) is the probability of
+failure. Suppose that the chance of success is multiplied by \(1+\theta\) if his initial capital is
+infinite instead of \(a\). Show that \(0 &lt; \theta &lt; (\rho ^{a} -1)^{-1} &lt; (a(\rho -1))^{-1}\)
+</p>
+
+<p>
+Solution: Recall that the probability of of success with initial capital is given by 
+\(S= \frac{\rho^a -1}{\rho^{a+b}-1} \leq\ \rho^{-b}\) where the inequality follows from the probability of success
+with infinite capital. Then, adapting what we have from the problem itself:
+</p>
+
+<p>
+\(S= \frac{\rho^a -1}{\rho^{a+b}-1} (1+\theta)=  \rho^{-b}\), then solve for \(\theta\)
+</p>
+
+<p>
+This yields that \(\theta = \frac{1-\rho^{-b}}{\rho^{a}-1} &lt; \frac{1}{\rho^a -1}\)
+</p>
+
+<p>
+Note that since \(\rho &gt;1\), we have that \(a(\rho -1) &lt; \rho^a -1\) and thus
+\(\frac{1}{\rho^a -1} &lt; \frac{1}{a(\rho -1)}\)
+Hence, \(\theta &lt; \frac{1}{a(\rho -1)}\)
+</p>
+
+<p>
+7.2:
+</p>
+
+<p>
+Gamblers Ruin/Fortune deduced from SLoLN: \(\begin{equation} P( \lim_{n \rightarrow \infty} \frac{1}{n} \sum_{i=1}^{n} x_i = p-q) = 1\end{equation}\), where
+\(p-q \neq 0\).
+</p>
+
+<p>
+As Peng showed in class:
+</p>
+
+<p>
+\(\begin{equation} P(\lim_{n \rightarrow \infty} \frac{\sum X_i}{n}=0)&gt;P(\frac{-a}{n} &lt; \frac{\sum X_i}{n} &lt; \frac{b}{n})=0 \end{equation}\)
+</p>
+
+<p>
+So the strong law of large numbers imples here that right hand side will go to zero. I.E. That there
+will never be continuous play. If play never terminates, observe that \(S_c(a) &lt;1\), the probability
+that fortune \(c\) will be achieved from initial \(a\). So then the probability of \(c\) succesive wins is
+bounded by \(\rho ^{-b}\), the probability of achieving \(c\) with unlimited fortune. So then from the
+Borel Cantelli Lemma, this will tell us that the probability of getting \(c\) succesive wins goes to
+0.
+</p>
+
+<p>
+8.2:
+</p>
+
+<p>
+Suppose we had the sequence of events \(\{ X_0 =0 , \ldots , X_n=0\} = \{Y_0 = \ldots = Y_{n+1}=0 \} \cup \{Y_0 = \ldots = Y_{n+1} = 1 \} \)
+</p>
+
+<p>
+Where the equality follows from the fact that either all of the \(Y\)'s are 0 or they are all 1 to
+achieve equality. Since \(X_n = 0 \implies Y_n = Y_{n+1}\)
+</p>
+
+<p>
+So then \(P(X_0 = 0, X_1 = 0, \ldots, X_n = 0) = P(Y_0 = 0, \ldots Y_{n+1} = 0 \} + P(Y_0 = 1, \ldots, Y_{n+1} = 1 \} = p^{n+2} + q^{n+2} \)
+</p>
+
+<p>
+So the probability that the next \(X\) is also 0 would be:
+\(P(X_{n+1} = 0 | X_1 = 0, \ldots ,X_n = 0) = \frac{p^{n+2} +q^{n+2}}{p^{n+1} +q^{n=1}}\)
+</p>
+
+<p>
+Which is different from \(P(X_{n+1} = 0 | X_n =0) = \frac{P(X_{n+1} = 0, X_n = 0)}{P(X_n =0)} = \frac{p^3 +q^3}{p^2+q^2} \)
+</p>
+
+<p>
+Hence, the \(X\)'s do not form a Markov Chain.
+</p>
+
+<p>
+However, we do have that \(X_{n-1} = Y_{n-1} + Y_n\) and \(X_{n+1} = Y_{n+1} + Y_{n+2}\)
+So we do have that \(X_{n-1}\) and \(X_{n+1}\) being independent. So the given relationship does hold.
+</p>
+
+<p>
+However, the last relation might not hold. Consider the markov chain given in the book in 8.13. If
+there was an unsuccessful attempt on the \(n-1\)st try. Then the probability of success on the \(n+1\)st
+try given that is not independent. 
+</p>
+
+
+<p>
+8.3:
+</p>
+
+<p>
+Take a random walk and send to {-1,0,1} determined if the value at the walk was positive, negative,or 0
+</p>
+
+<p>
+Alternatively, take a markov chain in 3 states. If it is set up where two events are switching and
+the last state stays where it is.
+We can define a function \(f\) that sends the 3 state system to a 2 state system sending the two switching events to the same point and the last event
+to the other one.
+</p>
+
+<p>
+See the picture I will attach later.
+</p>
+
+<p>
+8.15:
+</p>
+
+</body>
+</html>

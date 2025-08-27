@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="Stylesheet" type="text/css" href="style.css">
+<link rel="alternate" type="application/rss+xml" title="RSS" href="rss.xml">
+<title>BillingsleySection22</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+<p>
+Lorem ipsum
+</p>
+
+<div id="22.1"><h1 id="22.1" class="header"><a href="#22.1">22.1</a></h1></div>
+
+<p>
+Let \(X_1,X_2, \ldots\) be a sequence of independent random variables and \(Y\) is measurable in \(\sigma(X_1,X_2,\ldots)\) for each \(n\). Show that there exists a constant \(a\) such that \(\mathbb{P}[Y=a]=1\)
+</p>
+
+<div id="Proof:"><h1 id="Proof:" class="header"><a href="#Proof:">Proof:</a></h1></div>
+
+<p>
+Let \(X_1,X_2, \ldots\) be a sequence of independent random variables and \(Y\) be measurable in \(\sigma(X_1,X_2,\ldots)\) as stated. 
+</p>
+
+<p>
+Recall a property definition of \(\mathbb{P}[Y=a]\):
+</p>
+
+<p>
+\(\begin{equation}\mathbb{P}[Y=a]= \mathbb{P}[Y \leq a] - \mathbb{P}[Y&lt;a] \end{equation}\)
+</p>
+
+<p>
+Which is equivalent to:
+</p>
+
+<p>
+\(\begin{equation} F(a) - F(a^-) = \mathbb{P}[Y=a] \end{equation}\)
+</p>
+
+<p>
+Where \(F\) is the cumulative distribution function of \(Y\) and \(a^-\) is the limit approaching from the left to \(a\). A defining property of \(F\) was that \(\lim_{x \to \infty} F(x) \to 1\)
+</p>
+
+<p>
+So let \(a\) be the smallest positive real number such that \(F(x) = 1\).
+</p>
+
+<p>
+Then \(\mathbb{P}[Y=a]=1\) for some \(a\).
+</p>
+
+
+<div id="22.2"><h1 id="22.2" class="header"><a href="#22.2">22.2</a></h1></div>
+
+<p>
+Assume \(\{X_n \}\) independent and define \(X_{n}^{(c)}\) as in Theorem 22.8. Prove that for \(\sum |X_n|\) to converge with probability 1 it is necessary that \(\sum \mathbb{P}[|X_n| &gt;c]\) and \(\sum \mathbb{E}[|X_{n}^{(c)}|]\) converge for all positive \(c\) and sufficient that they converge for some positive \(c\). If the three series \((22.13)\) converge but \(\sum \mathbb{E}[|X_{n}^{(c)}|] = \infty\), then there is probability 1 that \(\sum X_n\) converges conditionally but not absolutely.
+</p>
+
+<div id="Proof:"><h1 id="Proof:" class="header"><a href="#Proof:">Proof:</a></h1></div>
+
+<p>
+In the forwards direction, assume that \(\sum |X_n|\) converges with probability 1. Since absolute convergence of a series implies ordinary convergence. Then, for all \(c&gt;0\) we have \(\begin{equation}\sum \mathbb{P}[X_n &gt; c] \leq \sum \mathbb{E}[|X_{n}^{(c)}] \leq \sum \mathbb{E}[|X_n|] &lt; \infty \end{equation}\).
+</p>
+
+<p>
+In the backwards direction, assume that \(\sum \mathbb{P}[|X_n| &gt;c]\) and \(\sum \mathbb{E}[|X_{n}^{(c)}\) converge for some positive \(c\). Theorem 22.6 yields that for \(\sum |X_{n}^{(c)}| - E[|X_{n}^{(c)}|]\), this converges almost surely. Since \(\sum E[|X_{n}^{(c)}|]\) converges for \(c\), then so must \(\sum |X_{n}^{(c)}|\). Then by the first Borel Cantelli lemma, \(\mathbb{P}[X_n \neq X_{n}^{(c)} i.o.] = 0\). Thus implying that \(\sum |X_n|\) converges with probability 1.
+</p>
+
+<p>
+This implies that \(\sum |X_n|\) converges with probability 1.
+</p>
+
+<p>
+If the three series converge of (Eq. 22.13) converge but \(\sum \mathbb{E}[|X_{n}^{(c)}] = \infty\), then there is probability 1 that \(\sum X_n\) converges conditionally but not absolutely. It is given that \(\sum X_n\) converges with probability 1 by hypothesis. However, \(\sum \mathbb{E}[|X_{n}^{(c)}] = \infty\) does not satisfy the conditions for what we just proved above in our if and only if. Hence, the series diverges absolutely with probability 1.
+</p>
+
+<div id="22.3"><h1 id="22.3" class="header"><a href="#22.3">22.3</a></h1></div>
+
+<p>
+Generalizing the Borel-Cantelli Lemmas
+</p>
+
+<ol>
+<li>
+Suppose that \(X_n\) are nonnegative. If \(\sum \mathbb{E}[X_n] &lt; \infty\), then \(\sum X_n\) converges with probability 1. If the \(X_n\) are independent and uniformly bounded, and if \(\sum \mathbb{E}[X_n] = \infty\), then \(\sum X_n\) diverges with probability 1. 
+
+<li>
+Construct independent nonnegative \(X_n\) such that \(\sum X_n\) converges with probability 1 but \(\sum \mathbb{E}[X_n]\) diverges. For an extreme example, arrange that \(\mathbb{P}[X_n &gt; 0 i.o] =0\) but \(\mathbb{E}[X_n] \cong \infty\)
+
+</ol>
+<div id="Proof:"><h1 id="Proof:" class="header"><a href="#Proof:">Proof:</a></h1></div>
+
+<p>
+For part a:
+</p>
+
+<p>
+Let \(X_n\) be nonnegative. Where \(\sum \mathbb{E}[X_n] &lt; \infty\). Let \(S_n = \sum_{i=1}^{n} X_i\). We need to show that \(P[\lim_{n}\sup{j\geq 1} |S_{n+j} - S_{n}| \geq \epsilon ] = 0\) 
+</p>
+
+
+<p>
+Observe that \(P [\limsup |S_{n+j} - S_n| \geq \epsilon] = P[\limsup \sum_{k=n+1}^{j} X_k \geq \epsilon ] = \lim_{n} P[\sup_{j /geq 1} \sum_{k=n+1} ^{j} X_k \geq \epsilon ] \)
+</p>
+
+
+<p>
+\(\leq \frac{1}{\epsilon} \lim \sup \sum E[X_k] = \frac{1}{\epsilon} \lim_{n} \sum_{k =n+1} ^\infty E[X_k]\).
+</p>
+
+<p>
+The last inequality goes to 0 since the series is convergent by hypothesis. Hence, \(S_n\) converges with probability 1.
+</p>
+   
+
+
+<p>
+For part b:
+</p>
+
+<p>
+Let \(X_1\) be a random variable that follows a Cauchy distribution and \(X_n, n&gt;1\) be random variables such that \(P[X_n \in A] = \frac{1}{n^2}\) for any \(A\). Clearly the expectation diverges since Cauchy distributions have infinite mean. But the sum of the \(X_n\) since this converges almost surely to \(X = 0\). 
+</p>
+   
+   
+<div id="22.5"><h1 id="22.5" class="header"><a href="#22.5">22.5</a></h1></div>
+
+<p>
+Suppose that \(X_1,X_2,\ldots\) are independent random variables with a Cauchy distribution for a common value of \(u\). 
+</p>
+
+<ol>
+<li>
+Show that \(n^{-1} \sum_{k=1}^n X_k\) does not converge with probability 1.
+
+<li>
+Show that \(P[n^{-1} \textrm{max}_{k \leq n} X_k \leq x] \to e^{\frac{-u}{\pi x}}\) for \(X &gt; 0\).
+
+</ol>
+<div id="Proof:"><h1 id="Proof:" class="header"><a href="#Proof:">Proof:</a></h1></div>
+
+<p>
+This follows from the corollary to theorem 22.1, since the \(X_i\) are i.i.d, and \(E[X_1]=0\). Truncate \(X_n\) by only being interested in values of \(X_n\) less than \(u\). Then \(n^{-1} \sum_{k=1}^{n} X_k \geq n^{-1} \sum_{k=1}^{n} X_{k}^{(u)} \to E[X_{1}^{(u)}]\)
+</p>
+
+
+<p>
+Notice that \(P[n^{-1} \textrm{max}_{k \leq n} X_k \leq x] = P[\textrm{max}_{k \leq n} X_k^{(u)} \leq nx]\). Then 
+</p>
+
+<p>
+\( \begin{equation} P[\textrm{max}_{k \leq n} X_k^{(u)} \leq nx] = P[X_1 \leq xn]^n  = \int_{0}^{nx} \frac{1}{\pi} \frac{u}{u^2 + x^2} dx  \to e ^{\frac{-u}{\pi x} } \end{equation}\)
+</p>
+
+<div id="22.15"><h1 id="22.15" class="header"><a href="#22.15">22.15</a></h1></div>
+
+<p>
+Assume that \(X_1, \ldots, X_n\) are independent random variables and \(s,t,\alpha\) are nonnegative. Let
+</p>
+
+<p>
+\(L(s) = \textrm{max}_{k \leq n} P[|S_k| \geq s ], R(s) = \textrm{max}_{k \leq n} P[|S_n - S_k| &gt; s] \)
+</p>
+
+
+<p>
+\(M(s) = P[\textrm{max}_{k \leq n} |S_k| &gt; s]\), and \(T(s) = P[|S_n| \geq s]\)
+</p>
+
+<ol>
+<li>
+Show that \(M(s+t) \leq T(t) + M(s+t)R(s)\)
+
+<li>
+Take \(s = 2\alpha\) and \(t = \alpha\). Show that \(M(3\alpha) \leq 1 \wedge 3L(\alpha)\)
+
+<li>
+Show \(M(2\alpha) \leq B_O(\alpha) = 1 \wedge \frac{T(\alpha}{1- R(\alpha)}\).
+
+<li>
+Prove \(B_{E}(\alpha) \leq 3B_O(\frac{\alpha}{2}), B_{O}(\alpha) \leq 3B_{E}(\frac{\alpha}{6})\)
+
+</ol>
+<div id="Proof:"><h1 id="Proof:" class="header"><a href="#Proof:">Proof:</a></h1></div>
+
+<p>
+For the first part,
+</p>
+
+<p>
+Observe that \(M(s+t) = P[\textrm{max}_{k \leq n} |S_k| &gt; s+t]\)
+</p>
+
+
+
+
+<p>
+\(\leq P[|S_n| \geq s+t] + \sum_{k=1}^{n-1} P[B_k \cap [|S_n - S_k| &gt; 2(s+t)]] \)
+</p>
+
+
+
+
+<p>
+\(\leq P[|S_n| \geq (s+t)] + \textrm{max}_{1\leq k \leq n} P[|S_n -S_k| \geq 2(s+t)] \leq T(t) + M(s+t)R(s)\)
+</p>
+
+<p>
+For the second part,
+</p>
+
+<p>
+Observe that \(M(3 \alpha) \leq T(\alpha) + M(2\alpha)R(\alpha)\) from the previous proposition. This is less than or equal to \(L(\alpha) + M(2\alpha)2L(\alpha) \leq 1 \wedge 3L(\alpha)\) since \(M(\alpha) &lt; L(\alpha), \forall \alpha\).
+</p>
+
+<p>
+For the third part,
+</p>
+
+<p>
+\(M(2\alpha)( 1- R(\alpha)) \leq T(\alpha)\), after dividing, we see that \(M(2\alpha) \leq 1 \wedge \frac{T(\alpha)}{1 - R(\alpha)}\)
+</p>
+
+<p>
+For the fourth part,
+</p>
+
+<p>
+Observe that \(B_{E}(2s) = 1 \wedge 3L(2s) \leq 3M(2s) \leq 3B_O(s)\)
+</p>
+
+<p>
+Then, since \(T(s)\) is nondecreasing, and \(R(2s) \leq 2L(s)\), and \(T(s) \leq L(s) \leq M(s)\), if \(B_E(s) \leq \frac{1}{3}\), then
+</p>
+
+<p>
+\(B_{O}(6s) \leq \frac{T(6s}{1 - R(6s)} \leq \frac{T(3s)}{1 - 2L(3s)} \leq \frac{M(3s)}{1 - 2M(3s)} \)
+</p>
+
+<p>
+\(\leq \frac{B_E(s)}{1-2B_{E}(s)} \leq 3B_{E}(s)\)
+</p>
+
+</body>
+</html>

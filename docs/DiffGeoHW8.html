@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="Stylesheet" type="text/css" href="style.css">
+<link rel="alternate" type="application/rss+xml" title="RSS" href="rss.xml">
+<title>DiffGeoHW8</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+<p>
+This is for HW 8, my main regeneration
+</p>
+
+<p>
+Question 1: Round Metric
+</p>
+
+<p>
+This was shown in Lee's Riemannian Manifolds: An Introduction to Curvature. Lemma 3.4
+</p>
+
+<p>
+Question 2: Euclidean geodesics
+</p>
+
+<p>
+We compute \(\frac{d}{ds} L_{\bar{g}}(\gamma_s) = \frac{d}{ds} (\int_{0}^{1} |\gamma_{s}'(t)|_{\bar{g}} dt)\)
+</p>
+
+<p>
+Expanding this yields:
+</p>
+
+<p>
+\(\begin{align} \frac{d}{ds}(\int_{0}^{1}|\gamma'(t) +s\tilde{\gamma}'(t) -s\gamma'(t)|_{\bar{g}}) &amp;= \frac{d}{ds}(\int_{0}^{1}|(1-s)(y-x) + s\tilde{\gamma}'(t)|_{\bar{g}} dt) \\ &amp;= \int_{0} ^{1} |(x-y) + \tilde{\gamma}'(t)|_{\bar{g}} dt \\ &amp;= \int_{0}^{1} \sqrt{((y-x)+\tilde{\gamma}'(t))^2} dt \\ &amp;= t(y-x) + \tilde{\gamma}(t) |_{0}^{1} \end{align} \)
+</p>
+
+<p>
+The third inequality comes from differentiating under the integral since they are different variables.
+</p>
+
+<p>
+What the last result shows us is that the only way this new path would be any improvement to the usual Euclidean distance is if \(\tilde{\gamma}\) were 0. Thus, we see that Euclidean geodesics are exactly straight lines.
+</p>
+
+
+<p>
+Question 3: Complete metrics on \(\mathbb{R}\)
+</p>
+
+<p>
+Assume that the integrals converge (say to some point \(p\in \mathbb{R}\)). We show the following for the positive case, the negative integral case is very similar. If this space is complete, then every cauchy sequence converges. Then, consider the sequence
+\(0 \rightarrow t_1 \rightarrow t_2 \rightarrow \ldots \rightarrow \infty\) so that then \(\int_{0} ^{\infty} \sqrt{f(t)}dt = \sum_{i=0} ^{\infty}\int_{t_i}^{t_{i+1}}\)
+</p>
+
+<p>
+We then consider a cauchy subsequence, \(\{k_{j}\}\) that approaches point \(p\)
+Then we see that we can approximate the \(k_j\) by a sequence of sums of integrals with bounds \(\{t_{n_i}, t_{n_i +1} \}\). Thus we have a Cauchy sequence of sums of integrals that approach the bound. 
+</p>
+
+<p>
+I didn't really understand how our conversation led to showing that this sequence contradicted the Cauchy property of the sequence. I guess the point is that then if you take some open set around \(p\) and then compute the distance between \(p\) and a point to the right of it. The triangle inequality just blows up in your face since then \(d_g(0, p) \geq d_g(0, \infty) + d_g(p,q)\)
+</p>
+
+<p>
+I attached some of my scratchwork on paper and maybe you can point out in the math where I am not thinking about things (often haha)
+</p>
+
+<p>
+Question 4: Symmetric connections
+</p>
+
+<p>
+Part A: We want to show that \(\tau (fX_1 +gX_2, Y) = f \tau(X_1,Y) + g\tau(X_2,Y)\) where \(f,g \in C^{\infty}(M)\)
+</p>
+
+<p>
+Observe that the left hand side is:
+</p>
+
+<p>
+\(\nabla_{fX_1 +gX_2} Y - \nabla_{Y}(fX_1 +gX_2) - [fX_1 +gX_2, Y] \)
+</p>
+
+<p>
+\(= f \nabla_{X_1}Y +g \nabla_{X_2}Y - (f \nabla_{Y}X_1 + g\nabla_{Y}X_2 + (Yf)X_1 + (Yg)X_2 - ( (fX_1 +gX_2)Y^j -Y(fX_1 +gX_2)^j) \frac{\partial}{\partial x^j} \)
+</p>
+
+<p>
+\(= (f \nabla_{X_1}Y - f\nabla_{Y}X_1 -(Yf)X - (fX_1 Y^j - Y(fX_1)^j)\frac{\partial}{\partial x^j} + (g \nabla_{X_2}Y - g\nabla_{Y}X_2 -(Yg)X_2 - (gX_2 Y^j - Y(gX_2)^j)\frac{\partial}{\partial x^j} \)
+</p>
+
+<p>
+\(= f \tau(X_1,Y) +g\tau(X_2,Y)\)
+</p>
+
+
+<p>
+Part B: Here we chase down some definitions. Let \(X = X^i \partial_i\), and \(Y = Y^j \partial^j\). So then we
+see that \(\nabla_X Y - \nabla_Y X - [X,Y] = X^i(Y^j \Gamma_{ij}^k \partial_k + Y_i ^j + \partial_j)- Y^j(X^i \Gamma_{ji}^k \partial_k + X^{i}_{j} \partial_i) - (X^i Y^j_i -Y^i X^j_i)\partial_J\)
+</p>
+
+<p>
+Question 5: Space connections
+</p>
+
+<p>
+We want to show that the difference tensor field \(A: \frak{X} (M) \times \frak{X}(M) \rightarrow \frak{X}(M)\) defined by the map 
+</p>
+
+<p>
+\(\begin{equation} A(X,Y) = \nabla_X ^{1}Y - \nabla_X ^{0} Y \end{equation}\)
+</p>
+
+<p>
+has all the nice properties of a connection. So we'll show that now.
+</p>
+
+<p>
+Linear Product Rule: We want to show that \(A(fX_1+gX_2,Y) = fA(X_1,Y)+gA(X_2,Y)\)
+Observe that the left hand side is exactly \(\begin{split} \nabla_{fX_1+gX_2} ^{1} Y - \nabla_{fX_1+gX_2}^0 Y &amp;= (f \nabla_{X_1}^1 Y + g\nabla_{X_2^{1}}Y) - (f \nabla_{X_1}^{0}Y + g\nabla_{X_2}^{0}Y) \\ &amp;= f(\nabla_{X_1}^{1} Y - \nabla_{X_1}^{0}Y ) + g(\nabla_{X_2}^{0} Y - \nabla_{X_2}^{0}Y) \\ &amp;= f(A(X_1,Y)) +g(A(X_2,Y)) \end{split}\)
+</p>
+
+<p>
+Next, if \(a,b \in \mathbb{R}\), we wish to that \(A(X, aY_1 +bY_2) = a(A(X,Y_1)) + b(A(X,Y_2))\)
+</p>
+
+<p>
+Manipulating the left hand side, we see that:
+</p>
+
+<p>
+\(\begin{align} \nabla_{X}^{1}(aY_1+bY_2) - \nabla_{X}^{0}(aY_1 +bY_2) &amp;= a \nabla_{X}^{1}Y_{1} + b \nabla_{X}^{1}Y_{2} - a\nabla_{X}^{0}Y_{1} - b\nabla_{X}^{0}Y_{2} \\ &amp;= a(\nabla_{X}^{1}Y_{1} - \nabla_{X}^{0}Y_{1}) + b(\nabla_{X}^{1}Y_{2} - \nabla_{X}^{0}Y_{2}) \\ &amp;= a(A(X,Y_1)) + b(A(X,Y_2)) \end{align}\)
+</p>
+
+<p>
+Finally we show that if \(f \in C^{\infty}(M)\) then \(A(X,fY) = f(A(X,Y))\)
+</p>
+
+<p>
+The left hand side is equal to:
+</p>
+
+<p>
+\(\begin{align} \nabla_{X}^{1}(fY) - \nabla_{X}^{0}(fY) &amp;= f \nabla_{X}^{1}(Y) + (Xf)Y - f \nabla_{X}^{0}Y - (Xf)Y \\ &amp;= f A(X,Y) \end{align}\) 
+</p>
+
+</body>
+</html>

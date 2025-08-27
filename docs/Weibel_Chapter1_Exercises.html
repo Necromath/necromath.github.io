@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="Stylesheet" type="text/css" href="style.css">
+<link rel="alternate" type="application/rss+xml" title="RSS" href="rss.xml">
+<title>Weibel_Chapter1_Exercises</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+<div id="Exercise 1.2.5"><h1 id="Exercise 1.2.5" class="header"><a href="#Exercise 1.2.5">Exercise 1.2.5</a></h1></div>
+
+<p>
+Prove that \(Tot(C)\) is acyclic if the double complex is bounded and the rows and columns are exact.
+</p>
+
+<div id="Solution:"><h1 id="Solution:" class="header"><a href="#Solution:">Solution:</a></h1></div>
+
+<p>
+Let \(C\) be a bounded double complex with exact rows and columns and consider \(x=(x_{p,q}) \in Tot(C)_n\), where \(p+q = n\) for any integers \(p,q\).
+</p>
+
+
+<p>
+Recall that \(d(x_{p,q}) = d^h(x_{p,q}) + d^v(x_{p,q})\). Since \(C\) is bounded, we can look at the north eastern most nontrivial module \(C_{i,j}\) and hence nontrivial \(Tot(C)_k\).
+</p>
+
+<p>
+The procedure is as follow: Start with \(d(x_{p,q}) = d^h(x_{p,q}) + d^v(x_{p,q})\), note that if \(x_{p,q}\) lies in the kernel of \(d\), then there exists an element \(x_{p-1,q+1}\) such that \(d^h(x_{p-1,q+1}) = 0\). Exactness of our columns then tells us that \(x_{p-1,q+1}=d^v(x_{p-1,q+2})\). An identical argument can be made for the rows. Combining these facts together we see that every element in \(Ker(d_{n})\) comes from an element in \(Im(d_{n-1}\). Hence \(Im(d_{n-1}) = Ker(d_n)\)
+</p>
+
+<p>
+Thus \(Tot(C)\) is acyclic.
+</p>
+
+<p>
+Exercise 1.3.1
+</p>
+
+<p>
+Let \(0 \to A \to B \to C \to 0\) be a short exact sequence of complexes. Show that if two of the three complexes A,B,C are exact, then so is the third.
+</p>
+
+<p>
+Solution: First, let \(B,C\) be exact complexes. Then, their homologies are 0 everywhere. So we can look at instead the short exact sequence \(0 \to H_n(A) \to 0 \to 0 \to 0\). Wherein exactness tells us immediately that \(H_n(A)\) is trivial, hence \(A\) is exact. 
+</p>
+
+<p>
+This argument can be repeated for \(A,C\) and \(A,B\). So we're done.
+</p>
+
+<div id="Exercise 1.3.3: The 5 lemma"><h1 id="Exercise 1.3.3: The 5 lemma" class="header"><a href="#Exercise 1.3.3: The 5 lemma">Exercise 1.3.3: The 5 lemma</a></h1></div>
+
+<div id="Solution:"><h1 id="Solution:" class="header"><a href="#Solution:">Solution:</a></h1></div>
+
+<p>
+This one will be turned in by hand, it's better with the diagram and I can't use tikz in this environment.
+</p>
+
+<div id="Exercise 1.3.5:"><h1 id="Exercise 1.3.5:" class="header"><a href="#Exercise 1.3.5:">Exercise 1.3.5:</a></h1></div>
+
+<p>
+Let \(f\) be a morphism of chain complexes. Show that if \(ker(f)\) and \(coker(f)\) are acyclic, then \(f\) is a quasi-isomorphism. Is the converse true?
+</p>
+
+<div id="Solution:"><h1 id="Solution:" class="header"><a href="#Solution:">Solution:</a></h1></div>
+
+<p>
+Let \(A,B\) be chain complexes and \(f: A \to B\) a morphism. We will show that if \(ker(f)\) and \(coker(f)\) are acyclic, then \(f\) is a quasi-isomorphism.
+</p>
+
+<p>
+Notice that we get a short exact sequence \(0 \to ker(f) \to A \to Im(f) \to 0\) and \(0 \to Im(f) \to B \to coker(f) \to 0\). If we look at the long exact sequence of homology that is induced from the first part. It looks like \(0 \to 0 \to H_n(A) \to H_n(Im(f)) \to 0\) since both \(ker(f)\) and \(Im(f)\) are acyclic. Exactness of this sequence tells us that \(H_n(A) \cong H_n(Im(f))\). We can make the exact same argument for the other short exact sequence and the induced long exact sequence on homology for that. Which means we get \(H_n(A) \cong H_n(Im(f)) \cong H_(B)\). Thus \(f\) is a quasi-isomorphism from A to B. 
+</p>
+
+<p>
+The converse is not true. This is show by the following example: Let \(A\) be the chain complex \(\ldots \to 0 \to 0 \to \mathbb{Z} \to \mathbb{Z} \to 0 \to \ldots\) and \(B\) the chain complex \(\ldots \to 0 \to \mathbb{Z} \to \mathbb{Z} \to 0 \to 0\to \ldots \) where only the middle \(\mathbb{Z}\) terms coincide, everywhere else 0. 
+</p>
+
+<p>
+If we let \(f\) be the chain complex morphism \(f: A \to B\) that sends the middle \(\mathbb{Z}\) to the middle \(\mathbb{Z}\) and everywhere else 0, then \(ker(f)\) and \(coker(f)\) are not acyclic. But \(f\) is a quasi-isomorphism. Since the Homologies of \(ker(f)\) and \(coker(f)\) are nontrivial at exactly one place. 
+</p>
+
+<div id="Exercise 1.4.1"><h1 id="Exercise 1.4.1" class="header"><a href="#Exercise 1.4.1">Exercise 1.4.1</a></h1></div>
+
+<ol>
+<li>
+Show that acyclic bounded below chain complexes of free R-modules are always split exact.
+
+<li>
+Show that an acyclic chain complex of finitely generated free abelian groups is always split exact, even when it is not bounded below. 
+
+</ol>
+   
+<div id="Solution:"><h1 id="Solution:" class="header"><a href="#Solution:">Solution:</a></h1></div>
+   
+<div id="1."><h1 id="1." class="header"><a href="#1.">1.</a></h1></div>
+
+<p>
+Let \(A.\) be an acyclic bounded below chain complex of free R-modules. 
+</p>
+
+<p>
+The complex is exact, since it is acyclic.
+</p>
+
+<p>
+Since \(A_n\) is a free module, we can decompose its basis into a direct sum \(A_n =  Z_n \oplus B'_n \) where \(Z_n\) is the kernel of the chain map \(d_n\) and \(B'_n = A_n \ Z_n\). Since the complex is exact, we have that \(Z_n = d(C_n) = B'_{n+1}\). So we can choose a basis in \(B'_{n+1}\) and let \(s_n:C_n \to C_{n+1}\) be s_n(z_i) = j_k where \(z_i\) is an element of the basis for \(Z_n\) and \(j_k\) is a fixed choice of basis element of \(B'_{n+1}\) and \(s_n(0) = 0\). Our choice of \(j_k\) is possible since free \(R\)-modules are projective. We can choose a basis for \(Z_n\) and let \(s_n: A_n \to A_{n+1}\) be the map which sets \(ds= id\) on \(Z_n\) via the projectivity of \(Z_n\). So, we have a map \(s\) such that \(dsd = d\). Hence, \(A.\) splits 
+</p>
+
+
+<p>
+Allowing us to conclude that \(A.\) is split exact.
+</p>
+
+
+<div id="2."><h1 id="2." class="header"><a href="#2.">2.</a></h1></div>
+
+<p>
+Let \(A.\) be an acyclic chain complex of finitely generated free abelian groups. 
+</p>
+
+<p>
+The complex is exact, since it is acyclic.
+</p>
+
+<p>
+Since \(A_n\) is a finitely generated free group, we can decompose it into a direct sum \(A_n = Z_n \oplus B'_n\) where \(Z_n\) is the kernel of the chain map \(d_n\) and \(B'_n = A_n \ Z_n\). Since the complex is exact, we have that \(Z_n = d(C_n) = B'_{n+1}\). So we can choose a basis in \(B'_{n+1}\) and let \(s_n:C_n \to C_{n+1}\) be s_n(e_i) = f_i where \(d(f_i) = e_i\) and \(e_i\) is an element of the basis for \(Z_n\)  since the kernel is also free. \(f_i\) is an element of the basis of \(B'_{n+1}\) and \(s_n(0) = 0\). Our choice of \(f_i\) is possible since free abelian groups are projective. We can choose a basis for \(Z_n\) and let \(s_n: A_n \to A_{n+1}\) be the map which sets \(ds= id\) on \(Z_n\) via the projectivity of \(Z_n\). So, we have a map \(s\) such that \(dsd = d\). Hence, \(A.\) splits
+</p>
+
+<p>
+Thus, \(A.\) is split exact.
+</p>
+
+
+<div id="Exercise 1.5.1"><h1 id="Exercise 1.5.1" class="header"><a href="#Exercise 1.5.1">Exercise 1.5.1</a></h1></div>
+
+<p>
+Let cone\((C)\) denote the mapping cone of the identity map \(id_C\) of \(C\); it has \(C_{n-1} \oplus C_{n}\) in degree \(n\). Show that cone\((C)\) is split exact, with \(s(b,c)=(-c,0)\) defining the splitting map. 
+</p>
+
+<div id="Solution:"><h1 id="Solution:" class="header"><a href="#Solution:">Solution:</a></h1></div>
+
+<p>
+The mapping cone of the identity has \(d\) defined as \(d(a,b) = (-d(a),d(b) - a)\).
+</p>
+
+<p>
+We check that \(dsd=d\): 
+</p>
+
+<p>
+\( \begin{split} d(s(d(a,b))) = d(s(-d(a),d(b) - a)) &amp; = d(a-d(b), 0) \\  &amp;= d(-d(a), 0 - (a-d(b))) \\ &amp;= d(-d(a), d(b) -a) \\ &amp;= d(a,b) \end{split}\)
+</p>
+
+<p>
+Thus, \(dsd = d\) and \(cone(C)\) is split.
+</p>
+
+<p>
+To see exactness, since the identity map is a quasi-isomorphism, the mapping cone of the identity is exact, by Corrolary 1.5.4. . What would a direct proof look like?
+</p>
+
+</body>
+</html>
