@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+<head>
+  <meta name="robots" content="noindex">
+  <meta charset="utf-8"/>
+  <title>%title%</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <link rel="stylesheet" type="text/css" href="%root_path%style.css" />
+
+  <!-- MathJax v3 config (set BEFORE loader). 
+       Replaces the old MathJax v2 'Hub.Config' block. -->
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        // add TeX packages similar to AMSmath/AMSsymbols/AMScd, color
+        packages: {'[+]': ['ams', 'amscd', 'color']},
+        macros: {
+          R: '\\mathbb{R}',
+          P: '\\mathbb{P}',
+          Norm: ['\\left\\lVert #1 \\right\\rVert', 1]
+        }
+      },
+      svg: { fontCache: 'global' }
+    };
+  </script>
+  <script defer id="MathJax-script"
+          src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+</head>
+<body>
+  <a href="%root_path%index.html">Index</a>
+
+  <div class="content">
+    %content%
+  </div>
+
+  <hr>
+  <script>
+    document.write(
+      "This page was powered by Vimwiki and was last modified on: " +
+      document.lastModified
+    );
+  </script>
+  <hr>
+  <center>&copy; Mauricio Montes, <span id="copy-year"></span>,
+    myfirstname.mylast@auburn.edu
+  </center>
+  <script>
+    document.getElementById('copy-year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
+
