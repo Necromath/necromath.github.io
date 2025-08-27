@@ -6,26 +6,35 @@
   <title>%title%</title>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <link rel="stylesheet" type="text/css" href="%root_path%style.css" />
-
-  <!-- MathJax v3 config (set BEFORE loader). 
-       Replaces the old MathJax v2 'Hub.Config' block. -->
-  <script>
-    window.MathJax = {
-      tex: {
-        inlineMath: [['$', '$'], ['\\(', '\\)']],
-        // add TeX packages similar to AMSmath/AMSsymbols/AMScd, color
-        packages: {'[+]': ['ams', 'amscd', 'color']},
-        macros: {
-          R: '\\mathbb{R}',
-          P: '\\mathbb{P}',
-          Norm: ['\\left\\lVert #1 \\right\\rVert', 1]
-        }
-      },
-      svg: { fontCache: 'global' }
-    };
+  <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({ TeX: {
+      extensions: ["autobold.js",
+        "AMSmath.js",
+        "AMSsymbols.js",
+        "AMScd.js",
+        "color.js"]
+      Macros: {
+        R: "\mathbb{R}",
+        P: "\mathbb{P}",
+        Norm: ["\left\|| #1 \right||",1]
+      }
+    }});
   </script>
-  <script defer id="MathJax-script"
-          src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+  <script>
+  MathJax = {
+    tex: {
+      inlineMath: [['$', '$'], ['\\(', '\\)']]
+    },
+    svg: {
+      fontCache: 'global'
+    }
+  };
+  </script>
+  <script type="text/javascript" id="MathJax-script" async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex&#45;svg.js">
+  </script>
+
+
 </head>
 <body>
   <a href="%root_path%index.html">Index</a>
