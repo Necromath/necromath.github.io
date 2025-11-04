@@ -12,7 +12,6 @@ topological signal processing, and laplacians with a focus on chemical reaction 
 Some of [[Research| my work]] that I have done. 
 
 Here is a landing page for the [[DRP at Auburn]]
-Change here
 
 {{IMG20240622132513.jpg|This is me|style="width:800px;height:533px;"}}
 
