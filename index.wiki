@@ -7,7 +7,7 @@ I am currently in Paris at The Sorbonne until May 2026 working with [[https://ww
 a chemical network perspective on the geometry of probabilistic networks. 
 
 I am interested in applications of algebraic topology, category theory,
-topological signal processing, and laplacians with a focus on chemical reaction networks.
+probability, and algebraic geometry. My current focus is on chemical reaction networks.
 
 Some of [[Research| my work]] that I have done. 
 
