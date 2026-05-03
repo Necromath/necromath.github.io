@@ -24,7 +24,7 @@ in a way that can make both theory and computation more tractable.
   categorical construction, and defines a reconstruction functor back to chemical reaction networks.
  
 - Reduction of Probabilistic Chemical Reaction Networks
-  (with Grégoire Sergeant-Perthuis)
+  (with Grégoire Sergeant-Perthuis, *accepted at ICML 2026*)
 
   This paper studies chemical reaction networks that implement the belief propagation algorithm.
   In particular, it develops a framework for transporting reductions of factor graphs to the associated reaction networks,
