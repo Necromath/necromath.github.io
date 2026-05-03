@@ -22,6 +22,15 @@ in a way that can make both theory and computation more tractable.
   In particular, it shows that topological reduction of a chemical reaction network can be understood through the
   stoichiometric functor into the arrow category of vector spaces, interprets the associated Schur complement as a
   categorical construction, and defines a reconstruction functor back to chemical reaction networks.
+ 
+- Reduction of Probabilistic Chemical Reaction Networks
+  (with Grégoire Sergeant-Perthuis)
+
+  This paper studies chemical reaction networks that implement the belief propagation algorithm.
+  In particular, it develops a framework for transporting reductions of factor graphs to the associated reaction networks,
+  showing how structure-preserving simplifications on the graphical side induce corresponding reductions on the chemical side.
+  The broader goal is to better understand the relationship between probabilistic inference, reaction-network dynamics,
+  and categorical structure.
 
 *Surface growth and stochastic models*
 
