@@ -1,15 +1,29 @@
-=== Mauricio Montes ===
+= Mauricio Montes =
 
-I received my B.S. in Mathematics from the University of Texas at Austin in 2021 (Hook ’em) and am currently a fifth-year Ph.D. student in Mathematics at Auburn University.
+I am a Ph.D. candidate in Mathematics at Auburn University being advised by Yanzhao Cao and Hal Schenck. I received my B.S. in Mathematics from the University of Texas at Austin in 2021 (Hook ’em).
 
-I am currently based in Paris, where I am visiting Sorbonne Université through May 2026 and working with [[https://www.normalesup.org/~sergeant/|Grégoire Sergeant-Perthuis]] on questions at the intersection of chemical reaction networks, probabilistic graphical models, and geometry.
+I am currently based in Paris, visiting Sorbonne Université (CQSB) through August 2027 and working with [[https://www.normalesup.org/~sergeant/|Grégoire Sergeant-Perthuis]].
 
-My research lies broadly in applied and algebraic topology, category theory, probability, and algebraic geometry, with a current emphasis on chemical reaction networks and related structures arising in inference and dynamics.
+== Research ==
+
+Graphs are ubiquitous objects used constantly in the representation of objects, processes, and relationships. Its discrete nature is especially helpful for statistical analysis, permitting the use of tools such as message passing algorithms in order to perform inference on some property of the vertices / edges / graph. 
+
+I am personally interested in the graphical representations of biology since biology and machine learning both compute with networks. While a cell infers the state of its environment through a web of chemical reactions, a graph neural network classifies a molecule by passing messages along its bonds. These networks are usually too large to analyze or simulate as given, so my research tries to tackle the question across these settings:
+
+_When can a network be made smaller without changing what it was built to compute?_
+
+I approach this with tools from algebraic topology, category theory, probability, and algebraic geometry. My dissertation is titled _Topological and Algebraic Methods for Reducing and Approximating Networked Systems_.
+
+Current projects:
+
+- *Reducing chemical networks that compute.* With Grégoire Sergeant-Perthuis, I showed that reductions of factor graphs carry over to the chemical reaction networks that implement belief propagation, with the same guarantee. ([[https://arxiv.org/abs/2606.27737|ICML 2026]])
+- *The categorical structure of topological reduction.* With [[https://albany.edu/math/faculty/justin-curry|Justin Curry]], I study Schur-complement reductions of chemical reaction networks as universal constructions. ([[https://arxiv.org/abs/2604.04919|arXiv]])
+- *Minimum Description Length of Graphs.* As an Applied Machine Learning Summer Fellow at Los Alamos National Laboratory (2026), I measured when lossless graph compression costs a graph neural network expressive power.
 
 You can read more about my [[Research|research here]].
 
 I also help organize the [[DRP at Auburn|Directed Reading Program at Auburn]].
 
-{{IMG20240622132513.jpg|Photo of Mauricio Montes|style="width:800px;height:533px;"}}
+{{IMG20240622132513.jpg|Photo of me|style="width:800px;height:533px;"}}
 
 $\int_{-\infty}^{\infty} \frac{\cos(x)}{1+x^2}\,dx = \frac{\pi}{e}$
